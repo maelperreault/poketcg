@@ -13,7 +13,6 @@ types = [
     'TYPE_PKMN_FIGHTING',
     'TYPE_PKMN_PSYCHIC',
     'TYPE_PKMN_COLORLESS',
-    'TYPE_TRAINER',
 ]
 
 sets = [
@@ -24,7 +23,7 @@ sets = [
 ]
 
 for l in old_lines:
-    if ' ; type' in l and 'ENERGY' not in l:
+    if ' ; type' in l and 'ENERGY' not in l and 'TRAINER' not in l:
         l = '	db %s ; type\n' % choice(types)
     elif ' ; set' in l and 'ENERGY' not in l:
         l = '	db %s | NONE ; sets\n' % choice(sets)

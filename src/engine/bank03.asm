@@ -3849,6 +3849,9 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 	close_advanced_text_box
 	; @Note debug boosters, maybe turn it into a feature?
 	; give_booster_packs BOOSTER_COLOSSEUM_FIGHTING, BOOSTER_COLOSSEUM_FIGHTING, NO_BOOSTER
+	; give_booster_packs BOOSTER_LABORATORY_NEUTRAL, BOOSTER_LABORATORY_NEUTRAL, NO_BOOSTER
+	; give_booster_packs BOOSTER_MYSTERY_GRASS_COLORLESS, BOOSTER_MYSTERY_GRASS_COLORLESS, NO_BOOSTER
+	; give_booster_packs BOOSTER_EVOLUTION_PSYCHIC, BOOSTER_EVOLUTION_PSYCHIC, NO_BOOSTER
 	set_next_npc_and_script NPC_DRMASON, Script_AfterPracticeDuel
 	end_script
 	ret
