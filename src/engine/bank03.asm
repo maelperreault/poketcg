@@ -3747,7 +3747,7 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 	move_player NORTH, 2
 	move_player NORTH, 2
 	move_player NORTH, 2
-	print_npc_text Text05e3
+	; print_npc_text Text05e3
 	close_advanced_text_box
 	set_next_npc_and_script NPC_SAM, .ows_d779
 	end_script
@@ -3756,9 +3756,9 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 .ows_d779
 	start_script
 	move_active_npc NPCMovement_d880
-	print_npc_text Text05e4
+	; print_npc_text Text05e4
 	set_dialog_npc NPC_DRMASON
-	print_npc_text Text05e5
+	; print_npc_text Text05e5
 	close_text_box
 	move_active_npc NPCMovement_d882
 	set_active_npc_direction EAST
@@ -3772,7 +3772,7 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 	start_script
 	move_active_npc NPCMovement_d88b
 	do_frames 40
-	print_npc_text Text05e6
+	; print_npc_text Text05e6
 	close_text_box
 	move_player WEST, 1
 	move_player WEST, 1
@@ -3782,9 +3782,10 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 	move_player SOUTH, 1
 	set_player_direction WEST
 	move_active_npc NPCMovement_d894
-	print_npc_text Text05e7
+	; print_npc_text Text05e7
 	set_dialog_npc NPC_SAM
-	print_npc_text Text05e8
+	; print_npc_text Text05e8
+	script_jump .ows_d817
 .ows_d7bc
 	close_text_box
 	show_sam_rules_multichoice
@@ -3831,15 +3832,15 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 
 .ows_d817
 	set_dialog_npc NPC_DRMASON
-	print_npc_text Text05ea
+	; print_npc_text Text05ea
 	script_nop
 	set_event EVENT_MASON_LAB_STATE, MASON_LAB_IN_PRACTICE_DUEL
 	close_advanced_text_box
-	set_next_npc_and_script NPC_SAM, .ows_d827
+	script_jump .ows_d82d ; this skips the practice duel entirely!
 	end_script
 	ret
 
-.ows_d827
+.ows_d827 ; TUTORIAL PRATICE DUEL
 	start_script
 	start_duel PRIZES_2, SAMS_PRACTICE_DECK_ID, MUSIC_DUEL_THEME_1
 	quit_script_fully
@@ -3852,8 +3853,8 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 
 Script_AfterPracticeDuel: ; d834 (3:5834)
 	start_script
-	print_npc_text Text05eb
-	print_npc_text Text05ef
+	; print_npc_text Text05eb
+	; print_npc_text Text05ef
 	close_text_box
 	move_active_npc NPCMovement_d896
 	set_player_direction NORTH
@@ -3864,11 +3865,11 @@ Script_AfterPracticeDuel: ; d834 (3:5834)
 	move_player EAST, 1
 	move_player EAST, 1
 	set_player_direction NORTH
-	print_npc_text Text05f0
+	; print_npc_text Text05f0
 	close_text_box
-	print_text Text05f1
+	; print_text Text05f1
 	close_text_box
-	print_npc_text Text05f2
+	; print_npc_text Text05f2
 .ows_d85f
 	choose_starter_deck
 	close_text_box
