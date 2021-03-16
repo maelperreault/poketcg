@@ -1358,20 +1358,7 @@ Text0378: ; 3ef66 (f:6f66)
 	done
 
 Text0379: ; 3efc3 (f:6fc3)
-	text "<RAMNAME> is crazy about Pokémon"
-	line "and Pokémon card collecting!"
-	line "One day,"
-	line "<RAMNAME> heard a rumor:"
-	line " ”The Legendary Pokémon Cards..."
-	line "  the extremely rare and powerful "
-	line "  cards held by Pokémon Trading "
-	line "  Card Game's greatest players... "
-	line "  The Grand Masters are searching"
-	line "  for one to inherit the legend!”"
-	line "Dreaming of inheriting the"
-	line "Legendary Pokémon Cards,"
-	line "<RAMNAME> visits the Pokémon"
-	line "card researcher, Dr. Mason..."
+	text "Pokémon TCG Rando by sushi"
 	done
 
 Text037a: ; 3f147 (f:7147)

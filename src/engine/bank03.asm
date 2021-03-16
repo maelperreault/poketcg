@@ -3886,8 +3886,8 @@ Script_AfterPracticeDuel: ; d834 (3:5834)
 	resume_song
 	close_text_box
 	set_event EVENT_MASON_LAB_STATE, MASON_LAB_RECEIVED_STARTER_DECK
-	give_stater_deck
-	print_npc_text Text05f6
+	give_starter_deck
+	; print_npc_text Text05f6
 	save_game 0
 	quit_script_fully
 

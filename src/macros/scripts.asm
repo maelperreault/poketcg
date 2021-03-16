@@ -549,7 +549,7 @@ script_nop: MACRO
 ENDM
 
 ; Gives the player their previously chosen starter deck
-give_stater_deck: MACRO
+give_starter_deck: MACRO
 	run_command ScriptCommand_GiveStarterDeck
 ENDM
 

@@ -92,7 +92,7 @@ script_commands = {
 	0x41: { "name": "play_credits",                               "params": [] },
 	0x42: { "name": "try_give_pc_pack",                           "params": [ "byte" ] },
 	0x43: { "name": "script_nop",                                 "params": [] },
-	0x44: { "name": "give_stater_deck",                           "params": [] },
+	0x44: { "name": "give_starter_deck",                          "params": [] },
 	0x45: { "name": "walk_player_to_mason_lab",                   "params": [] },
 	0x46: { "name": "override_song",                              "params": [ "song" ] },
 	0x47: { "name": "set_default_song",                           "params": [ "song" ] },
