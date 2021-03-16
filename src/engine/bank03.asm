@@ -3840,13 +3840,15 @@ Script_EnterLabFirstTime: ; d753 (3:5753)
 	end_script
 	ret
 
-.ows_d827 ; TUTORIAL PRATICE DUEL
+.ows_d827 ; TUTORIAL PRACTICE DUEL
 	start_script
 	start_duel PRIZES_2, SAMS_PRACTICE_DECK_ID, MUSIC_DUEL_THEME_1
 	quit_script_fully
 
 .ows_d82d
 	close_advanced_text_box
+	; @Note debug boosters, maybe turn it into a feature?
+	; give_booster_packs BOOSTER_COLOSSEUM_FIGHTING, BOOSTER_COLOSSEUM_FIGHTING, NO_BOOSTER
 	set_next_npc_and_script NPC_DRMASON, Script_AfterPracticeDuel
 	end_script
 	ret
