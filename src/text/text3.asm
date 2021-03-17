@@ -1358,7 +1358,7 @@ Text0378: ; 3ef66 (f:6f66)
 	done
 
 Text0379: ; 3efc3 (f:6fc3)
-	text "Pokémon TCG Rando by sushi"
+	text "Pokémon TCG Randomizer by sushi"
 	done
 
 Text037a: ; 3f147 (f:7147)

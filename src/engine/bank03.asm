@@ -8479,6 +8479,7 @@ NPCMovement_f6a6: ; f6a6 (3:76a6)
 Script_f6af: ; f6af (3:76af)
 	start_script
 	try_give_medal_pc_packs
+	; GRAND MASTER MEDAL CHECK
 	jump_if_event_equal EVENT_MEDAL_COUNT, 8, .ows_f6b9
 	print_text_quit_fully Text0558
 

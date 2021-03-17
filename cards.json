@@ -1,0 +1,2974 @@
+{
+  "BulbasaurCard": {
+    "name": "BulbasaurCard",
+    "text_name": "NONE",
+    "id": 1,
+    "group": 1,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "IvysaurCard": {
+    "name": "IvysaurCard",
+    "text_name": "PoisonPowderName",
+    "id": 2,
+    "group": 1,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 2
+    },
+    "target_group": "BulbasaurName"
+  },
+  "Venusaur1Card": {
+    "name": "Venusaur1Card",
+    "text_name": "MegaDrainName",
+    "id": 3,
+    "group": 1,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4
+    },
+    "target_group": "IvysaurName"
+  },
+  "Venusaur2Card": {
+    "name": "Venusaur2Card",
+    "text_name": "SolarBeamName",
+    "id": 4,
+    "group": 1,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4
+    },
+    "target_group": "IvysaurName"
+  },
+  "CaterpieCard": {
+    "name": "CaterpieCard",
+    "text_name": "NONE",
+    "id": 5,
+    "group": 5,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "MetapodCard": {
+    "name": "MetapodCard",
+    "text_name": "StunSporeName",
+    "id": 6,
+    "group": 5,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 2
+    },
+    "target_group": "CaterpieName"
+  },
+  "ButterfreeCard": {
+    "name": "ButterfreeCard",
+    "text_name": "MegaDrainName",
+    "id": 7,
+    "group": 5,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 4
+    },
+    "target_group": "MetapodName"
+  },
+  "WeedleCard": {
+    "name": "WeedleCard",
+    "text_name": "NONE",
+    "id": 8,
+    "group": 8,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "KakunaCard": {
+    "name": "KakunaCard",
+    "text_name": "PoisonPowderName",
+    "id": 9,
+    "group": 8,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 2
+    },
+    "target_group": "WeedleName"
+  },
+  "BeedrillCard": {
+    "name": "BeedrillCard",
+    "text_name": "PoisonStingName",
+    "id": 10,
+    "group": 8,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3,
+      "GRASS": 3
+    },
+    "target_group": "KakunaName"
+  },
+  "EkansCard": {
+    "name": "EkansCard",
+    "text_name": "WrapName",
+    "id": 11,
+    "group": 11,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "ArbokCard": {
+    "name": "ArbokCard",
+    "text_name": "PoisonFangName",
+    "id": 12,
+    "group": 11,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "EkansName"
+  },
+  "NidoranFCard": {
+    "name": "NidoranFCard",
+    "text_name": "CallForFamilyName",
+    "id": 13,
+    "group": 13,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": ""
+  },
+  "NidorinaCard": {
+    "name": "NidorinaCard",
+    "text_name": "DoubleKickName",
+    "id": 14,
+    "group": 13,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 2
+    },
+    "target_group": "NidoranFName"
+  },
+  "NidoqueenCard": {
+    "name": "NidoqueenCard",
+    "text_name": "MegaPunchName",
+    "id": 15,
+    "group": 13,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 3
+    },
+    "target_group": "NidorinaName"
+  },
+  "NidoranMCard": {
+    "name": "NidoranMCard",
+    "text_name": "NONE",
+    "id": 16,
+    "group": 16,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "NidorinoCard": {
+    "name": "NidorinoCard",
+    "text_name": "HornDrillName",
+    "id": 17,
+    "group": 16,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 4
+    },
+    "target_group": "NidoranMName"
+  },
+  "NidokingCard": {
+    "name": "NidokingCard",
+    "text_name": "ToxicName",
+    "id": 18,
+    "group": 16,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 2
+    },
+    "target_group": "NidorinoName"
+  },
+  "ZubatCard": {
+    "name": "ZubatCard",
+    "text_name": "LeechLifeName",
+    "id": 19,
+    "group": 19,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3,
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "GolbatCard": {
+    "name": "GolbatCard",
+    "text_name": "LeechLifeName",
+    "id": 20,
+    "group": 19,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4,
+      "GRASS": 2
+    },
+    "target_group": "ZubatName"
+  },
+  "OddishCard": {
+    "name": "OddishCard",
+    "text_name": "SproutName",
+    "id": 21,
+    "group": 21,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": ""
+  },
+  "GloomCard": {
+    "name": "GloomCard",
+    "text_name": "FoulOdorName",
+    "id": 22,
+    "group": 21,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "OddishName"
+  },
+  "VileplumeCard": {
+    "name": "VileplumeCard",
+    "text_name": "PetalDanceName",
+    "id": 23,
+    "group": 21,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "GloomName"
+  },
+  "ParasCard": {
+    "name": "ParasCard",
+    "text_name": "SporeName",
+    "id": 24,
+    "group": 24,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "ParasectCard": {
+    "name": "ParasectCard",
+    "text_name": "SlashName",
+    "id": 25,
+    "group": 24,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 3
+    },
+    "target_group": "ParasName"
+  },
+  "VenonatCard": {
+    "name": "VenonatCard",
+    "text_name": "LeechLifeName",
+    "id": 26,
+    "group": 26,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "VenomothCard": {
+    "name": "VenomothCard",
+    "text_name": "VenomPowderName",
+    "id": 27,
+    "group": 26,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": "VenonatName"
+  },
+  "BellsproutCard": {
+    "name": "BellsproutCard",
+    "text_name": "CallForFamilyName",
+    "id": 28,
+    "group": 28,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "WeepinbellCard": {
+    "name": "WeepinbellCard",
+    "text_name": "RazorLeafName",
+    "id": 29,
+    "group": 28,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "BellsproutName"
+  },
+  "VictreebelCard": {
+    "name": "VictreebelCard",
+    "text_name": "AcidName",
+    "id": 30,
+    "group": 28,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "WeepinbellName"
+  },
+  "GrimerCard": {
+    "name": "GrimerCard",
+    "text_name": "MinimizeName",
+    "id": 31,
+    "group": 31,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "MukCard": {
+    "name": "MukCard",
+    "text_name": "SludgeName",
+    "id": 32,
+    "group": 31,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "GrimerName"
+  },
+  "ExeggcuteCard": {
+    "name": "ExeggcuteCard",
+    "text_name": "LeechSeedName",
+    "id": 33,
+    "group": 33,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "ExeggutorCard": {
+    "name": "ExeggutorCard",
+    "text_name": "BigEggsplosionName",
+    "id": 34,
+    "group": 33,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": "ExeggcuteName"
+  },
+  "KoffingCard": {
+    "name": "KoffingCard",
+    "text_name": "NONE",
+    "id": 35,
+    "group": 35,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "WeezingCard": {
+    "name": "WeezingCard",
+    "text_name": "SelfdestructName",
+    "id": 36,
+    "group": 35,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "KoffingName"
+  },
+  "Tangela1Card": {
+    "name": "Tangela1Card",
+    "text_name": "PoisonPowderName",
+    "id": 37,
+    "group": 37,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Tangela2Card": {
+    "name": "Tangela2Card",
+    "text_name": "PoisonWhipName",
+    "id": 38,
+    "group": 38,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "ScytherCard": {
+    "name": "ScytherCard",
+    "text_name": "SlashName",
+    "id": 39,
+    "group": 39,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 1,
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "PinsirCard": {
+    "name": "PinsirCard",
+    "text_name": "GuillotineName",
+    "id": 40,
+    "group": 40,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "CharmanderCard": {
+    "name": "CharmanderCard",
+    "text_name": "EmberName",
+    "id": 41,
+    "group": 41,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 1
+    },
+    "target_group": ""
+  },
+  "CharmeleonCard": {
+    "name": "CharmeleonCard",
+    "text_name": "FlamethrowerName",
+    "id": 42,
+    "group": 41,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4,
+      "FIRE": 2
+    },
+    "target_group": "CharmanderName"
+  },
+  "CharizardCard": {
+    "name": "CharizardCard",
+    "text_name": "FireSpinName",
+    "id": 43,
+    "group": 41,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 4
+    },
+    "target_group": "CharmeleonName"
+  },
+  "VulpixCard": {
+    "name": "VulpixCard",
+    "text_name": "NONE",
+    "id": 44,
+    "group": 44,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 2
+    },
+    "target_group": ""
+  },
+  "Ninetails1Card": {
+    "name": "Ninetails1Card",
+    "text_name": "FireBlastName",
+    "id": 45,
+    "group": 44,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 4
+    },
+    "target_group": "VulpixName"
+  },
+  "Ninetails2Card": {
+    "name": "Ninetails2Card",
+    "text_name": "DancingEmbersName",
+    "id": 46,
+    "group": 44,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 5
+    },
+    "target_group": "VulpixName"
+  },
+  "GrowlitheCard": {
+    "name": "GrowlitheCard",
+    "text_name": "NONE",
+    "id": 47,
+    "group": 47,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Arcanine1Card": {
+    "name": "Arcanine1Card",
+    "text_name": "FlamesOfRageName",
+    "id": 48,
+    "group": 47,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 2
+    },
+    "target_group": "GrowlitheName"
+  },
+  "Arcanine2Card": {
+    "name": "Arcanine2Card",
+    "text_name": "TakeDownName",
+    "id": 49,
+    "group": 47,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "GrowlitheName"
+  },
+  "PonytaCard": {
+    "name": "PonytaCard",
+    "text_name": "FlameTailName",
+    "id": 50,
+    "group": 50,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 2
+    },
+    "target_group": ""
+  },
+  "RapidashCard": {
+    "name": "RapidashCard",
+    "text_name": "AgilityName",
+    "id": 51,
+    "group": 50,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3,
+      "FIRE": 2
+    },
+    "target_group": "PonytaName"
+  },
+  "Magmar1Card": {
+    "name": "Magmar1Card",
+    "text_name": "FlamethrowerName",
+    "id": 52,
+    "group": 52,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 4,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Magmar2Card": {
+    "name": "Magmar2Card",
+    "text_name": "SmogName",
+    "id": 53,
+    "group": 53,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 3
+    },
+    "target_group": ""
+  },
+  "Flareon1Card": {
+    "name": "Flareon1Card",
+    "text_name": "RageName",
+    "id": 54,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 6
+    },
+    "target_group": "EeveeName"
+  },
+  "Flareon2Card": {
+    "name": "Flareon2Card",
+    "text_name": "FlamethrowerName",
+    "id": 55,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4,
+      "FIRE": 2
+    },
+    "target_group": "EeveeName"
+  },
+  "Moltres1Card": {
+    "name": "Moltres1Card",
+    "text_name": "DiveBombName",
+    "id": 56,
+    "group": 56,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 5
+    },
+    "target_group": ""
+  },
+  "Moltres2Card": {
+    "name": "Moltres2Card",
+    "text_name": "DiveBombName",
+    "id": 57,
+    "group": 57,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIRE": 3
+    },
+    "target_group": ""
+  },
+  "SquirtleCard": {
+    "name": "SquirtleCard",
+    "text_name": "WithdrawName",
+    "id": 58,
+    "group": 58,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "WartortleCard": {
+    "name": "WartortleCard",
+    "text_name": "BiteName",
+    "id": 59,
+    "group": 58,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 3
+    },
+    "target_group": "SquirtleName"
+  },
+  "BlastoiseCard": {
+    "name": "BlastoiseCard",
+    "text_name": "HydroPumpName",
+    "id": 60,
+    "group": 58,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": "WartortleName"
+  },
+  "PsyduckCard": {
+    "name": "PsyduckCard",
+    "text_name": "FurySwipesName",
+    "id": 61,
+    "group": 61,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "GolduckCard": {
+    "name": "GolduckCard",
+    "text_name": "HyperBeamName",
+    "id": 62,
+    "group": 61,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": "PsyduckName"
+  },
+  "PoliwagCard": {
+    "name": "PoliwagCard",
+    "text_name": "NONE",
+    "id": 63,
+    "group": 63,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "PoliwhirlCard": {
+    "name": "PoliwhirlCard",
+    "text_name": "DoubleslapName",
+    "id": 64,
+    "group": 63,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "PoliwagName"
+  },
+  "PoliwrathCard": {
+    "name": "PoliwrathCard",
+    "text_name": "WhirlpoolName",
+    "id": 65,
+    "group": 63,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "PoliwhirlName"
+  },
+  "TentacoolCard": {
+    "name": "TentacoolCard",
+    "text_name": "AcidName",
+    "id": 66,
+    "group": 66,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "TentacruelCard": {
+    "name": "TentacruelCard",
+    "text_name": "JellyfishStingName",
+    "id": 67,
+    "group": 66,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": "TentacoolName"
+  },
+  "SeelCard": {
+    "name": "SeelCard",
+    "text_name": "NONE",
+    "id": 68,
+    "group": 68,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "DewgongCard": {
+    "name": "DewgongCard",
+    "text_name": "IceBeamName",
+    "id": 69,
+    "group": 68,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "SeelName"
+  },
+  "ShellderCard": {
+    "name": "ShellderCard",
+    "text_name": "HideInShellName",
+    "id": 70,
+    "group": 70,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2
+    },
+    "target_group": ""
+  },
+  "CloysterCard": {
+    "name": "CloysterCard",
+    "text_name": "SpikeCannonName",
+    "id": 71,
+    "group": 70,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 4
+    },
+    "target_group": "ShellderName"
+  },
+  "KrabbyCard": {
+    "name": "KrabbyCard",
+    "text_name": "IronGripName",
+    "id": 72,
+    "group": 72,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "KinglerCard": {
+    "name": "KinglerCard",
+    "text_name": "CrabhammerName",
+    "id": 73,
+    "group": 72,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "KrabbyName"
+  },
+  "HorseaCard": {
+    "name": "HorseaCard",
+    "text_name": "NONE",
+    "id": 74,
+    "group": 74,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "SeadraCard": {
+    "name": "SeadraCard",
+    "text_name": "AgilityName",
+    "id": 75,
+    "group": 74,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 3
+    },
+    "target_group": "HorseaName"
+  },
+  "GoldeenCard": {
+    "name": "GoldeenCard",
+    "text_name": "NONE",
+    "id": 76,
+    "group": 76,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "SeakingCard": {
+    "name": "SeakingCard",
+    "text_name": "WaterfallName",
+    "id": 77,
+    "group": 76,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": "GoldeenName"
+  },
+  "StaryuCard": {
+    "name": "StaryuCard",
+    "text_name": "NONE",
+    "id": 78,
+    "group": 78,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "StarmieCard": {
+    "name": "StarmieCard",
+    "text_name": "StarFreezeName",
+    "id": 79,
+    "group": 78,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3,
+      "COLORLESS": 2
+    },
+    "target_group": "StaryuName"
+  },
+  "MagikarpCard": {
+    "name": "MagikarpCard",
+    "text_name": "FlailName",
+    "id": 80,
+    "group": 80,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "GyaradosCard": {
+    "name": "GyaradosCard",
+    "text_name": "BubblebeamName",
+    "id": 81,
+    "group": 80,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 7
+    },
+    "target_group": "MagikarpName"
+  },
+  "LaprasCard": {
+    "name": "LaprasCard",
+    "text_name": "ConfuseRayName",
+    "id": 82,
+    "group": 82,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": ""
+  },
+  "Vaporeon1Card": {
+    "name": "Vaporeon1Card",
+    "text_name": "BiteName",
+    "id": 83,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "EeveeName"
+  },
+  "Vaporeon2Card": {
+    "name": "Vaporeon2Card",
+    "text_name": "WaterGunName",
+    "id": 84,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3,
+      "WATER": 2
+    },
+    "target_group": "EeveeName"
+  },
+  "OmanyteCard": {
+    "name": "OmanyteCard",
+    "text_name": "WaterGunName",
+    "id": 85,
+    "group": 204,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": "MysteriousFossilName"
+  },
+  "OmastarCard": {
+    "name": "OmastarCard",
+    "text_name": "SpikeCannonName",
+    "id": 86,
+    "group": 204,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "OmanyteName"
+  },
+  "Articuno1Card": {
+    "name": "Articuno1Card",
+    "text_name": "BlizzardName",
+    "id": 87,
+    "group": 87,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 7
+    },
+    "target_group": ""
+  },
+  "Articuno2Card": {
+    "name": "Articuno2Card",
+    "text_name": "IceBreathName",
+    "id": 88,
+    "group": 88,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": ""
+  },
+  "Pikachu1Card": {
+    "name": "Pikachu1Card",
+    "text_name": "ThunderJoltName",
+    "id": 89,
+    "group": 89,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "LIGHTNING": 1
+    },
+    "target_group": ""
+  },
+  "Pikachu2Card": {
+    "name": "Pikachu2Card",
+    "text_name": "NONE",
+    "id": 90,
+    "group": 90,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 2
+    },
+    "target_group": ""
+  },
+  "Pikachu3Card": {
+    "name": "Pikachu3Card",
+    "text_name": "ThundershockName",
+    "id": 91,
+    "group": 91,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "LIGHTNING": 2
+    },
+    "target_group": ""
+  },
+  "Pikachu4Card": {
+    "name": "Pikachu4Card",
+    "text_name": "ThundershockName",
+    "id": 92,
+    "group": 92,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "LIGHTNING": 2
+    },
+    "target_group": ""
+  },
+  "FlyingPikachuCard": {
+    "name": "FlyingPikachuCard",
+    "text_name": "FlyName",
+    "id": 93,
+    "group": 93,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 1,
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "SurfingPikachu1Card": {
+    "name": "SurfingPikachu1Card",
+    "text_name": "NONE",
+    "id": 94,
+    "group": 94,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2
+    },
+    "target_group": ""
+  },
+  "SurfingPikachu2Card": {
+    "name": "SurfingPikachu2Card",
+    "text_name": "NONE",
+    "id": 95,
+    "group": 95,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "WATER": 2
+    },
+    "target_group": ""
+  },
+  "Raichu1Card": {
+    "name": "Raichu1Card",
+    "text_name": "ThunderName",
+    "id": 96,
+    "group": 92,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "PikachuName"
+  },
+  "Raichu2Card": {
+    "name": "Raichu2Card",
+    "text_name": "NONE",
+    "id": 97,
+    "group": 92,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 4
+    },
+    "target_group": "PikachuName"
+  },
+  "Magnemite1Card": {
+    "name": "Magnemite1Card",
+    "text_name": "SelfdestructName",
+    "id": 98,
+    "group": 98,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Magnemite2Card": {
+    "name": "Magnemite2Card",
+    "text_name": "MagneticStormName",
+    "id": 99,
+    "group": 99,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "LIGHTNING": 1
+    },
+    "target_group": ""
+  },
+  "Magneton1Card": {
+    "name": "Magneton1Card",
+    "text_name": "SelfdestructName",
+    "id": 100,
+    "group": 99,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "MagnemiteName"
+  },
+  "Magneton2Card": {
+    "name": "Magneton2Card",
+    "text_name": "SelfdestructName",
+    "id": 101,
+    "group": 99,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 5,
+      "COLORLESS": 1
+    },
+    "target_group": "MagnemiteName"
+  },
+  "VoltorbCard": {
+    "name": "VoltorbCard",
+    "text_name": "NONE",
+    "id": 102,
+    "group": 102,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Electrode1Card": {
+    "name": "Electrode1Card",
+    "text_name": "EnergySpikeName",
+    "id": 103,
+    "group": 102,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 5
+    },
+    "target_group": "VoltorbName"
+  },
+  "Electrode2Card": {
+    "name": "Electrode2Card",
+    "text_name": "ChainLightningName",
+    "id": 104,
+    "group": 102,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "LIGHTNING": 3
+    },
+    "target_group": "VoltorbName"
+  },
+  "Electabuzz1Card": {
+    "name": "Electabuzz1Card",
+    "text_name": "QuickAttackName",
+    "id": 105,
+    "group": 105,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 1,
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "Electabuzz2Card": {
+    "name": "Electabuzz2Card",
+    "text_name": "ThunderpunchName",
+    "id": 106,
+    "group": 106,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Jolteon1Card": {
+    "name": "Jolteon1Card",
+    "text_name": "StunNeedleName",
+    "id": 107,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 6
+    },
+    "target_group": "EeveeName"
+  },
+  "Jolteon2Card": {
+    "name": "Jolteon2Card",
+    "text_name": "PinMissileName",
+    "id": 108,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3,
+      "LIGHTNING": 2
+    },
+    "target_group": "EeveeName"
+  },
+  "Zapdos1Card": {
+    "name": "Zapdos1Card",
+    "text_name": "NONE",
+    "id": 109,
+    "group": 109,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 4
+    },
+    "target_group": ""
+  },
+  "Zapdos2Card": {
+    "name": "Zapdos2Card",
+    "text_name": "ThunderboltName",
+    "id": 110,
+    "group": 110,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 7,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Zapdos3Card": {
+    "name": "Zapdos3Card",
+    "text_name": "BigThunderName",
+    "id": 111,
+    "group": 111,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "LIGHTNING": 3
+    },
+    "target_group": ""
+  },
+  "SandshrewCard": {
+    "name": "SandshrewCard",
+    "text_name": "NONE",
+    "id": 112,
+    "group": 112,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 1
+    },
+    "target_group": ""
+  },
+  "SandslashCard": {
+    "name": "SandslashCard",
+    "text_name": "FurySwipesName",
+    "id": 113,
+    "group": 112,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2,
+      "FIGHTING": 2
+    },
+    "target_group": "SandshrewName"
+  },
+  "DiglettCard": {
+    "name": "DiglettCard",
+    "text_name": "MudSlapName",
+    "id": 114,
+    "group": 114,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 3
+    },
+    "target_group": ""
+  },
+  "DugtrioCard": {
+    "name": "DugtrioCard",
+    "text_name": "EarthquakeName",
+    "id": 115,
+    "group": 114,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 6,
+      "COLORLESS": 1
+    },
+    "target_group": "DiglettName"
+  },
+  "MankeyCard": {
+    "name": "MankeyCard",
+    "text_name": "ScratchName",
+    "id": 116,
+    "group": 116,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "PrimeapeCard": {
+    "name": "PrimeapeCard",
+    "text_name": "TantrumName",
+    "id": 117,
+    "group": 116,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "MankeyName"
+  },
+  "MachopCard": {
+    "name": "MachopCard",
+    "text_name": "NONE",
+    "id": 118,
+    "group": 118,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 1
+    },
+    "target_group": ""
+  },
+  "MachokeCard": {
+    "name": "MachokeCard",
+    "text_name": "SubmissionName",
+    "id": 119,
+    "group": 118,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "MachopName"
+  },
+  "MachampCard": {
+    "name": "MachampCard",
+    "text_name": "SeismicTossName",
+    "id": 120,
+    "group": 118,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "MachokeName"
+  },
+  "GeodudeCard": {
+    "name": "GeodudeCard",
+    "text_name": "NONE",
+    "id": 121,
+    "group": 121,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "GravelerCard": {
+    "name": "GravelerCard",
+    "text_name": "RockThrowName",
+    "id": 122,
+    "group": 121,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "GeodudeName"
+  },
+  "GolemCard": {
+    "name": "GolemCard",
+    "text_name": "SelfdestructName",
+    "id": 123,
+    "group": 121,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 7,
+      "COLORLESS": 1
+    },
+    "target_group": "GravelerName"
+  },
+  "OnixCard": {
+    "name": "OnixCard",
+    "text_name": "HardenName",
+    "id": 124,
+    "group": 124,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 3
+    },
+    "target_group": ""
+  },
+  "CuboneCard": {
+    "name": "CuboneCard",
+    "text_name": "RageName",
+    "id": 125,
+    "group": 125,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "FIGHTING": 2
+    },
+    "target_group": ""
+  },
+  "Marowak1Card": {
+    "name": "Marowak1Card",
+    "text_name": "CallforFriendName",
+    "id": 126,
+    "group": 125,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "CuboneName"
+  },
+  "Marowak2Card": {
+    "name": "Marowak2Card",
+    "text_name": "WailName",
+    "id": 127,
+    "group": 125,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "CuboneName"
+  },
+  "HitmonleeCard": {
+    "name": "HitmonleeCard",
+    "text_name": "HighJumpKickName",
+    "id": 128,
+    "group": 128,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 5
+    },
+    "target_group": ""
+  },
+  "HitmonchanCard": {
+    "name": "HitmonchanCard",
+    "text_name": "SpecialPunch",
+    "id": 129,
+    "group": 129,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "RhyhornCard": {
+    "name": "RhyhornCard",
+    "text_name": "HornAttackName",
+    "id": 130,
+    "group": 130,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3,
+      "FIGHTING": 1
+    },
+    "target_group": ""
+  },
+  "RhydonCard": {
+    "name": "RhydonCard",
+    "text_name": "RamName",
+    "id": 131,
+    "group": 130,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 5,
+      "COLORLESS": 2
+    },
+    "target_group": "RhyhornName"
+  },
+  "KabutoCard": {
+    "name": "KabutoCard",
+    "text_name": "ScratchName",
+    "id": 132,
+    "group": 204,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": "MysteriousFossilName"
+  },
+  "KabutopsCard": {
+    "name": "KabutopsCard",
+    "text_name": "AbsorbName",
+    "id": 133,
+    "group": 204,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "FIGHTING": 6
+    },
+    "target_group": "KabutoName"
+  },
+  "AerodactylCard": {
+    "name": "AerodactylCard",
+    "text_name": "WingAttackName",
+    "id": 134,
+    "group": 204,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "MysteriousFossilName"
+  },
+  "AbraCard": {
+    "name": "AbraCard",
+    "text_name": "NONE",
+    "id": 135,
+    "group": 135,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1
+    },
+    "target_group": ""
+  },
+  "KadabraCard": {
+    "name": "KadabraCard",
+    "text_name": "SuperPsiName",
+    "id": 136,
+    "group": 135,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "AbraName"
+  },
+  "AlakazamCard": {
+    "name": "AlakazamCard",
+    "text_name": "ConfuseRayName",
+    "id": 137,
+    "group": 135,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": "KadabraName"
+  },
+  "Slowpoke1Card": {
+    "name": "Slowpoke1Card",
+    "text_name": "AmnesiaName",
+    "id": 138,
+    "group": 138,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "PSYCHIC": 2
+    },
+    "target_group": ""
+  },
+  "Slowpoke2Card": {
+    "name": "Slowpoke2Card",
+    "text_name": "ScavengeName",
+    "id": 139,
+    "group": 139,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "PSYCHIC": 2
+    },
+    "target_group": ""
+  },
+  "SlowbroCard": {
+    "name": "SlowbroCard",
+    "text_name": "PsyshockName",
+    "id": 140,
+    "group": 139,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 2
+    },
+    "target_group": "SlowpokeName"
+  },
+  "Gastly1Card": {
+    "name": "Gastly1Card",
+    "text_name": "DestinyBondName",
+    "id": 141,
+    "group": 141,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Gastly2Card": {
+    "name": "Gastly2Card",
+    "text_name": "EnergyConversionName",
+    "id": 142,
+    "group": 142,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": ""
+  },
+  "Haunter1Card": {
+    "name": "Haunter1Card",
+    "text_name": "NightmareName",
+    "id": 143,
+    "group": 142,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": "GastlyName"
+  },
+  "Haunter2Card": {
+    "name": "Haunter2Card",
+    "text_name": "DreamEaterName",
+    "id": 144,
+    "group": 142,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": "GastlyName"
+  },
+  "GengarCard": {
+    "name": "GengarCard",
+    "text_name": "DarkMindName",
+    "id": 145,
+    "group": 142,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": "HaunterName"
+  },
+  "DrowzeeCard": {
+    "name": "DrowzeeCard",
+    "text_name": "ConfuseRayName",
+    "id": 146,
+    "group": 146,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1,
+      "PSYCHIC": 2
+    },
+    "target_group": ""
+  },
+  "HypnoCard": {
+    "name": "HypnoCard",
+    "text_name": "DarkMindName",
+    "id": 147,
+    "group": 146,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 4
+    },
+    "target_group": "DrowzeeName"
+  },
+  "MrMimeCard": {
+    "name": "MrMimeCard",
+    "text_name": "MeditateName",
+    "id": 148,
+    "group": 148,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "JynxCard": {
+    "name": "JynxCard",
+    "text_name": "MeditateName",
+    "id": 149,
+    "group": 149,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mewtwo1Card": {
+    "name": "Mewtwo1Card",
+    "text_name": "BarrierName",
+    "id": 150,
+    "group": 150,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mewtwo2Card": {
+    "name": "Mewtwo2Card",
+    "text_name": "PsyburnName",
+    "id": 151,
+    "group": 151,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mewtwo3Card": {
+    "name": "Mewtwo3Card",
+    "text_name": "PsyburnName",
+    "id": 152,
+    "group": 152,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mew1Card": {
+    "name": "Mew1Card",
+    "text_name": "PsyshockName",
+    "id": 153,
+    "group": 153,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1
+    },
+    "target_group": ""
+  },
+  "Mew2Card": {
+    "name": "Mew2Card",
+    "text_name": "NONE",
+    "id": 154,
+    "group": 154,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mew3Card": {
+    "name": "Mew3Card",
+    "text_name": "DevolutionBeamName",
+    "id": 155,
+    "group": 155,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": ""
+  },
+  "PidgeyCard": {
+    "name": "PidgeyCard",
+    "text_name": "NONE",
+    "id": 156,
+    "group": 156,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "PidgeottoCard": {
+    "name": "PidgeottoCard",
+    "text_name": "MirrorMoveName",
+    "id": 157,
+    "group": 156,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": "PidgeyName"
+  },
+  "Pidgeot1Card": {
+    "name": "Pidgeot1Card",
+    "text_name": "GaleName",
+    "id": 158,
+    "group": 156,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 7
+    },
+    "target_group": "PidgeottoName"
+  },
+  "Pidgeot2Card": {
+    "name": "Pidgeot2Card",
+    "text_name": "HurricaneName",
+    "id": 159,
+    "group": 156,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": "PidgeottoName"
+  },
+  "RattataCard": {
+    "name": "RattataCard",
+    "text_name": "NONE",
+    "id": 160,
+    "group": 160,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "RaticateCard": {
+    "name": "RaticateCard",
+    "text_name": "SuperFangName",
+    "id": 161,
+    "group": 160,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "RattataName"
+  },
+  "SpearowCard": {
+    "name": "SpearowCard",
+    "text_name": "MirrorMoveName",
+    "id": 162,
+    "group": 162,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "FearowCard": {
+    "name": "FearowCard",
+    "text_name": "DrillPeckName",
+    "id": 163,
+    "group": 162,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 7
+    },
+    "target_group": "SpearowName"
+  },
+  "ClefairyCard": {
+    "name": "ClefairyCard",
+    "text_name": "MetronomeName",
+    "id": 164,
+    "group": 164,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "ClefableCard": {
+    "name": "ClefableCard",
+    "text_name": "MinimizeName",
+    "id": 165,
+    "group": 164,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "ClefairyName"
+  },
+  "Jigglypuff1Card": {
+    "name": "Jigglypuff1Card",
+    "text_name": "DoubleEdgeName",
+    "id": 166,
+    "group": 166,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "Jigglypuff2Card": {
+    "name": "Jigglypuff2Card",
+    "text_name": "ExpandName",
+    "id": 167,
+    "group": 167,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "Jigglypuff3Card": {
+    "name": "Jigglypuff3Card",
+    "text_name": "PoundName",
+    "id": 168,
+    "group": 168,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "WigglytuffCard": {
+    "name": "WigglytuffCard",
+    "text_name": "DoTheWaveName",
+    "id": 169,
+    "group": 168,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "JigglypuffName"
+  },
+  "Meowth1Card": {
+    "name": "Meowth1Card",
+    "text_name": "NONE",
+    "id": 170,
+    "group": 170,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "Meowth2Card": {
+    "name": "Meowth2Card",
+    "text_name": "NONE",
+    "id": 171,
+    "group": 171,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "PersianCard": {
+    "name": "PersianCard",
+    "text_name": "PounceName",
+    "id": 172,
+    "group": 171,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": "MeowthName"
+  },
+  "FarfetchdCard": {
+    "name": "FarfetchdCard",
+    "text_name": "PotSmashName",
+    "id": 173,
+    "group": 173,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "DoduoCard": {
+    "name": "DoduoCard",
+    "text_name": "NONE",
+    "id": 174,
+    "group": 174,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "DodrioCard": {
+    "name": "DodrioCard",
+    "text_name": "RageName",
+    "id": 175,
+    "group": 174,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "DoduoName"
+  },
+  "LickitungCard": {
+    "name": "LickitungCard",
+    "text_name": "SupersonicName",
+    "id": 176,
+    "group": 176,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "ChanseyCard": {
+    "name": "ChanseyCard",
+    "text_name": "DoubleEdgeName",
+    "id": 177,
+    "group": 177,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 6
+    },
+    "target_group": ""
+  },
+  "KangaskhanCard": {
+    "name": "KangaskhanCard",
+    "text_name": "CometPunchName",
+    "id": 178,
+    "group": 178,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": ""
+  },
+  "TaurosCard": {
+    "name": "TaurosCard",
+    "text_name": "RampageName",
+    "id": 179,
+    "group": 179,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": ""
+  },
+  "DittoCard": {
+    "name": "DittoCard",
+    "text_name": "MorphName",
+    "id": 180,
+    "group": 180,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "EeveeCard": {
+    "name": "EeveeCard",
+    "text_name": "QuickAttackName",
+    "id": 181,
+    "group": 181,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "PorygonCard": {
+    "name": "PorygonCard",
+    "text_name": "Conversion2Name",
+    "id": 182,
+    "group": 182,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "SnorlaxCard": {
+    "name": "SnorlaxCard",
+    "text_name": "BodySlamName",
+    "id": 183,
+    "group": 183,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "DratiniCard": {
+    "name": "DratiniCard",
+    "text_name": "NONE",
+    "id": 184,
+    "group": 184,
+    "uses_attacks": true,
+    "stage": 0,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "DragonairCard": {
+    "name": "DragonairCard",
+    "text_name": "HyperBeamName",
+    "id": 185,
+    "group": 184,
+    "uses_attacks": true,
+    "stage": 1,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 7
+    },
+    "target_group": "DratiniName"
+  },
+  "Dragonite1Card": {
+    "name": "Dragonite1Card",
+    "text_name": "SlamName",
+    "id": 186,
+    "group": 184,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "DragonairName"
+  },
+  "Dragonite2Card": {
+    "name": "Dragonite2Card",
+    "text_name": "SlamName",
+    "id": 187,
+    "group": 184,
+    "uses_attacks": true,
+    "stage": 2,
+    "current_attack": 0,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "DragonairName"
+  },
+  "GrassEnergyCard": {
+    "name": "GrassEnergyCard",
+    "text_name": "GrassEnergyName",
+    "id": 188,
+    "group": 188,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "FireEnergyCard": {
+    "name": "FireEnergyCard",
+    "text_name": "FireEnergyName",
+    "id": 189,
+    "group": 189,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "WaterEnergyCard": {
+    "name": "WaterEnergyCard",
+    "text_name": "WaterEnergyName",
+    "id": 190,
+    "group": 190,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "LightningEnergyCard": {
+    "name": "LightningEnergyCard",
+    "text_name": "LightningEnergyName",
+    "id": 191,
+    "group": 191,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "FightingEnergyCard": {
+    "name": "FightingEnergyCard",
+    "text_name": "FightingEnergyName",
+    "id": 192,
+    "group": 192,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PsychicEnergyCard": {
+    "name": "PsychicEnergyCard",
+    "text_name": "PsychicEnergyName",
+    "id": 193,
+    "group": 193,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "DoubleColorlessEnergyCard": {
+    "name": "DoubleColorlessEnergyCard",
+    "text_name": "DoubleColorlessEnergyName",
+    "id": 194,
+    "group": 194,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ProfessorOakCard": {
+    "name": "ProfessorOakCard",
+    "text_name": "ProfessorOakName",
+    "id": 195,
+    "group": 195,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ImposterProfessorOakCard": {
+    "name": "ImposterProfessorOakCard",
+    "text_name": "ImposterProfessorOakName",
+    "id": 196,
+    "group": 196,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "BillCard": {
+    "name": "BillCard",
+    "text_name": "BillName",
+    "id": 197,
+    "group": 197,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "MrFujiCard": {
+    "name": "MrFujiCard",
+    "text_name": "MrFujiName",
+    "id": 198,
+    "group": 198,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "LassCard": {
+    "name": "LassCard",
+    "text_name": "LassName",
+    "id": 199,
+    "group": 199,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ImakuniCard": {
+    "name": "ImakuniCard",
+    "text_name": "ImakuniName",
+    "id": 200,
+    "group": 200,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonTraderCard": {
+    "name": "PokemonTraderCard",
+    "text_name": "PokemonTraderName",
+    "id": 201,
+    "group": 201,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonBreederCard": {
+    "name": "PokemonBreederCard",
+    "text_name": "PokemonBreederName",
+    "id": 202,
+    "group": 202,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ClefairyDollCard": {
+    "name": "ClefairyDollCard",
+    "text_name": "ClefairyDollName",
+    "id": 203,
+    "group": 203,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "MysteriousFossilCard": {
+    "name": "MysteriousFossilCard",
+    "text_name": "MysteriousFossilName",
+    "id": 204,
+    "group": 204,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "EnergyRetrievalCard": {
+    "name": "EnergyRetrievalCard",
+    "text_name": "EnergyRetrievalName",
+    "id": 205,
+    "group": 205,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "SuperEnergyRetrievalCard": {
+    "name": "SuperEnergyRetrievalCard",
+    "text_name": "SuperEnergyRetrievalName",
+    "id": 206,
+    "group": 206,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "EnergySearchCard": {
+    "name": "EnergySearchCard",
+    "text_name": "EnergySearchName",
+    "id": 207,
+    "group": 207,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "EnergyRemovalCard": {
+    "name": "EnergyRemovalCard",
+    "text_name": "EnergyRemovalName",
+    "id": 208,
+    "group": 208,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "SuperEnergyRemovalCard": {
+    "name": "SuperEnergyRemovalCard",
+    "text_name": "SuperEnergyRemovalName",
+    "id": 209,
+    "group": 209,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "SwitchCard": {
+    "name": "SwitchCard",
+    "text_name": "SwitchName",
+    "id": 210,
+    "group": 210,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonCenterCard": {
+    "name": "PokemonCenterCard",
+    "text_name": "PokemonCenterName",
+    "id": 211,
+    "group": 211,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokeBallCard": {
+    "name": "PokeBallCard",
+    "text_name": "PokeBallName",
+    "id": 212,
+    "group": 212,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ScoopUpCard": {
+    "name": "ScoopUpCard",
+    "text_name": "ScoopUpName",
+    "id": 213,
+    "group": 213,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ComputerSearchCard": {
+    "name": "ComputerSearchCard",
+    "text_name": "ComputerSearchName",
+    "id": 214,
+    "group": 214,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokedexCard": {
+    "name": "PokedexCard",
+    "text_name": "PokedexName",
+    "id": 215,
+    "group": 215,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PlusPowerCard": {
+    "name": "PlusPowerCard",
+    "text_name": "PlusPowerName",
+    "id": 216,
+    "group": 216,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "DefenderCard": {
+    "name": "DefenderCard",
+    "text_name": "DefenderName",
+    "id": 217,
+    "group": 217,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ItemFinderCard": {
+    "name": "ItemFinderCard",
+    "text_name": "ItemFinderName",
+    "id": 218,
+    "group": 218,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "GustOfWindCard": {
+    "name": "GustOfWindCard",
+    "text_name": "GustOfWindName",
+    "id": 219,
+    "group": 219,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "DevolutionSprayCard": {
+    "name": "DevolutionSprayCard",
+    "text_name": "DevolutionSprayName",
+    "id": 220,
+    "group": 220,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PotionCard": {
+    "name": "PotionCard",
+    "text_name": "PotionName",
+    "id": 221,
+    "group": 221,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "SuperPotionCard": {
+    "name": "SuperPotionCard",
+    "text_name": "SuperPotionName",
+    "id": 222,
+    "group": 222,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "FullHealCard": {
+    "name": "FullHealCard",
+    "text_name": "FullHealName",
+    "id": 223,
+    "group": 223,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "ReviveCard": {
+    "name": "ReviveCard",
+    "text_name": "ReviveName",
+    "id": 224,
+    "group": 224,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "MaintenanceCard": {
+    "name": "MaintenanceCard",
+    "text_name": "MaintenanceName",
+    "id": 225,
+    "group": 225,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonFluteCard": {
+    "name": "PokemonFluteCard",
+    "text_name": "PokemonFluteName",
+    "id": 226,
+    "group": 226,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "GamblerCard": {
+    "name": "GamblerCard",
+    "text_name": "GamblerName",
+    "id": 227,
+    "group": 227,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  },
+  "RecycleCard": {
+    "name": "RecycleCard",
+    "text_name": "RecycleName",
+    "id": 228,
+    "group": 228,
+    "uses_attacks": false,
+    "stage": 3,
+    "current_attack": 0,
+    "energy": {},
+    "target_group": ""
+  }
+}
