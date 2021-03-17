@@ -2089,9 +2089,16 @@ Func_1996e: ; 1996e (6:596e)
 	jr nz, .asm_199b2
 	ld a, $2
 	ld [s0a003], a
-	ld a, $2
+	ld a, $0
+	; default text speed
+	; $4 = 1
+	; $0 = 5
 	ld [sTextSpeed], a
 	ld [wTextSpeed], a
+	; animations
+	; $0 = show all
+	; $1 = skip some
+	; $2 = none
 	xor a
 	ld [sAnimationsDisabled], a
 	ld [s0a009], a
