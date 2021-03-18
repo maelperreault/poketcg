@@ -15,3 +15,11 @@
     * Group by evolution, where evolutions are in the same set as each other.
     * Full random, where all cards are put in random sets.
 * Randomize trainers. They can get prize requirements, random decks, music, and booster rewards.
+
+## Planned Features
+* NPC name randomization.
+    * Supply a list of names to randomly substitute in.
+* NPC text randomization
+    * Supply a list of text to randomly substitute in at certain points.
+* Starter deck randomization.
+* NPC deck randomization.
