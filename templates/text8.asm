@@ -342,16 +342,11 @@ Text06b9: ; 51048 (14:5048)
 	line "Let's duel again! Fire Pokémon!"
 	done
 
-Text06ba: ; 51080 (14:5080)
-	text "I am Ken, the Fire Club Master!"
-	line "So, you are collecting Medals"
-	line "to inherit the Legendary Cards?"
-	line "What!?! You have almost no cards!"
-	line "If you wish to duel me, go collect "
-	line "more cards!"
+KenCheck: ; 51080 (14:5080)
+	text "Collect 300 cards."
 	done
 
-KenCheck: ; 51131 (14:5131)
+Text06bb: ; 51131 (14:5131)
 	text "Collect 300 cards."
 	done
 
