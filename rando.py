@@ -168,7 +168,6 @@ class PTCGRando:
             'templates/patches/murray_check.asm'
         ]
         self.data['masters_checked'] = 0
-        print(self.data['master_checks'])
         with open_utf8('templates/bank03.asm', 'r') as src, open_utf8('src/engine/bank03.asm', 'w') as target:
             for i, line in enumerate(src):
                 if '; DUEL:' in line:
@@ -196,6 +195,11 @@ class PTCGRando:
             for i, line in enumerate(src):
                 target.write(line)
 
+    def randomize_text8(self):
+        with open_utf8('templates/text8.asm', 'r') as src, open_utf8('src/text/text8.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
 ptcg = PTCGRando()
 ptcg.load_data('data.json')
 ptcg.seed = 123
@@ -204,6 +208,7 @@ ptcg.randomize_bank03()
 ptcg.randomize_text_offsets()
 ptcg.randomize_text4()
 ptcg.randomize_text7()
+ptcg.randomize_text8()
 
 for i in range(100):
     calc_offset(0, 10, i)
