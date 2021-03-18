@@ -97,66 +97,90 @@ class PTCGRando:
                 else:
                     target.write(line)
 
+    def write_duel(self, target, line):
+        trainer = self.data['npc_duels'][line.split(':')[1].strip()]
+        y = trainer['id'] * 10
+        prize = trainer['prize']
+        deck_id = trainer['deck_id']
+        music_id = trainer['music_id']
+        if not self.exclude_prize:
+            if self.prize_full_random:
+                prize = calc_range(noise3d(PTCGRando.RAND_DECKS, y, 10, self.seed), 1, 6)
+            else:
+                prize = calc_offset(prize, self.prize_range, noise3d(PTCGRando.RAND_DECKS, y, 10, self.seed))
+                if prize < 1:
+                    prize = 1
+                elif prize > 6:
+                    prize = 6
+        if not self.exclude_decks:
+            deck_id = pick(self.data['decks'], noise3d(PTCGRando.RAND_DECKS, y, 20, self.seed))
+        if not self.exclude_music:
+            music_id = pick(self.data['music'], noise3d(PTCGRando.RAND_DECKS, y, 30, self.seed))
+        target.write('	start_duel PRIZES_{}, {}, {}\n'.format(prize, deck_id, music_id))
+
+    def write_boosters(self, target, line):
+        trainer = self.data['npc_boosters'][line.split(':')[1].strip()]
+        y = trainer['id'] * 10
+        z = 10
+        booster_count = 0
+        boosters = []
+        if self.exclude_boosters:
+            boosters = trainer['packs']
+        else:
+            if self.booster_full_random:
+                booster_count = calc_range(noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed), self.booster_min, self.booster_max)
+            else:
+                booster_count = len(trainer['packs'])
+                booster_count = calc_offset(booster_count, self.booster_range, noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed))
+                if booster_count < 1:
+                    booster_count = 1
+            for i in range(booster_count):
+                z += 10
+                boosters.append(pick(self.data['packs'], noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed)))
+
+        remainder = booster_count % 3
+        if remainder > 0:
+            boosters += ['NO_BOOSTER'] * (3 - remainder)
+        booster_count = len(boosters)
+
+        while len(boosters) >= 3:
+            booster_set = boosters[:3]
+            boosters = boosters[3:]
+            target.write('	give_booster_packs {}\n'.format(', '.join(booster_set)))
+
     def randomize_bank03(self):
         with open('templates/bank03.asm', 'r') as src, open('src/engine/bank03.asm', 'w') as target:
             for i, line in enumerate(src):
                 if '; DUEL:' in line:
-                    trainer = self.data['npc_duels'][line.split(':')[1].strip()]
-                    y = trainer['id'] * 10
-                    prize = trainer['prize']
-                    deck_id = trainer['deck_id']
-                    music_id = trainer['music_id']
-                    if not self.exclude_prize:
-                        if self.prize_full_random:
-                            prize = calc_range(noise3d(PTCGRando.RAND_DECKS, y, 10, self.seed), 1, 6)
-                        else:
-                            prize = calc_offset(prize, self.prize_range, noise3d(PTCGRando.RAND_DECKS, y, 10, self.seed))
-                            if prize < 1:
-                                prize = 1
-                            elif prize > 6:
-                                prize = 6
-                    if not self.exclude_decks:
-                        deck_id = pick(self.data['decks'], noise3d(PTCGRando.RAND_DECKS, y, 20, self.seed))
-                    if not self.exclude_music:
-                        music_id = pick(self.data['music'], noise3d(PTCGRando.RAND_DECKS, y, 30, self.seed))
-                    target.write('	start_duel PRIZES_{}, {}, {}\n'.format(prize, deck_id, music_id))
+                    self.write_duel(target, line)
                 elif '; BOOSTERS:' in line:
-                    trainer = self.data['npc_boosters'][line.split(':')[1].strip()]
-                    y = trainer['id'] * 10
-                    z = 10
-                    booster_count = 0
-                    boosters = []
-                    if self.exclude_boosters:
-                        boosters = trainer['packs']
-                    else:
-                        if self.booster_full_random:
-                            booster_count = calc_range(noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed), self.booster_min, self.booster_max)
-                        else:
-                            booster_count = len(trainer['packs'])
-                            booster_count = calc_offset(booster_count, self.booster_range, noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed))
-                            if booster_count < 1:
-                                booster_count = 1
-                        for i in range(booster_count):
-                            z += 10
-                            boosters.append(pick(self.data['packs'], noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed)))
-
-                    remainder = booster_count % 3
-                    if remainder > 0:
-                        boosters += ['NO_BOOSTER'] * (3 - remainder)
-                    booster_count = len(boosters)
-
-                    while len(boosters) >= 3:
-                        booster_set = boosters[:3]
-                        boosters = boosters[3:]
-                        target.write('	give_booster_packs {}\n'.format(', '.join(booster_set)))
+                    self.write_boosters(target, line)
                 else:
                     target.write(line)
+
+    def randomize_text_offsets(self):
+        with open('templates/text_offsets.asm', 'r') as src, open('src/text/text_offsets.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
+    def randomize_text4(self):
+        with open('templates/text4.asm', 'r') as src, open('src/text/text4.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
+    def randomize_text7(self):
+        with open('templates/text7.asm', 'r') as src, open('src/text/text7.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
 
 ptcg = PTCGRando()
 ptcg.load_data('data.json')
 ptcg.seed = 123
 ptcg.randomize_cards()
 ptcg.randomize_bank03()
+ptcg.randomize_text_offsets()
+ptcg.randomize_text4()
+ptcg.randomize_text7()
 
 for i in range(100):
     calc_offset(0, 10, i)

@@ -4741,26 +4741,9 @@ Script_Mitch: ; ddc3 (3:5dc3)
 	start_script
 	try_give_pc_pack $02
 	jump_if_event_true EVENT_BEAT_MITCH, Script_Mitch_AlreadyHaveMedal
-	fight_club_pupil_jump .first_interaction, .three_pupils_remaining, \
-		.two_pupils_remaining, .one_pupil_remaining, .all_pupils_defeated
-.first_interaction
-	print_npc_text Text0477
-	set_event EVENT_PUPIL_MICHAEL_STATE, PUPIL_ACTIVE
-	set_event EVENT_PUPIL_CHRIS_STATE, PUPIL_ACTIVE
-	set_event EVENT_PUPIL_JESSICA_STATE, PUPIL_ACTIVE
-	quit_script_fully
+	; MASTER_CHECK:Mitch
 
-.three_pupils_remaining
-	print_text_quit_fully Text0478
-
-.two_pupils_remaining
-	print_text_quit_fully Text0479
-
-.one_pupil_remaining
-	print_text_quit_fully Text047a
-
-.all_pupils_defeated
-	print_npc_text Text047b
+.start_dialogue
 	ask_question_jump Text047c, .start_duel
 	print_npc_text Text047d
 	quit_script_fully
@@ -5145,6 +5128,9 @@ Script_LostToAndrew: ; e03a (3:603a)
 
 Script_Gene: ; e03e (3:603e)
 	start_script
+	; MASTER_CHECK:Gene
+
+.start_dialogue
 	try_give_pc_pack $03
 	jump_if_event_true EVENT_BEAT_GENE, Script_LostToGene.ows_e07b
 	print_npc_text Text07a3
@@ -5575,6 +5561,8 @@ Script_MeetAmy: ; e2d1 (3:62d1)
 Script_Amy: ; e304 (3:6304)
 	start_script
 	jump_if_event_true EVENT_BEAT_AMY, Script_Amy_AlreadyHaveMedal
+	; MASTER_CHECK:Amy
+.start_dialogue
 	print_npc_text Text044f
 .ask_for_duel
 	ask_question_jump Text0450, .start_duel
@@ -5835,16 +5823,9 @@ Preload_Isaac: ; e494 (3:6494)
 
 Script_Isaac: ; e4ad (3:64ad)
 	start_script
-	jump_if_event_false EVENT_BEAT_JENNIFER, .ows_e4bd
-	jump_if_event_false EVENT_BEAT_NICHOLAS, .ows_e4bd
-	jump_if_event_false EVENT_BEAT_BRANDON, .ows_e4bd
-	script_jump .ows_e4c1
+	; MASTER_CHECK:Isaac
 
-.ows_e4bd
-	print_npc_text Text0632
-	quit_script_fully
-
-.ows_e4c1
+.start_dialogue
 	jump_if_event_true EVENT_BEAT_ISAAC, Script_LostToIsaac.ows_e503
 	test_if_event_false EVENT_ISAAC_TALKED
 	print_variable_npc_text Text0633, Text0634
@@ -6782,13 +6763,9 @@ Preload_Murray1: ; eada (3:6ada)
 Script_Murray: ; eadf (3:6adf)
 	start_script
 	try_give_pc_pack $07
-	try_give_medal_pc_packs
-	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 4, .ows_eaef
-	print_npc_text Text067b
-	print_text Text067c
-	quit_script_fully
+	; MASTER_CHECK:Murray
 
-.ows_eaef
+.start_dialogue
 	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.ows_eb31
 	test_if_event_false EVENT_MURRAY_TALKED
 	print_variable_npc_text Text067d, Text067e
@@ -7032,6 +7009,9 @@ Script_LostToErik: ; ec63 (3:6c63)
 Script_Rick: ; ec67 (3:6c67)
 	start_script
 	jump_if_event_true EVENT_BEAT_RICK, Script_LostToRick.ows_eca2
+	; MASTER_CHECK:Rick
+
+.start_dialogue
 	print_npc_text Text075e
 	ask_question_jump Text075f, .ows_ec78
 	print_npc_text Text0760
@@ -7501,15 +7481,9 @@ Script_LostToJonathan: ; ef1e (3:6f1e)
 Script_Ken: ; ef22 (3:6f22)
 	start_script
 	try_give_pc_pack $09
-	jump_if_event_true EVENT_KEN_HAD_ENOUGH_CARDS, .have_300_cards
-	jump_if_enough_cards_owned 300, .have_300_cards
-	test_if_event_zero EVENT_KEN_TALKED
-	print_variable_npc_text Text06ba, Text06bb
-	set_event EVENT_KEN_TALKED, TRUE
-	quit_script_fully
+	; MASTER_CHECK:Ken
 
-.have_300_cards
-	max_out_event_value EVENT_KEN_HAD_ENOUGH_CARDS
+.start_dialogue
 	jump_if_event_true EVENT_BEAT_KEN, Script_Ken_AlreadyHaveMedal
 	test_if_event_zero EVENT_KEN_TALKED
 	print_variable_npc_text Text06bc, Text06bd
