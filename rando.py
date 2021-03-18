@@ -1,5 +1,7 @@
 import json
+from functools import partial
 
+open_utf8 = partial(open, encoding='utf8')
 
 # The base bit-noise constants were crafted to have distinctive and interesting
 # bits, and have so far produced excellent experimental test results.
@@ -42,6 +44,7 @@ class PTCGRando:
     RAND_CARDS = 10
     RAND_DECKS = 20
     RAND_BOOSTERS = 30
+    RAND_MASTERS = 40
 
     def __init__(self):
         self.seed = 1
@@ -77,12 +80,12 @@ class PTCGRando:
         self.booster_range = 2
 
     def load_data(self, filename):
-        with open(filename) as file:
+        with open_utf8(filename) as file:
             self.data = json.load(file)
 
     def randomize_cards(self):
         current_card = ''
-        with open('templates/cards.asm', 'r') as src, open('src/data/cards.asm', 'w') as target:
+        with open_utf8('templates/cards.asm', 'r') as src, open_utf8('src/data/cards.asm', 'w') as target:
             for i, line in enumerate(src):
                 if 'CARD_NAME' in line:
                     current_card = line.split(':')[0]
@@ -148,28 +151,48 @@ class PTCGRando:
             boosters = boosters[3:]
             target.write('	give_booster_packs {}\n'.format(', '.join(booster_set)))
 
+    def write_master_check(self, target, line):
+        if len(self.data['master_checks']) == 0:
+            return
+        patch_file = pick(self.data['master_checks'], noise2d(PTCGRando.RAND_MASTERS, self.data['masters_checked'], self.seed))
+        self.data['master_checks'].remove(patch_file)
+        with open_utf8(patch_file, 'r') as patch:
+            target.writelines(patch.readlines())
+        self.data['masters_checked'] = self.data['masters_checked'] + 10
+
     def randomize_bank03(self):
-        with open('templates/bank03.asm', 'r') as src, open('src/engine/bank03.asm', 'w') as target:
+        self.data['master_checks'] = [
+            'templates/patches/isaac_check.asm',
+            'templates/patches/ken_check.asm',
+            'templates/patches/mitch_check.asm',
+            'templates/patches/murray_check.asm'
+        ]
+        self.data['masters_checked'] = 0
+        print(self.data['master_checks'])
+        with open_utf8('templates/bank03.asm', 'r') as src, open_utf8('src/engine/bank03.asm', 'w') as target:
             for i, line in enumerate(src):
                 if '; DUEL:' in line:
                     self.write_duel(target, line)
                 elif '; BOOSTERS:' in line:
                     self.write_boosters(target, line)
+                elif '; MASTER_CHECK:' in line:
+                    self.write_master_check(target, line)
+                    target.write(line)
                 else:
                     target.write(line)
 
     def randomize_text_offsets(self):
-        with open('templates/text_offsets.asm', 'r') as src, open('src/text/text_offsets.asm', 'w') as target:
+        with open_utf8('templates/text_offsets.asm', 'r') as src, open_utf8('src/text/text_offsets.asm', 'w') as target:
             for i, line in enumerate(src):
                 target.write(line)
 
     def randomize_text4(self):
-        with open('templates/text4.asm', 'r') as src, open('src/text/text4.asm', 'w') as target:
+        with open_utf8('templates/text4.asm', 'r') as src, open_utf8('src/text/text4.asm', 'w') as target:
             for i, line in enumerate(src):
                 target.write(line)
 
     def randomize_text7(self):
-        with open('templates/text7.asm', 'r') as src, open('src/text/text7.asm', 'w') as target:
+        with open_utf8('templates/text7.asm', 'r') as src, open_utf8('src/text/text7.asm', 'w') as target:
             for i, line in enumerate(src):
                 target.write(line)
 
