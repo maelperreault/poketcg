@@ -1,4 +1,7 @@
 # PTCG Randomizer Changes
 
-* Sam is dead.
-* Default text speed of 5.
+## QoL tweaks
+* Sam is dead. (skip tutorial)
+* Set text speed to 5 by default.
+* Disable attack animations by default.
+
