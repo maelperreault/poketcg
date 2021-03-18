@@ -3011,328 +3011,293 @@
       "id": 1,
       "packs": [
         "BOOSTER_LABORATORY_NEUTRAL",
-        "BOOSTER_LABORATORY_NEUTRAL",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_NEUTRAL"
       ]
     },
     "Mitch": {
       "id": 2,
       "packs": [
         "BOOSTER_LABORATORY_NEUTRAL",
-        "BOOSTER_LABORATORY_NEUTRAL",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_NEUTRAL"
       ]
     },
     "ChrisFighting": {
       "id": 3,
       "packs": [
         "BOOSTER_EVOLUTION_FIGHTING",
-        "BOOSTER_EVOLUTION_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_FIGHTING"
       ]
     },
     "MichaelFighting": {
       "id": 4,
       "packs": [
         "BOOSTER_COLOSSEUM_FIGHTING",
-        "BOOSTER_COLOSSEUM_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIGHTING"
       ]
     },
     "JessicaFighting": {
       "id": 5,
       "packs": [
         "BOOSTER_COLOSSEUM_FIGHTING",
-        "BOOSTER_COLOSSEUM_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIGHTING"
       ]
     },
     "ChrisRock": {
       "id": 6,
       "packs": [
         "BOOSTER_EVOLUTION_FIGHTING",
-        "BOOSTER_EVOLUTION_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_FIGHTING"
       ]
     },
     "Matthew": {
       "id": 7,
       "packs": [
         "BOOSTER_MYSTERY_FIGHTING_COLORLESS",
-        "BOOSTER_MYSTERY_FIGHTING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_FIGHTING_COLORLESS"
       ]
     },
     "Ryan": {
       "id": 8,
       "packs": [
         "BOOSTER_EVOLUTION_FIGHTING",
-        "BOOSTER_EVOLUTION_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_FIGHTING"
       ]
     },
     "Andrew": {
       "id": 9,
       "packs": [
         "BOOSTER_COLOSSEUM_FIGHTING",
-        "BOOSTER_COLOSSEUM_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIGHTING"
       ]
     },
     "GeneExtra": {
       "id": 10,
       "packs": [
         "BOOSTER_MYSTERY_FIGHTING_COLORLESS",
-        "BOOSTER_MYSTERY_FIGHTING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_FIGHTING_COLORLESS"
       ]
     },
     "Gene": {
       "id": 11,
       "packs": [
         "BOOSTER_MYSTERY_FIGHTING_COLORLESS",
-        "BOOSTER_MYSTERY_FIGHTING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_FIGHTING_COLORLESS"
       ]
     },
     "Sara": {
       "id": 12,
       "packs": [
         "BOOSTER_COLOSSEUM_WATER",
-        "BOOSTER_COLOSSEUM_WATER",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_WATER"
       ]
     },
     "Amanda": {
       "id": 13,
       "packs": [
         "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS"
       ]
     },
     "Joshua": {
       "id": 14,
       "packs": [
         "BOOSTER_MYSTERY_WATER_COLORLESS",
-        "BOOSTER_MYSTERY_WATER_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_WATER_COLORLESS"
       ]
     },
     "Amy": {
       "id": 15,
       "packs": [
         "BOOSTER_LABORATORY_WATER",
-        "BOOSTER_LABORATORY_WATER",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_WATER"
       ]
     },
     "Jennifer": {
       "id": 16,
       "packs": [
         "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS"
       ]
     },
     "Nicholas": {
       "id": 17,
       "packs": [
         "BOOSTER_COLOSSEUM_LIGHTNING",
-        "BOOSTER_COLOSSEUM_LIGHTNING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_LIGHTNING"
       ]
     },
     "Brandon": {
       "id": 18,
       "packs": [
         "BOOSTER_COLOSSEUM_LIGHTNING",
-        "BOOSTER_COLOSSEUM_LIGHTNING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_LIGHTNING"
       ]
     },
     "IsaacExtra": {
       "id": 19,
       "packs": [
         "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS"
       ]
     },
     "Isaac": {
       "id": 20,
       "packs": [
         "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_LIGHTNING_COLORLESS"
       ]
     },
     "MichaelGrass": {
       "id": 21,
       "packs": [
         "BOOSTER_COLOSSEUM_FIGHTING",
-        "BOOSTER_COLOSSEUM_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIGHTING"
       ]
     },
     "Brittany": {
       "id": 22,
       "packs": [
         "BOOSTER_MYSTERY_GRASS_COLORLESS",
-        "BOOSTER_MYSTERY_GRASS_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_GRASS_COLORLESS"
       ]
     },
     "Kristin": {
       "id": 23,
       "packs": [
         "BOOSTER_EVOLUTION_GRASS",
-        "BOOSTER_EVOLUTION_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_GRASS"
       ]
     },
     "Heather": {
       "id": 24,
       "packs": [
         "BOOSTER_COLOSSEUM_GRASS",
-        "BOOSTER_COLOSSEUM_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_GRASS"
       ]
     },
     "Nikki": {
       "id": 25,
       "packs": [
         "BOOSTER_LABORATORY_NEUTRAL",
-        "BOOSTER_LABORATORY_NEUTRAL",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_NEUTRAL"
       ]
     },
     "Robert": {
       "id": 26,
       "packs": [
         "BOOSTER_EVOLUTION_PSYCHIC",
-        "BOOSTER_EVOLUTION_PSYCHIC",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_PSYCHIC"
       ]
     },
     "Daniel": {
       "id": 27,
       "packs": [
         "BOOSTER_EVOLUTION_PSYCHIC",
-        "BOOSTER_EVOLUTION_PSYCHIC",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_PSYCHIC"
       ]
     },
     "Stephanie": {
       "id": 28,
       "packs": [
         "BOOSTER_LABORATORY_PSYCHIC",
-        "BOOSTER_LABORATORY_PSYCHIC",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_PSYCHIC"
       ]
     },
     "MurrayExtra": {
       "id": 29,
       "packs": [
         "BOOSTER_LABORATORY_PSYCHIC",
-        "BOOSTER_LABORATORY_PSYCHIC",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_PSYCHIC"
       ]
     },
     "Murray": {
       "id": 30,
       "packs": [
         "BOOSTER_LABORATORY_PSYCHIC",
-        "BOOSTER_LABORATORY_PSYCHIC",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_PSYCHIC"
       ]
     },
     "David": {
       "id": 31,
       "packs": [
         "BOOSTER_MYSTERY_GRASS_COLORLESS",
-        "BOOSTER_MYSTERY_GRASS_COLORLESS",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_GRASS_COLORLESS"
       ]
     },
     "Erik": {
       "id": 32,
       "packs": [
         "BOOSTER_EVOLUTION_GRASS",
-        "BOOSTER_EVOLUTION_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_GRASS"
       ]
     },
     "RickExtra": {
       "id": 33,
       "packs": [
         "BOOSTER_LABORATORY_GRASS",
-        "BOOSTER_LABORATORY_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_GRASS"
       ]
     },
     "Rick": {
       "id": 34,
       "packs": [
         "BOOSTER_LABORATORY_GRASS",
-        "BOOSTER_LABORATORY_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_GRASS"
       ]
     },
     "JosephExtra": {
       "id": 35,
       "packs": [
         "BOOSTER_LABORATORY_GRASS",
-        "BOOSTER_LABORATORY_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_GRASS"
       ]
     },
     "Joseph": {
       "id": 36,
       "packs": [
         "BOOSTER_LABORATORY_GRASS",
-        "BOOSTER_LABORATORY_GRASS",
-        "NO_BOOSTER"
+        "BOOSTER_LABORATORY_GRASS"
       ]
     },
     "JessicaFire": {
       "id": 37,
       "packs": [
         "BOOSTER_COLOSSEUM_FIGHTING",
-        "BOOSTER_COLOSSEUM_FIGHTING",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIGHTING"
       ]
     },
     "John": {
       "id": 38,
       "packs": [
         "BOOSTER_EVOLUTION_FIRE",
-        "BOOSTER_EVOLUTION_FIRE",
-        "NO_BOOSTER"
+        "BOOSTER_EVOLUTION_FIRE"
       ]
     },
     "Adam": {
       "id": 39,
       "packs": [
         "BOOSTER_COLOSSEUM_FIRE",
-        "BOOSTER_COLOSSEUM_FIRE",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIRE"
       ]
     },
     "Jonathan": {
       "id": 40,
       "packs": [
         "BOOSTER_COLOSSEUM_FIRE",
-        "BOOSTER_COLOSSEUM_FIRE",
-        "NO_BOOSTER"
+        "BOOSTER_COLOSSEUM_FIRE"
       ]
     },
     "Ken": {
       "id": 41,
       "packs": [
         "BOOSTER_MYSTERY_NEUTRAL",
-        "BOOSTER_MYSTERY_NEUTRAL",
-        "NO_BOOSTER"
+        "BOOSTER_MYSTERY_NEUTRAL"
+      ]
+    },
+    "Sam": {
+      "id": 42,
+      "packs": [
+        "BOOSTER_ENERGY_RANDOM"
       ]
     }
   },
@@ -3594,6 +3559,12 @@
       "prize": 6,
       "deck_id": "LEGENDARY_RONALD_DECK_ID",
       "music_id": "MUSIC_DUEL_THEME_3"
+    },
+    "Sam": {
+      "id": 44,
+      "prize": 2,
+      "deck_id": "SAMS_NORMAL_DECK_ID",
+      "music_id": "MUSIC_DUEL_THEME_1"
     }
   },
   "decks": [

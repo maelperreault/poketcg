@@ -3628,7 +3628,7 @@ Script_Sam: ; d61d (3:561d)
 	quit_script_fully
 
 .ows_d685
-	;DUEL:Sam
+	; DUEL:Sam
 	; start_duel PRIZES_2, SAMS_NORMAL_DECK_ID, MUSIC_DUEL_THEME_1
 	quit_script_fully
 
@@ -3637,7 +3637,8 @@ Script_BeatSam: ; d68a (3:568a)
 	jump_if_event_equal EVENT_MASON_LAB_STATE, MASON_LAB_IN_PRACTICE_DUEL, Script_EnterLabFirstTime.ows_d82d
 	jump_if_event_equal EVENT_SAM_MENU_CHOICE, SAM_MENU_PRACTICE_DUEL, Script_LostToSam.ows_d6ad
 	print_npc_text Text05d1
-	give_booster_packs BOOSTER_ENERGY_RANDOM, NO_BOOSTER, NO_BOOSTER
+	; BOOSTERS:Sam
+	; give_booster_packs BOOSTER_ENERGY_RANDOM, NO_BOOSTER, NO_BOOSTER
 	print_text_quit_fully Text05d2
 
 Script_LostToSam: ; d69f (3:569f)
