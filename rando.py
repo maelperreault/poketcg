@@ -219,8 +219,8 @@ ptcg.randomize_text7()
 ptcg.randomize_text8()
 
 if sys.platform == 'linux':
-    make = subprocess.run(['make'], stdout=subprocess.PIPE, text=True)
+    make = subprocess.run(['make'], stdout=subprocess.PIPE, universal_newlines=True)
     if make.returncode == 0:
-        shutil.move('poketcb.gbc', 'ptcgr_{:06d}.gbc'.format(seed))
+        shutil.move('poketcg.gbc', 'ptcgr_{:06d}.gbc'.format(seed))
     else:
         print(make.stdout)
