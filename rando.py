@@ -1,4 +1,8 @@
+import sys
 import json
+import random
+import subprocess
+import shutil
 from functools import partial
 
 open_utf8 = partial(open, encoding='utf8')
@@ -52,7 +56,7 @@ class PTCGRando:
 
         # CARDS
         # Groups evolutioary lines in the same boosters
-        self.group_by_evolution = False
+        self.group_by_evolution = True
 
         # TRAINERS
         # Disable randomizing prize counts
@@ -200,9 +204,13 @@ class PTCGRando:
             for i, line in enumerate(src):
                 target.write(line)
 
+seed = random.randint(0, 999999)
+if len(sys.argv) > 1:
+    seed = int(sys.argv[1])
+
 ptcg = PTCGRando()
 ptcg.load_data('data.json')
-ptcg.seed = 123
+ptcg.seed = seed
 ptcg.randomize_cards()
 ptcg.randomize_bank03()
 ptcg.randomize_text_offsets()
@@ -210,5 +218,9 @@ ptcg.randomize_text4()
 ptcg.randomize_text7()
 ptcg.randomize_text8()
 
-for i in range(100):
-    calc_offset(0, 10, i)
+if sys.platform == 'linux':
+    make = subprocess.run(['make'], stdout=subprocess.PIPE, text=True)
+    if make.returncode == 0:
+        shutil.move('poketcb.gbc', 'ptcgr_{:06d}.gbc'.format(seed))
+    else:
+        print(make.stdout)
