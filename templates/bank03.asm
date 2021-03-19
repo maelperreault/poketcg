@@ -6752,7 +6752,7 @@ Script_LostToStephanie: ; eacc (3:6acc)
 Preload_Murray2: ; ead0 (3:6ad0)
 	call TryGiveMedalPCPacks
 	get_event_value EVENT_MEDAL_COUNT
-	cp 4
+	cp 0
 	ret
 
 Preload_Murray1: ; eada (3:6ada)
@@ -6766,7 +6766,7 @@ Script_Murray: ; eadf (3:6adf)
 	; MASTER_CHECK:Murray
 
 .start_dialogue
-	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.ows_eb31
+	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.murray_rematch
 	test_if_event_false EVENT_MURRAY_TALKED
 	print_variable_npc_text Text067d, Text067e
 	max_out_event_value EVENT_MURRAY_TALKED
@@ -6782,7 +6782,7 @@ Script_Murray: ; eadf (3:6adf)
 
 Script_BeatMurray: ; eb0f (3:6b0f)
 	start_script
-	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.ows_eb45
+	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.murray_already_beat
 	print_npc_text Text0682
 	max_out_event_value EVENT_BEAT_MURRAY
 	try_give_medal_pc_packs
@@ -6799,19 +6799,19 @@ Script_LostToMurray: ; eb29 (3:6b29)
 	jump_if_event_true EVENT_BEAT_MURRAY, .ows_eb50
 	print_text_quit_fully Text0685
 
-.ows_eb31
+.murray_rematch
 	print_npc_text Text0686
-	ask_question_jump Text067f, .ows_eb3d
+	ask_question_jump Text067f, .murray_start_rematch
 	print_npc_text Text0687
 	quit_script_fully
 
-.ows_eb3d
+.murray_start_rematch
 	print_npc_text Text0688
 	; DUEL:Murray
 	; start_duel PRIZES_6, STRANGE_PSYSHOCK_DECK_ID, MUSIC_DUEL_THEME_2
 	quit_script_fully
 
-.ows_eb45
+.murray_already_beat
 	print_npc_text Text0689
 	; BOOSTERS:Murray
 	; give_booster_packs BOOSTER_LABORATORY_PSYCHIC, BOOSTER_LABORATORY_PSYCHIC, NO_BOOSTER

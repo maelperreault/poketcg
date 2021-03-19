@@ -189,6 +189,16 @@ class PTCGRando:
             for i, line in enumerate(src):
                 target.write(line)
 
+    def randomize_text2(self):
+        with open_utf8('templates/text2.asm', 'r') as src, open_utf8('src/text/text2.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
+    def randomize_text3(self):
+        with open_utf8('templates/text3.asm', 'r') as src, open_utf8('src/text/text3.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
     def randomize_text4(self):
         with open_utf8('templates/text4.asm', 'r') as src, open_utf8('src/text/text4.asm', 'w') as target:
             for i, line in enumerate(src):
@@ -214,6 +224,8 @@ ptcg.seed = seed
 ptcg.randomize_cards()
 ptcg.randomize_bank03()
 ptcg.randomize_text_offsets()
+ptcg.randomize_text2()
+ptcg.randomize_text3()
 ptcg.randomize_text4()
 ptcg.randomize_text7()
 ptcg.randomize_text8()
