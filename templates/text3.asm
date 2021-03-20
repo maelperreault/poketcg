@@ -1525,67 +1525,67 @@ Text0396: ; 3f4f9 (f:74f9)
 	done
 
 Text0397: ; 3f501 (f:7501)
-	text ""
+	text "Fighting Club Member"
 	done
 
 Text0398: ; 3f517 (f:7517)
-	text ""
+	text "Rock Club Member"
 	done
 
 Text0399: ; 3f529 (f:7529)
-	text ""
+	text "Water Club Member"
 	done
 
 Text039a: ; 3f53c (f:753c)
-	text ""
+	text "Lightning Club Member"
 	done
 
 Text039b: ; 3f553 (f:7553)
-	text ""
+	text "Grass Club Member"
 	done
 
 Text039c: ; 3f566 (f:7566)
-	text ""
+	text "Psychic Club Member"
 	done
 
 Text039d: ; 3f57b (f:757b)
-	text ""
+	text "Science Club Member"
 	done
 
 Text039e: ; 3f590 (f:7590)
-	text ""
+	text "Fire Club Member"
 	done
 
 Text039f: ; 3f5a2 (f:75a2)
-	text ""
+	text "Fighting Club Master"
 	done
 
 Text03a0: ; 3f5b8 (f:75b8)
-	text ""
+	text "Rock Club Master"
 	done
 
 Text03a1: ; 3f5ca (f:75ca)
-	text ""
+	text "Water Club Master"
 	done
 
 Text03a2: ; 3f5dd (f:75dd)
-	text ""
+	text "Lightning Club Master"
 	done
 
 Text03a3: ; 3f5f4 (f:75f4)
-	text ""
+	text "Grass Club Master"
 	done
 
 Text03a4: ; 3f607 (f:7607)
-	text ""
+	text "Psychic Club Master"
 	done
 
 Text03a5: ; 3f61c (f:761c)
-	text ""
+	text "Science Club Master"
 	done
 
 Text03a6: ; 3f631 (f:7631)
-	text ""
+	text "Fire Club Master"
 	done
 
 Text03a7: ; 3f643 (f:7643)
@@ -1921,15 +1921,15 @@ SelectDeckToDuelText: ; 3f950 (f:7950)
 	done
 
 CharmanderAndFriendsDeckChoiceText: ; 3f982 (f:7982)
-	text "CHARMANDER & Friends Deck"
+	text "{CharmanderAndFriends:}" ; STARTER_DECK
 	done
 
 SquirtleAndFriendsDeckChoiceText: ; 3f99d (f:799d)
-	text "SQUIRTLE & Friends Deck"
+	text "{SquirtleAndFriends:}" ; STARTER_DECK
 	done
 
 BulbasaurAndFriendsDeckChoiceText: ; 3f9b6 (f:79b6)
-	text "BULBASAUR & Friends Deck"
+	text "{BulbasaurAndFriends:}" ; STARTER_DECK
 	done
 
 SelectDeckToTakeText: ; 3f9d0 (f:79d0)

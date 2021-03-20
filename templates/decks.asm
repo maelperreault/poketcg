@@ -610,23 +610,13 @@ CharmanderAndFriendsDeck: ; 30428 (c:4428)
 	tx CharmanderAndFriendsDeckName
 
 CharmanderExtraDeck: ; 30465 (c:4465)
-	db 4, GRASS_ENERGY
-	db 4, WATER_ENERGY
-	db 3, PSYCHIC_ENERGY
-	db 1, BULBASAUR
-	db 1, IVYSAUR
-	db 2, NIDORANF
-	db 2, CATERPIE
-	db 1, METAPOD
-	db 1, NIDORANM
-	db 1, PINSIR
-	db 2, SEEL
-	db 1, DEWGONG
-	db 2, GOLDEEN
-	db 1, SEAKING
-	db 2, ABRA
-	db 1, KADABRA
-	db 1, GASTLY1
+	; GENERATE_SIDEBOARD:CharmanderExtra
+	db 5, GRASS_ENERGY
+	db 5, FIRE_ENERGY
+	db 5, LIGHTNING_ENERGY
+	db 5, WATER_ENERGY
+	db 5, FIGHTING_ENERGY
+	db 5, PSYCHIC_ENERGY
 	db 30, GRASS_ENERGY ; irrelevant
 	db 0 ; end
 	tx CharmanderExtraDeckName
@@ -637,25 +627,13 @@ SquirtleAndFriendsDeck: ; 3048c (c:448c)
 	tx SquirtleAndFriendsDeckName
 
 SquirtleExtraDeck: ; 304cf (c:44cf)
-	db 3, GRASS_ENERGY
-	db 4, FIRE_ENERGY
-	db 4, LIGHTNING_ENERGY
-	db 2, NIDORANF
-	db 1, NIDORANM
-	db 1, CATERPIE
-	db 1, METAPOD
-	db 1, WEEDLE
-	db 1, KAKUNA
-	db 1, PINSIR
-	db 2, CHARMANDER
-	db 1, CHARMELEON
-	db 1, MAGMAR1
-	db 1, GROWLITHE
-	db 1, ARCANINE2
-	db 2, PIKACHU1
-	db 1, MAGNEMITE1
-	db 1, MAGNETON1
-	db 1, ELECTABUZZ2
+	; GENERATE_SIDEBOARD:SquirtleExtra
+	db 5, GRASS_ENERGY
+	db 5, FIRE_ENERGY
+	db 5, LIGHTNING_ENERGY
+	db 5, WATER_ENERGY
+	db 5, FIGHTING_ENERGY
+	db 5, PSYCHIC_ENERGY
 	db 30, GRASS_ENERGY ; irrelevant
 	db 0 ; end
 	tx SquirtleExtraDeckName
@@ -666,24 +644,13 @@ BulbasaurAndFriendsDeck: ; 304fa (c:44fa)
 	tx BulbasaurAndFriendsDeckName
 
 BulbasaurExtraDeck: ; 3053b (c:453b)
-	db 4, LIGHTNING_ENERGY
-	db 4, PSYCHIC_ENERGY
-	db 3, FIGHTING_ENERGY
-	db 2, PIKACHU1
-	db 1, RAICHU1
-	db 1, MAGNEMITE1
-	db 1, ELECTABUZZ2
-	db 2, ABRA
-	db 1, KADABRA
-	db 1, JYNX
-	db 2, GASTLY1
-	db 1, HAUNTER2
-	db 1, DIGLETT
-	db 1, DUGTRIO
-	db 1, HITMONCHAN
-	db 1, BILL
-	db 2, POTION
-	db 1, GUST_OF_WIND
+	; GENERATE_SIDEBOARD:BulbasaurExtra
+	db 5, GRASS_ENERGY
+	db 5, FIRE_ENERGY
+	db 5, LIGHTNING_ENERGY
+	db 5, WATER_ENERGY
+	db 5, FIGHTING_ENERGY
+	db 5, PSYCHIC_ENERGY
 	db 30, GRASS_ENERGY ; irrelevant
 	db 0 ; end
 	tx BulbasaurExtraDeckName

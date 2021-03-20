@@ -17,6 +17,11 @@
     "PSYCHIC": "PsychicEnergyCard",
     "COLORLESS": "DoubleColorlessEnergyCard"
   },
+  "starter_deck_names": {
+    "CharmanderAndFriends": "Charmander & Friends",
+    "SquirtleAndFriends": "Squirtle & Friends",
+    "BulbasaurAndFriends": "Bulbasaur & Friends"
+  },
   "sets": [
     "COLOSSEUM",
     "EVOLUTION",
@@ -613,9 +618,6 @@
   },
   "decks": [
     "SAMS_NORMAL_DECK_ID",
-    "CHARMANDER_EXTRA_DECK_ID",
-    "SQUIRTLE_EXTRA_DECK_ID",
-    "BULBASAUR_EXTRA_DECK_ID",
     "LIGHTNING_AND_FIRE_DECK_ID",
     "WATER_AND_FIGHTING_DECK_ID",
     "GRASS_AND_PSYCHIC_DECK_ID",

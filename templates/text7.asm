@@ -298,7 +298,7 @@ Text05fd: ; 4d466 (13:5466)
 	done
 
 Text05fe: ; 4d4e2 (13:54e2)
-	text "Would you like to duel Aaron?"
+	text "Would you like to duel?"
 	done
 
 Text05ff: ; 4d501 (13:5501)
@@ -481,7 +481,7 @@ Text061b: ; 4dca0 (13:5ca0)
 	done
 
 Text061c: ; 4dd25 (13:5d25)
-	text "Would you like to duel Jennifer?"
+	text "Would you like to duel?"
 	done
 
 Text061d: ; 4dd47 (13:5d47)
@@ -516,7 +516,7 @@ Text0622: ; 4de1a (13:5e1a)
 	done
 
 Text0623: ; 4de9d (13:5e9d)
-	text "Would you like to duel Nicholas?"
+	text "Would you like to duel?"
 	done
 
 Text0624: ; 4debf (13:5ebf)
@@ -564,7 +564,7 @@ Text062b: ; 4e097 (13:6097)
 	done
 
 Text062c: ; 4e0da (13:60da)
-	text "Would you like to Duel Brandon?"
+	text "Would you like to Duel?"
 	done
 
 Text062d: ; 4e0fb (13:60fb)
@@ -618,7 +618,7 @@ Text0634: ; 4e2cc (13:62cc)
 	done
 
 Text0635: ; 4e326 (13:6326)
-	text "Would you like to duel Isaac?"
+	text "Would you like to duel?"
 	done
 
 Text0636: ; 4e345 (13:6345)
@@ -840,11 +840,11 @@ Text0654: ; 4ef34 (13:6f34)
 	line "It doesn't have any weaknesses, "
 	line "and it's difficult for opponents'"
 	line "attacks to cause damage!"
-	line "Would you like to duel me?"
+	line "Would you like to duel?"
 	done
 
 Text0655: ; 4effe (13:6ffe)
-	text "Would you like to duel Robert?"
+	text "Would you like to duel?"
 	done
 
 Text0656: ; 4f01e (13:701e)
@@ -1008,7 +1008,7 @@ Text066c: ; 4f951 (13:7951)
 	done
 
 Text066d: ; 4f9d8 (13:79d8)
-	text "Would you like to duel Daniel?"
+	text "Would you like to duel?"
 	done
 
 Text066e: ; 4f9f8 (13:79f8)
@@ -1053,7 +1053,7 @@ Text0674: ; 4fb66 (13:7b66)
 	done
 
 Text0675: ; 4fbc0 (13:7bc0)
-	text "Would you like to duel Stephanie?"
+	text "Would you like to duel?"
 	done
 
 Text0676: ; 4fbe3 (13:7be3)
@@ -1109,7 +1109,7 @@ Text067e: ; 4fe6c (13:7e6c)
 	done
 
 Text067f: ; 4fe9b (13:7e9b)
-	text "Would you like to duel Murray?"
+	text "Would you like to duel?"
 	done
 
 Text0680: ; 4febb (13:7ebb)

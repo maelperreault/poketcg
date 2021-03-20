@@ -3173,7 +3173,7 @@
     "constant": "DOUBLE_COLORLESS_ENERGY",
     "type": 1,
     "stage": 3,
-    "limit": 2,
+    "limit": 0,
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},

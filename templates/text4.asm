@@ -454,7 +454,7 @@ Text042c: ; 42087 (10:6087)
 	done
 
 Text042d: ; 420e4 (10:60e4)
-	text "Would you like to duel Sara?"
+	text "Would you like to duel?"
 	done
 
 Text042e: ; 42102 (10:6102)
@@ -494,7 +494,7 @@ Text0433: ; 42279 (10:6279)
 	done
 
 Text0434: ; 422d6 (10:62d6)
-	text "Would you like to duel Amanda?"
+	text "Would you like to duel?"
 	done
 
 Text0435: ; 422f6 (10:62f6)
@@ -558,7 +558,7 @@ Text043e: ; 425b8 (10:65b8)
 	done
 
 Text043f: ; 425d6 (10:65d6)
-	text "Would you like to duel Joshua?"
+	text "Would you like to duel?"
 	done
 
 Text0440: ; 425f6 (10:65f6)
@@ -657,7 +657,7 @@ Text044f: ; 429bd (10:69bd)
 	done
 
 Text0450: ; 429f0 (10:69f0)
-	text "Would you like to duel Amy?"
+	text "Would you like to duel?"
 	done
 
 Text0451: ; 42a0d (10:6a0d)
@@ -837,7 +837,7 @@ Text0468: ; 43325 (10:7325)
 	done
 
 Text0469: ; 43391 (10:7391)
-	text "Would you like to duel Imakuni??"
+	text "Would you like to duel?"
 	done
 
 Text046a: ; 433b3 (10:73b3)
@@ -959,7 +959,7 @@ Text047b: ; 43acb (10:7acb)
 	done
 
 Text047c: ; 43b54 (10:7b54)
-	text "Would you like to Duel Mitch?"
+	text "Would you like to Duel?"
 	done
 
 Text047d: ; 43b73 (10:7b73)
@@ -1047,7 +1047,7 @@ Text048a: ; 43f61 (10:7f61)
 	done
 
 Text048b: ; 43fd9 (10:7fd9)
-	text "Would you like to duel Chris?"
+	text "Would you like to duel?"
 	done
 
 	ds $8

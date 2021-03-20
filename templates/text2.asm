@@ -1272,211 +1272,211 @@ Text01dd: ; 3b425 (e:7425)
 	done
 
 PracticePlayerDeckName: ; 3b42c (e:742c)
-	text ""
+	text "Practice Player"
 	done
 
 SamsPracticeDeckName: ; 3b43d (e:743d)
-	text ""
+	text "Sam's Practice"
 	done
 
 CharmanderAndFriendsDeckName: ; 3b44d (e:744d)
-	text "poop"
+	text "{CharmanderAndFriends}" ; STARTER_DECK
 	done
 
 CharmanderExtraDeckName: ; 3b463 (e:7463)
-	text ""
+	text "Charmander extra"
 	done
 
 SquirtleAndFriendsDeckName: ; 3b475 (e:7475)
-	text "ass"
+	text "{SquirtleAndFriends}" ; STARTER_DECK
 	done
 
 SquirtleExtraDeckName: ; 3b489 (e:7489)
-	text ""
+	text "Squirtle extra"
 	done
 
 BulbasaurAndFriendsDeckName: ; 3b499 (e:7499)
-	text "cum"
+	text "{BulbasaurAndFriends}" ; STARTER_DECK
 	done
 
 BulbasaurExtraDeckName: ; 3b4ae (e:74ae)
-	text ""
+	text "Bulbasaur extra"
 	done
 
 FirstStrikeDeckName: ; 3b4bf (e:74bf)
-	text ""
+	text "First-Strike"
 	done
 
 RockCrusherDeckName: ; 3b4cd (e:74cd)
-	text ""
+	text "Rock Crusher"
 	done
 
 GoGoRainDanceDeckName: ; 3b4db (e:74db)
-	text ""
+	text "Go Go Rain Dance"
 	done
 
 ZappingSelfdestructDeckName: ; 3b4ed (e:74ed)
-	text ""
+	text "Zapping Selfdestruct"
 	done
 
 FlowerPowerDeckName: ; 3b503 (e:7503)
-	text ""
+	text "Flower Power"
 	done
 
 StrangePsyshockDeckName: ; 3b511 (e:7511)
-	text ""
+	text "Strange Psyshock"
 	done
 
 WondersofScienceDeckName: ; 3b523 (e:7523)
-	text ""
+	text "Wonders of Science"
 	done
 
 FireChargeDeckName: ; 3b537 (e:7537)
-	text ""
+	text "Fire Charge"
 	done
 
 LegendaryMoltresDeckName: ; 3b544 (e:7544)
-	text ""
+	text "Legendary Moltres"
 	done
 
 LegendaryZapdosDeckName: ; 3b557 (e:7557)
-	text ""
+	text "Legendary Zapdos"
 	done
 
 LegendaryArticunoDeckName: ; 3b569 (e:7569)
-	text ""
+	text "Legendary Articuno"
 	done
 
 LegendaryDragoniteDeckName: ; 3b57d (e:757d)
-	text ""
+	text "Legendary Dragonite"
 	done
 
 ImRonaldDeckName: ; 3b592 (e:7592)
-	text ""
+	text "I'm Ronald!"
 	done
 
 PowerfulRonaldDeckName: ; 3b59f (e:759f)
-	text ""
+	text "Powerful Ronald"
 	done
 
 InvincibleRonaldDeckName: ; 3b5b0 (e:75b0)
-	text ""
+	text "Invincible Ronald"
 	done
 
 LegendaryRonaldDeckName: ; 3b5c3 (e:75c3)
-	text ""
+	text "Legendary Ronald"
 	done
 
 WaterfrontPokemonDeckName: ; 3b5d5 (e:75d5)
-	text ""
+	text "Waterfront Pokémon"
 	done
 
 LonelyFriendsDeckName: ; 3b5e9 (e:75e9)
-	text ""
+	text "Lonely Friends"
 	done
 
 SoundoftheWavesDeckName: ; 3b5f9 (e:75f9)
-	text ""
+	text "Sound of the Waves"
 	done
 
 AngerDeckName: ; 3b60d (e:760d)
-	text ""
+	text "Anger"
 	done
 
 FlamethrowerDeckName: ; 3b614 (e:7614)
-	text ""
+	text "Flamethrower"
 	done
 
 ReshuffleDeckName: ; 3b622 (e:7622)
-	text ""
+	text "Reshuffle"
 	done
 
 ExcavationDeckName: ; 3b62d (e:762d)
-	text ""
+	text "Excavation"
 	done
 
 BlisteringPokemonDeckName: ; 3b639 (e:7639)
-	text ""
+	text "Blistering Pokémon"
 	done
 
 HardPokemonDeckName: ; 3b64d (e:764d)
-	text ""
+	text "Hard Pokémon"
 	done
 
 EtceteraDeckName: ; 3b65b (e:765b)
-	text ""
+	text "Etcetera"
 	done
 
 FlowerGardenDeckName: ; 3b665 (e:7665)
-	text ""
+	text "Flower Garden"
 	done
 
 KaleidoscopeDeckName: ; 3b674 (e:7674)
-	text ""
+	text "Kaleidoscope"
 	done
 
 MusclesforBrainsDeckName: ; 3b682 (e:7682)
-	text ""
+	text "Muscles for Brains"
 	done
 
 HeatedBattleDeckName: ; 3b696 (e:7696)
-	text ""
+	text "Heated Battle"
 	done
 
 LovetoBattleDeckName: ; 3b6a5 (e:76a5)
-	text ""
+	text "Love to Battle"
 	done
 
 PikachuDeckName: ; 3b6b5 (e:76b5)
-	text ""
+	text "Pikachu"
 	done
 
 BoomBoomSelfdestructDeckName: ; 3b6be (e:76be)
-	text ""
+	text "Boom Boom Selfdestruct"
 	done
 
 PowerGeneratorDeckName: ; 3b6d6 (e:76d6)
-	text ""
+	text "Power Generator"
 	done
 
 GhostDeckName: ; 3b6e7 (e:76e7)
-	text ""
+	text "Ghost"
 	done
 
 NapTimeDeckName: ; 3b6ee (e:76ee)
-	text ""
+	text "Nap Time"
 	done
 
 StrangePowerDeckName: ; 3b6f8 (e:76f8)
-	text ""
+	text "Strange Power"
 	done
 
 FlyinPokemonDeckName: ; 3b707 (e:7707)
-	text ""
+	text "Flyin' Pokémon"
 	done
 
 LovelyNidoranDeckName: ; 3b717 (e:7717)
-	text ""
+	text "Lovely Nidoran"
 	done
 
 PoisonDeckName: ; 3b727 (e:7727)
-	text ""
+	text "Poison"
 	done
 
 ImakuniDeckName: ; 3b72f (e:772f)
-	text ""
+	text "Imakuni?"
 	done
 
 LightningAndFireDeckName: ; 3b739 (e:7739)
-	text ""
+	text "Lightning & Fire"
 	done
 
 WaterAndFightingDeckName: ; 3b74b (e:774b)
-	text ""
+	text "Water & Fighting"
 	done
 
 GrassAndPsychicDeckName: ; 3b75d (e:775d)
-	text ""
+	text "Grass & Psychic"
 	done
 
 RetreatCostText: ; 3b76e (e:776e)
@@ -1581,7 +1581,7 @@ PlayerNameKeyboardText: ; 3b8f2 (e:78f2)
 	done
 
 DeckNameKeyboardText: ; 3b97b (e:797b)
-	text ""
+	textfw3 "A", " ", "B", " ", "C", " ", "D", " ", "E", " ", "F", " ", "G", " ", "H", " ", "I"
 	line ""
 	textfw3 "J", " ", "K", " ", "L", " ", "M", " ", "N", " ", "O", " ", "P", " ", "Q", " ", "R"
 	line ""

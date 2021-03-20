@@ -82,7 +82,7 @@ Text068e: ; 5044a (14:444a)
 	done
 
 Text068f: ; 504df (14:44df)
-	text "Would you like to duel Jessica?"
+	text "Would you like to duel?"
 	done
 
 Text0690: ; 50500 (14:4500)
@@ -239,7 +239,7 @@ Text06a5: ; 50bc0 (14:4bc0)
 	done
 
 Text06a6: ; 50c49 (14:4c49)
-	text "Would you like to duel John?"
+	text "Would you like to duel?"
 	done
 
 Text06a7: ; 50c67 (14:4c67)
@@ -277,7 +277,7 @@ Text06ac: ; 50d8b (14:4d8b)
 	done
 
 Text06ad: ; 50df1 (14:4df1)
-	text "Would you like to duel Adam?"
+	text "Would you like to duel?"
 	done
 
 Text06ae: ; 50e0f (14:4e0f)
@@ -314,7 +314,7 @@ Text06b3: ; 50f03 (14:4f03)
 	done
 
 Text06b4: ; 50f60 (14:4f60)
-	text "Would you like to Duel Jonathan?"
+	text "Would you like to Duel?"
 	done
 
 Text06b5: ; 50f82 (14:4f82)
@@ -368,7 +368,7 @@ Text06bd: ; 512c6 (14:52c6)
 	done
 
 Text06be: ; 51327 (14:5327)
-	text "Would you like to duel Ken?"
+	text "Would you like to duel?"
 	done
 
 Text06bf: ; 51344 (14:5344)
@@ -546,7 +546,7 @@ Text06d9: ; 51b2e (14:5b2e)
 	done
 
 Text06da: ; 51b49 (14:5b49)
-	text "Would you like to duel Michael?"
+	text "Would you like to duel?"
 	done
 
 Text06db: ; 51b6a (14:5b6a)
@@ -599,7 +599,7 @@ Text06e1: ; 51d9b (14:5d9b)
 	done
 
 Text06e2: ; 51e6e (14:5e6e)
-	text "Would you like to duel Brittany?"
+	text "Would you like to duel?"
 	done
 
 Text06e3: ; 51e90 (14:5e90)
@@ -819,7 +819,7 @@ Text0705: ; 527b0 (14:67b0)
 	done
 
 Text0706: ; 52812 (14:6812)
-	text "Would you like to Duel Kristin?"
+	text "Would you like to Duel?"
 	done
 
 Text0707: ; 52833 (14:6833)
@@ -876,7 +876,7 @@ Text070e: ; 52abf (14:6abf)
 	done
 
 Text070f: ; 52aff (14:6aff)
-	text "Would you like to duel Heather?"
+	text "Would you like to duel?"
 	done
 
 Text0710: ; 52b20 (14:6b20)
@@ -936,7 +936,7 @@ Text0719: ; 52d1a (14:6d1a)
 	done
 
 Text071a: ; 52d3e (14:6d3e)
-	text "Would you like to duel Nikki?"
+	text "Would you like to duel?"
 	done
 
 Text071b: ; 52d5d (14:6d5d)

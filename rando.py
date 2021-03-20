@@ -221,7 +221,7 @@ class PTCGRando:
             for i, line in enumerate(src):
                 target.write(line)
 
-    def generate_deck(self, target, z):
+    def generate_deck(self, target, z, deck_name):
         y = 10
         remaining_trainer = noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed)
         remaining_trainer = calc_range(remaining_trainer, self.min_trainer, self.max_trainer)
@@ -238,7 +238,8 @@ class PTCGRando:
             color_count = 3
         colors = self.data['colors'].copy()
         y += 10
-        if noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % 2 == 1:
+        # 75% chance to remove colorless
+        if noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % 4 != 0:
             colors.remove('COLORLESS')
         while len(colors) > color_count:
             color = colors[noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % len(colors)]
@@ -290,15 +291,17 @@ class PTCGRando:
                 remaining_energies -= 1
             y += 10
 
+        self.data['starter_deck_names'][deck_name] = ', '.join([color[:6] for color in colors])
+
         for k in cards:
-            target.write(' db {}, {}\n'.format(cards[k], k))
+            target.write('	db {}, {}\n'.format(cards[k], k))
 
     def randomize_decks(self):
         with open_utf8('templates/decks.asm', 'r') as src, open_utf8('src/data/decks.asm', 'w') as target:
             z = 10
             for i, line in enumerate(src):
                 if '; GENERATE_DECK:' in line:
-                    self.generate_deck(target, z)
+                    self.generate_deck(target, z, line.split(':')[1].strip())
                     z += 10
                 target.write(line)
 
@@ -310,6 +313,8 @@ class PTCGRando:
     def randomize_text2(self):
         with open_utf8('templates/text2.asm', 'r') as src, open_utf8('src/text/text2.asm', 'w') as target:
             for i, line in enumerate(src):
+                if '; STARTER_DECK' in line:
+                    line = line.format(**self.data['starter_deck_names'])
                 target.write(line)
 
     def randomize_text3(self):
@@ -338,6 +343,8 @@ class PTCGRando:
                         npcs.remove(npc)
                         target.write('	text "{}"\n'.format(npc))
                         y += 10
+                elif '; STARTER_DECK' in line:
+                    target.write(line.format(**self.data['starter_deck_names']))
                 else:
                     target.write(line)
 
@@ -364,6 +371,16 @@ class PTCGRando:
                 else:
                     target.write(line)
 
+    def randomize_text5(self):
+        with open_utf8('templates/text5.asm', 'r') as src, open_utf8('src/text/text5.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
+    def randomize_text6(self):
+        with open_utf8('templates/text6.asm', 'r') as src, open_utf8('src/text/text6.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
     def randomize_text7(self):
         with open_utf8('templates/text7.asm', 'r') as src, open_utf8('src/text/text7.asm', 'w') as target:
             for i, line in enumerate(src):
@@ -389,6 +406,11 @@ class PTCGRando:
 
     def randomize_text8(self):
         with open_utf8('templates/text8.asm', 'r') as src, open_utf8('src/text/text8.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
+    def randomize_text9(self):
+        with open_utf8('templates/text9.asm', 'r') as src, open_utf8('src/text/text9.asm', 'w') as target:
             for i, line in enumerate(src):
                 target.write(line)
 
