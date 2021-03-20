@@ -97,7 +97,7 @@ class PTCGRando:
         self.min_trainer = 5
         self.max_trainer = 12
 
-        self.exclude_npcs = True
+        self.exclude_npcs = False
 
     def pkmn_by_evolution(cards, has_evolution=False):
         return filter(lambda x: x['has_evolution'] == has_evolution, cards)
@@ -316,13 +316,25 @@ class PTCGRando:
         with open_utf8('templates/text3.asm', 'r') as src, open_utf8('src/text/text3.asm', 'w') as target:
             y = 10
             npcs = self.data['npcs'].copy()
+            self.data['npc_names'] = {}
             for i, line in enumerate(src):
                 if '; NPC_NAMES:' in line:
                     if self.exclude_npcs:
                         target.write(line.split(':')[1])
                     else:
-                        print(npcs)
                         npc = pick(npcs, noise2d(PTCGRando.RAND_NPC_NAMES, y, self.seed))
+                        if 'Michael' in line:
+                            self.data['npc_names']['Michael'] = npc
+                        elif 'Chris' in line:
+                            self.data['npc_names']['Chris'] = npc
+                        elif 'Jessica' in line:
+                            self.data['npc_names']['Jessica'] = npc
+                        elif 'Jennifer' in line:
+                            self.data['npc_names']['Jennifer'] = npc
+                        elif 'Nicholas' in line:
+                            self.data['npc_names']['Nicholas'] = npc
+                        elif 'Brandon' in line:
+                            self.data['npc_names']['Brandon'] = npc
                         npcs.remove(npc)
                         target.write('	text "{}"\n'.format(npc))
                         y += 10
@@ -332,12 +344,48 @@ class PTCGRando:
     def randomize_text4(self):
         with open_utf8('templates/text4.asm', 'r') as src, open_utf8('src/text/text4.asm', 'w') as target:
             for i, line in enumerate(src):
-                target.write(line)
+                if '; MITCH_CHECK:' in line:
+                    npc = ''
+                    if self.exclude_npcs:
+                        if 'Michael' in line:
+                            npc = 'Michael'
+                        elif 'Chris' in line:
+                            npc = 'Chris'
+                        elif 'Jessica' in line:
+                            npc = 'Jessica'
+                    else:
+                        if 'Michael' in line:
+                            npc = self.data['npc_names']['Michael']
+                        elif 'Chris' in line:
+                            npc = self.data['npc_names']['Chris']
+                        elif 'Jessica' in line:
+                            npc = self.data['npc_names']['Jessica']
+                    target.write(line.format(npc))
+                else:
+                    target.write(line)
 
     def randomize_text7(self):
         with open_utf8('templates/text7.asm', 'r') as src, open_utf8('src/text/text7.asm', 'w') as target:
             for i, line in enumerate(src):
-                target.write(line)
+                if '; ISAAC_CHECK:' in line:
+                    npc = ''
+                    if self.exclude_npcs:
+                        if 'Jennifer' in line:
+                            npc = 'Jennifer'
+                        elif 'Nicholas' in line:
+                            npc = 'Nicholas'
+                        elif 'Brandon' in line:
+                            npc = 'Brandon'
+                    else:
+                        if 'Jennifer' in line:
+                            npc = self.data['npc_names']['Jennifer']
+                        elif 'Nicholas' in line:
+                            npc = self.data['npc_names']['Nicholas']
+                        elif 'Brandon' in line:
+                            npc = self.data['npc_names']['Brandon']
+                    target.write(line.format(npc))
+                else:
+                    target.write(line)
 
     def randomize_text8(self):
         with open_utf8('templates/text8.asm', 'r') as src, open_utf8('src/text/text8.asm', 'w') as target:
@@ -362,9 +410,18 @@ ptcg.randomize_text4()
 ptcg.randomize_text7()
 ptcg.randomize_text8()
 
-if sys.platform == 'linux':
+def is_tool(name):
+    """Check whether `name` is on PATH and marked as executable."""
+
+    # from whichcraft import which
+    from shutil import which
+
+    return which(name) is not None
+
+if is_tool('make'):
     make = subprocess.run(['make'], stdout=subprocess.PIPE, universal_newlines=True)
     if make.returncode == 0:
         shutil.move('poketcg.gbc', 'ptcgr_{:06d}.gbc'.format(seed))
+        print('Successfully compiled with seed: {:06d}'.format(seed))
     else:
         print(make.stdout)

@@ -595,8 +595,11 @@ Text0631: ; 4e1a5 (13:61a5)
 	done
 
 IsaacCheck: ; 4e200 (13:6200)
-	text "Duel Jennifer, Nicholas"
-	line "and Brandon first."
+	text "Duel these guys in the"
+	line "Lightning Club first:"
+	line "{}" ; ISAAC_CHECK:Jennifer
+	line "{}" ; ISAAC_CHECK:Nicholas
+	line "{}" ; ISAAC_CHECK:Brandon
 	done
 
 Text0633: ; 4e235 (13:6235)

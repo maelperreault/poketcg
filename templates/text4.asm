@@ -922,32 +922,31 @@ Text0476: ; 437da (10:77da)
 	done
 
 MitchCheck: ; 43822 (10:7822)
-	text "Duel Michael, Chris"
-	line "and Jessica first."
+	text "Duel these guys first:"
+	line "{} in the Grass Club" ; MITCH_CHECK:Michael
+	line "{} in the Rock Club" ; MITCH_CHECK:Chris
+	line "{} in the Fire Club" ; MITCH_CHECK:Jessica
 	done
 
 Text0478: ; 43918 (10:7918)
-	text "If you wish to duel me, you "
-	line "must defeat my pupils first!"
-	line "My pupils are training at the"
-	line "other Clubs!"
-	line "Go and see if you can defeat all"
-	line "3 of my pupils!"
+	text "Duel these guys first:"
+	line "{} in the Grass Club" ; MITCH_CHECK:Michael
+	line "{} in the Rock Club" ; MITCH_CHECK:Chris
+	line "{} in the Fire Club" ; MITCH_CHECK:Jessica
 	done
 
 Text0479: ; 439af (10:79af)
-	text "So, you've defeated 1 of my pupils."
-	line "You must be a pretty good player."
-	line "But you're not good enough!"
-	line "If you wish to duel me, you"
-	line "must defeat my 2 remaining pupils!"
+	text "Duel these guys first:"
+	line "{} in the Grass Club" ; MITCH_CHECK:Michael
+	line "{} in the Rock Club" ; MITCH_CHECK:Chris
+	line "{} in the Fire Club" ; MITCH_CHECK:Jessica
 	done
 
 Text047a: ; 43a51 (10:7a51)
-	text "So, you've defeated 2 of my pupils!"
-	line "You are pretty good."
-	line "But there's still the last one..."
-	line "Can you defeat my last pupil?"
+	text "Duel these guys first:"
+	line "{} in the Grass Club" ; MITCH_CHECK:Michael
+	line "{} in the Rock Club" ; MITCH_CHECK:Chris
+	line "{} in the Fire Club" ; MITCH_CHECK:Jessica
 	done
 
 Text047b: ; 43acb (10:7acb)

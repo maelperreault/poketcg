@@ -16,14 +16,14 @@
     * Group by evolution, where evolutions are in the same set as each other.
     * Full random, where all cards are put in random sets.
 * Randomize trainers. They can get random prize requirements, decks, music, and booster rewards.
+* NPC name randomization.
+    * Supply a list of names to randomly substitute in.
 
 ## Planned Features
 * Changing master requirements to be variable.
     * 0-7 medals instead of 4 medals.
     * x-y cards instead of 300 cards.
     * Beating trainers other than Jennifer, Nicholas, Brandon, Michael, Chris, and Jessica.
-* NPC name randomization.
-    * Supply a list of names to randomly substitute in.
 * NPC text randomization
     * Supply a list of text to randomly substitute in at certain points.
 * NPC deck randomization.
