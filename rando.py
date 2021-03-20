@@ -227,6 +227,9 @@ class PTCGRando:
         else:
             color_count = 3
         colors = self.data['colors'].copy()
+        y += 10
+        if noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % 2 == 1:
+            colors.remove('COLORLESS')
         while len(colors) > color_count:
             color = colors[noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % len(colors)]
             colors.remove(color)
