@@ -51,6 +51,7 @@ class PTCGRando:
     RAND_BOOSTERS = 30
     RAND_MASTERS = 40
     RAND_STARTER_DECKS = 50
+    RAND_NPC_NAMES = 60
 
     TYPE_PKMN = 0
     TYPE_ENERGY = 1
@@ -96,6 +97,8 @@ class PTCGRando:
         self.min_trainer = 5
         self.max_trainer = 12
 
+        self.exclude_npcs = True
+
     def pkmn_by_evolution(cards, has_evolution=False):
         return filter(lambda x: x['has_evolution'] == has_evolution, cards)
 
@@ -108,7 +111,7 @@ class PTCGRando:
     def pkmn_colorless(cards):
         return filter(lambda x: ('COLORLESS' in x['energy'], len(x['energy'])) == (True, 1), cards)
 
-    def load_data(self, data_file, cards_file):
+    def load_data(self, data_file, cards_file, npcs_file):
         with open_utf8(data_file) as file:
             self.data = json.load(file)
         with open_utf8(cards_file) as file:
@@ -117,6 +120,8 @@ class PTCGRando:
             self.data['pokemon_cards'] = list(filter(lambda x: x['type'] == PTCGRando.TYPE_PKMN, card_list))
             self.data['energy_cards'] = list(filter(lambda x: x['type'] == PTCGRando.TYPE_ENERGY, card_list))
             self.data['trainer_cards'] = list(filter(lambda x: x['type'] == PTCGRando.TYPE_TRAINER, card_list))
+        with open_utf8(npcs_file) as file:
+            self.data['npcs'] = json.load(file)
 
     def randomize_cards(self):
         current_card = ''
@@ -309,8 +314,20 @@ class PTCGRando:
 
     def randomize_text3(self):
         with open_utf8('templates/text3.asm', 'r') as src, open_utf8('src/text/text3.asm', 'w') as target:
+            y = 10
+            npcs = self.data['npcs'].copy()
             for i, line in enumerate(src):
-                target.write(line)
+                if '; NPC_NAMES:' in line:
+                    if self.exclude_npcs:
+                        target.write(line.split(':')[1])
+                    else:
+                        print(npcs)
+                        npc = pick(npcs, noise2d(PTCGRando.RAND_NPC_NAMES, y, self.seed))
+                        npcs.remove(npc)
+                        target.write('	text "{}"\n'.format(npc))
+                        y += 10
+                else:
+                    target.write(line)
 
     def randomize_text4(self):
         with open_utf8('templates/text4.asm', 'r') as src, open_utf8('src/text/text4.asm', 'w') as target:
@@ -332,7 +349,7 @@ if len(sys.argv) > 1:
     seed = int(sys.argv[1])
 
 ptcg = PTCGRando()
-ptcg.load_data('data.json', 'cards.json')
+ptcg.load_data('data.json', 'cards.json', 'npc_names.json')
 ptcg.seed = seed
 ptcg.randomize_cards()
 ptcg.randomize_bank03()

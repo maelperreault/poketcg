@@ -1608,243 +1608,243 @@ LaboratoryBoosterText: ; 3f663 (f:7663)
 	done
 
 DrMasonNPCName: ; 3f66f (f:766f)
-	text "Dr. Mason"
+; NPC_NAMES:	text "Dr. Mason"
 	done
 
 RonaldNPCName: ; 3f67a (f:767a)
-	text "Ronald"
+; NPC_NAMES:	text "Ronald"
 	done
 
 IshiharaNPCName: ; 3f682 (f:7682)
-	text "ISHIHARA"
+; NPC_NAMES:	text "ISHIHARA"
 	done
 
 ImakuniNPCName: ; 3f68c (f:768c)
-	text "Imakuni?"
+; NPC_NAMES:	text "Imakuni?"
 	done
 
 ClerkNPCName: ; 3f696 (f:7696)
-	text "CLERK"
+; NPC_NAMES:	text "CLERK"
 	done
 
 SamNPCName: ; 3f69d (f:769d)
-	text "Sam"
+; NPC_NAMES:	text "Sam"
 	done
 
 TechNPCName: ; 3f6a2 (f:76a2)
-	text "TECH"
+; NPC_NAMES:	text "TECH"
 	done
 
 ClerkNPCName2: ; 3f6a8 (f:76a8)
-	text "CLERK"
+; NPC_NAMES:	text "CLERK"
 	done
 
 ChrisNPCName: ; 3f6af (f:76af)
-	text "Chris"
+; NPC_NAMES:	text "Chris"
 	done
 
 MichaelNPCName: ; 3f6b6 (f:76b6)
-	text "Michael"
+; NPC_NAMES:	text "Michael"
 	done
 
 JessicaNPCName: ; 3f6bf (f:76bf)
-	text "Jessica"
+; NPC_NAMES:	text "Jessica"
 	done
 
 MitchNPCName: ; 3f6c8 (f:76c8)
-	text "Mitch"
+; NPC_NAMES:	text "Mitch"
 	done
 
 MatthewNPCName: ; 3f6cf (f:76cf)
-	text "Matthew"
+; NPC_NAMES:	text "Matthew"
 	done
 
 RyanNPCName: ; 3f6d8 (f:76d8)
-	text "Ryan"
+; NPC_NAMES:	text "Ryan"
 	done
 
 AndrewNPCName: ; 3f6de (f:76de)
-	text "Andrew"
+; NPC_NAMES:	text "Andrew"
 	done
 
 GeneNPCName: ; 3f6e6 (f:76e6)
-	text "Gene"
+; NPC_NAMES:	text "Gene"
 	done
 
 SaraNPCName: ; 3f6ec (f:76ec)
-	text "Sara"
+; NPC_NAMES:	text "Sara"
 	done
 
 AmandaNPCName: ; 3f6f2 (f:76f2)
-	text "Amanda"
+; NPC_NAMES:	text "Amanda"
 	done
 
 JoshuaNPCName: ; 3f6fa (f:76fa)
-	text "Joshua"
+; NPC_NAMES:	text "Joshua"
 	done
 
 AmyNPCName: ; 3f702 (f:7702)
-	text "Amy"
+; NPC_NAMES:	text "Amy"
 	done
 
 JenniferNPCName: ; 3f707 (f:7707)
-	text "Jennifer"
+; NPC_NAMES:	text "Jennifer"
 	done
 
 NicholasNPCName: ; 3f711 (f:7711)
-	text "Nicholas"
+; NPC_NAMES:	text "Nicholas"
 	done
 
 BrandonNPCName: ; 3f71b (f:771b)
-	text "Brandon"
+; NPC_NAMES:	text "Brandon"
 	done
 
 IsaacNPCName: ; 3f724 (f:7724)
-	text "Isaac"
+; NPC_NAMES:	text "Isaac"
 	done
 
 BrittanyNPCName: ; 3f72b (f:772b)
-	text "Brittany"
+; NPC_NAMES:	text "Brittany"
 	done
 
 KristinNPCName: ; 3f735 (f:7735)
-	text "Kristin"
+; NPC_NAMES:	text "Kristin"
 	done
 
 HeatherNPCName: ; 3f73e (f:773e)
-	text "Heather"
+; NPC_NAMES:	text "Heather"
 	done
 
 NikkiNPCName: ; 3f747 (f:7747)
-	text "Nikki"
+; NPC_NAMES:	text "Nikki"
 	done
 
 RobertNPCName: ; 3f74e (f:774e)
-	text "Robert"
+; NPC_NAMES:	text "Robert"
 	done
 
 DanielNPCName: ; 3f756 (f:7756)
-	text "Daniel"
+; NPC_NAMES:	text "Daniel"
 	done
 
 StephanieNPCName: ; 3f75e (f:775e)
-	text "Stephanie"
+; NPC_NAMES:	text "Stephanie"
 	done
 
 MurrayNPCName: ; 3f769 (f:7769)
-	text "Murray"
+; NPC_NAMES:	text "Murray"
 	done
 
 JosephNPCName: ; 3f771 (f:7771)
-	text "Joseph"
+; NPC_NAMES:	text "Joseph"
 	done
 
 DavidNPCName: ; 3f779 (f:7779)
-	text "David"
+; NPC_NAMES:	text "David"
 	done
 
 ErikNPCName: ; 3f780 (f:7780)
-	text "Erik"
+; NPC_NAMES:	text "Erik"
 	done
 
 RickNPCName: ; 3f786 (f:7786)
-	text "Rick"
+; NPC_NAMES:	text "Rick"
 	done
 
 JohnNPCName: ; 3f78c (f:778c)
-	text "John"
+; NPC_NAMES:	text "John"
 	done
 
 AdamNPCName: ; 3f792 (f:7792)
-	text "Adam"
+; NPC_NAMES:	text "Adam"
 	done
 
 JonathanNPCName: ; 3f798 (f:7798)
-	text "Jonathan"
+; NPC_NAMES:	text "Jonathan"
 	done
 
 KenNPCName: ; 3f7a2 (f:77a2)
-	text "Ken"
+; NPC_NAMES:	text "Ken"
 	done
 
 CourtneyNPCName: ; 3f7a7 (f:77a7)
-	text "COURTNEY"
+; NPC_NAMES:	text "COURTNEY"
 	done
 
 SteveNPCName: ; 3f7b1 (f:77b1)
-	text "Steve"
+; NPC_NAMES:	text "Steve"
 	done
 
 JackNPCName: ; 3f7b8 (f:77b8)
-	text "Jack"
+; NPC_NAMES:	text "Jack"
 	done
 
 RodNPCName: ; 3f7be (f:77be)
-	text "Rod"
+; NPC_NAMES:	text "Rod"
 	done
 
 ManNPCName: ; 3f7c3 (f:77c3)
-	text "Man"
+; NPC_NAMES:	text "Man"
 	done
 
 WomanNPCName: ; 3f7c8 (f:77c8)
-	text "Woman"
+; NPC_NAMES:	text "Woman"
 	done
 
 ChapNPCName: ; 3f7cf (f:77cf)
-	text "CHAP"
+; NPC_NAMES:	text "CHAP"
 	done
 
 GalNPCName: ; 3f7d5 (f:77d5)
-	text "GAL"
+; NPC_NAMES:	text "GAL"
 	done
 
 LassNPCName: ; 3f7da (f:77da)
-	text "Lass"
+; NPC_NAMES:	text "Lass"
 	done
 
 PappyNPCName: ; 3f7e0 (f:77e0)
-	text "Pappy"
+; NPC_NAMES:	text "Pappy"
 	done
 
 LadNPCName: ; 3f7e7 (f:77e7)
-	text "Lad"
+; NPC_NAMES:	text "Lad"
 	done
 
 HostNPCName: ; 3f7ec (f:77ec)
-	text "HOST"
+; NPC_NAMES:	text "HOST"
 	done
 
 SpecsNPCName: ; 3f7f2 (f:77f2)
-	text "Specs"
+; NPC_NAMES:	text "Specs"
 	done
 
 ButchNPCName: ; 3f7f9 (f:77f9)
-	text "Butch"
+; NPC_NAMES:	text "Butch"
 	done
 
 HoodNPCName: ; 3f800 (f:7800)
-	text "Hood"
+; NPC_NAMES:	text "Hood"
 	done
 
 ChampNPCName: ; 3f806 (f:7806)
-	text "Champ"
+; NPC_NAMES:	text "Champ"
 	done
 
 ManiaNPCName: ; 3f80d (f:780d)
-	text "Mania"
+; NPC_NAMES:	text "Mania"
 	done
 
 GrannyNPCName: ; 3f814 (f:7814)
-	text "Granny"
+; NPC_NAMES:	text "Granny"
 	done
 
 GuideNPCName: ; 3f81c (f:781c)
-	text "Guide"
+; NPC_NAMES:	text "Guide"
 	done
 
 AaronNPCName: ; 3f823 (f:7823)
-	text "Aaron"
+; NPC_NAMES:	text "Aaron"
 	done
 
 MewtwoTradeCardName: ; 3f82a (f:782a)
