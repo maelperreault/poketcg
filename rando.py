@@ -3,6 +3,7 @@ import json
 import random
 import subprocess
 import shutil
+from collections import Counter
 from functools import partial
 
 open_utf8 = partial(open, encoding='utf8')
@@ -46,9 +47,19 @@ def calc_range(p, min, max):
 
 class PTCGRando:
     RAND_CARDS = 10
-    RAND_DECKS = 20
+    RAND_NPC_DECKS = 20
     RAND_BOOSTERS = 30
     RAND_MASTERS = 40
+    RAND_STARTER_DECKS = 50
+
+    TYPE_PKMN = 0
+    TYPE_ENERGY = 1
+    TYPE_TRAINER = 2
+
+    STAGE_BASIC = 0
+    STAGE_1 = 1
+    STAGE_2 = 2
+    STAGE_NONE = 3
 
     def __init__(self):
         self.seed = 1
@@ -76,16 +87,36 @@ class PTCGRando:
         self.exclude_boosters = False
 
         # Enabling randomizes booster rewards from booster_min to booster_max
-        self.booster_full_random = False
         self.booster_min = 1
         self.booster_max = 6
 
-        # While booster_full_random is disabled, adds from -booster_range to +booster_range
-        self.booster_range = 2
+        # DECK GENERATION
+        self.min_pokemon = 20
+        self.max_pokemon = 32
+        self.min_trainer = 5
+        self.max_trainer = 12
 
-    def load_data(self, filename):
-        with open_utf8(filename) as file:
+    def pkmn_by_evolution(cards, has_evolution=False):
+        return filter(lambda x: x['has_evolution'] == has_evolution, cards)
+
+    def pkmn_by_stage(cards, stage=STAGE_BASIC):
+        return filter(lambda x: x['stage'] == stage, cards)
+
+    def pkmn_by_energy(cards, energy):
+        return filter(lambda x: energy in x['energy'], cards)
+
+    def pkmn_colorless(cards):
+        return filter(lambda x: ('COLORLESS' in x['energy'], len(x['energy'])) == (True, 1), cards)
+
+    def load_data(self, data_file, cards_file):
+        with open_utf8(data_file) as file:
             self.data = json.load(file)
+        with open_utf8(cards_file) as file:
+            self.data['cards'] = json.load(file)
+            card_list = self.data['cards'].values()
+            self.data['pokemon_cards'] = list(filter(lambda x: x['type'] == PTCGRando.TYPE_PKMN, card_list))
+            self.data['energy_cards'] = list(filter(lambda x: x['type'] == PTCGRando.TYPE_ENERGY, card_list))
+            self.data['trainer_cards'] = list(filter(lambda x: x['type'] == PTCGRando.TYPE_TRAINER, card_list))
 
     def randomize_cards(self):
         current_card = ''
@@ -112,17 +143,17 @@ class PTCGRando:
         music_id = trainer['music_id']
         if not self.exclude_prize:
             if self.prize_full_random:
-                prize = calc_range(noise3d(PTCGRando.RAND_DECKS, y, 10, self.seed), 1, 6)
+                prize = calc_range(noise3d(PTCGRando.RAND_NPC_DECKS, y, 10, self.seed), 1, 6)
             else:
-                prize = calc_offset(prize, self.prize_range, noise3d(PTCGRando.RAND_DECKS, y, 10, self.seed))
+                prize = calc_offset(prize, self.prize_range, noise3d(PTCGRando.RAND_NPC_DECKS, y, 10, self.seed))
                 if prize < 1:
                     prize = 1
                 elif prize > 6:
                     prize = 6
         if not self.exclude_decks:
-            deck_id = pick(self.data['decks'], noise3d(PTCGRando.RAND_DECKS, y, 20, self.seed))
+            deck_id = pick(self.data['decks'], noise3d(PTCGRando.RAND_NPC_DECKS, y, 20, self.seed))
         if not self.exclude_music:
-            music_id = pick(self.data['music'], noise3d(PTCGRando.RAND_DECKS, y, 30, self.seed))
+            music_id = pick(self.data['music'], noise3d(PTCGRando.RAND_NPC_DECKS, y, 30, self.seed))
         target.write('	start_duel PRIZES_{}, {}, {}\n'.format(prize, deck_id, music_id))
 
     def write_boosters(self, target, line):
@@ -134,13 +165,9 @@ class PTCGRando:
         if self.exclude_boosters:
             boosters = trainer['packs']
         else:
-            if self.booster_full_random:
-                booster_count = calc_range(noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed), self.booster_min, self.booster_max)
-            else:
-                booster_count = len(trainer['packs'])
-                booster_count = calc_offset(booster_count, self.booster_range, noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed))
-                if booster_count < 1:
-                    booster_count = 1
+            booster_count = calc_range(noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed), self.booster_min, self.booster_max)
+            if booster_count < 1:
+                booster_count = 1
             for i in range(booster_count):
                 z += 10
                 boosters.append(pick(self.data['packs'], noise3d(PTCGRando.RAND_BOOSTERS, y, z, self.seed)))
@@ -184,6 +211,84 @@ class PTCGRando:
                 else:
                     target.write(line)
 
+    def generate_deck(self, target, z):
+        y = 10
+        remaining_trainer = noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed)
+        remaining_trainer = calc_range(remaining_trainer, self.min_trainer, self.max_trainer)
+        y += 10
+        remaining_pokemon = noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed)
+        remaining_pokemon = calc_range(remaining_pokemon, self.min_pokemon, self.max_pokemon)
+        y += 10
+        color_count = noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % 10
+        if color_count < 3:
+            color_count = 1
+        elif color_count < 9:
+            color_count = 2
+        else:
+            color_count = 3
+        colors = self.data['colors'].copy()
+        while len(colors) > color_count:
+            color = colors[noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed) % len(colors)]
+            colors.remove(color)
+            y += 10
+
+        cards = Counter()
+
+        while remaining_trainer > 0:
+            card = pick(self.data['trainer_cards'], noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed))
+            if cards[card['constant']] < card['limit']:
+                cards[card['constant']] += 1
+                remaining_trainer -= 1
+            y += 10
+
+        pokemons = []
+        for color in colors:
+            if color == 'COLORLESS':
+                pokemons += PTCGRando.pkmn_by_energy(self.data['pokemon_cards'], color)
+            else:
+                pokemons += PTCGRando.pkmn_colorless(self.data['pokemon_cards'])
+
+        while remaining_pokemon > 0:
+            card = pick(pokemons, noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed))
+            if cards[card['constant']] < card['limit']:
+                cards[card['constant']] += 1
+                remaining_pokemon -= 1
+                if card['has_evolution'] and card['target_group']:
+                    pre_evo = next(filter(lambda x: x['text_name'] == card['target_group'], self.data['cards'].values()))
+                    if cards[pre_evo['constant']] < pre_evo['limit']:
+                        cards[pre_evo['constant']] += 1
+                        remaining_pokemon -= 1
+                    if pre_evo['has_evolution'] and pre_evo['target_group']:
+                        pre_evo2 = next(filter(lambda x: x['text_name'] == pre_evo['target_group'], self.data['cards'].values()))
+                        if cards[pre_evo2['constant']] < pre_evo2['limit']:
+                            cards[pre_evo2['constant']] += 1
+                            remaining_pokemon -= 1
+            y += 10
+
+        energies = []
+        for color in colors:
+            energies.append(self.data['cards'][self.data['energies'][color]])
+        remaining_energies = 60 - sum(cards.values())
+
+        while remaining_energies > 0:
+            card = pick(energies, noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed))
+            if cards[card['constant']] < card['limit']:
+                cards[card['constant']] += 1
+                remaining_energies -= 1
+            y += 10
+
+        for k in cards:
+            target.write(' db {}, {}\n'.format(cards[k], k))
+
+    def randomize_decks(self):
+        with open_utf8('templates/decks.asm', 'r') as src, open_utf8('src/data/decks.asm', 'w') as target:
+            z = 10
+            for i, line in enumerate(src):
+                if '; GENERATE_DECK:' in line:
+                    self.generate_deck(target, z)
+                    z += 10
+                target.write(line)
+
     def randomize_text_offsets(self):
         with open_utf8('templates/text_offsets.asm', 'r') as src, open_utf8('src/text/text_offsets.asm', 'w') as target:
             for i, line in enumerate(src):
@@ -219,16 +324,17 @@ if len(sys.argv) > 1:
     seed = int(sys.argv[1])
 
 ptcg = PTCGRando()
-ptcg.load_data('data.json')
+ptcg.load_data('data.json', 'cards.json')
 ptcg.seed = seed
-ptcg.randomize_cards()
-ptcg.randomize_bank03()
-ptcg.randomize_text_offsets()
-ptcg.randomize_text2()
-ptcg.randomize_text3()
-ptcg.randomize_text4()
-ptcg.randomize_text7()
-ptcg.randomize_text8()
+# ptcg.randomize_cards()
+# ptcg.randomize_bank03()
+ptcg.randomize_decks()
+# ptcg.randomize_text_offsets()
+# ptcg.randomize_text2()
+# ptcg.randomize_text3()
+# ptcg.randomize_text4()
+# ptcg.randomize_text7()
+# ptcg.randomize_text8()
 
 if sys.platform == 'linux':
     make = subprocess.run(['make'], stdout=subprocess.PIPE, universal_newlines=True)

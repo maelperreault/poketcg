@@ -239,14 +239,14 @@ BulbasaurCard: ; 30e28 (c:4e28)
 	tx BulbasaurName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db BULBASAUR
+	db BULBASAUR ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 2 ; energies
-	tx LeechSeedName ; name
+	tx LeechSeedName ; attack name
 	tx BulbasaursLeechSeedDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -260,7 +260,7 @@ BulbasaurCard: ; 30e28 (c:4e28)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -290,14 +290,14 @@ IvysaurCard: ; 30e69 (c:4e69)
 	tx IvysaurName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db IVYSAUR
+	db IVYSAUR ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx BulbasaurName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1, COLORLESS, 2 ; energies
-	tx VineWhipName ; name
+	tx VineWhipName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -311,7 +311,7 @@ IvysaurCard: ; 30e69 (c:4e69)
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx PoisonPowderName ; name
+	tx PoisonPowderName ; attack name
 	tx InflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -341,14 +341,14 @@ Venusaur1Card: ; 30eaa (c:4eaa)
 	tx VenusaurName ; name
 	db STAR ; rarity
 	db PROMOTIONAL | GB ; sets
-	db VENUSAUR1
+	db VENUSAUR1 ; const
 	db 100 ; hp
 	db STAGE2 ; stage
 	tx IvysaurName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx SolarPowerName ; name
+	tx SolarPowerName ; attack name
 	tx SolarPowerDescription ; description
 	tx SolarPowerDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -362,7 +362,7 @@ Venusaur1Card: ; 30eaa (c:4eaa)
 
 	; attack 2
 	energy GRASS, 4 ; energies
-	tx MegaDrainName ; name
+	tx MegaDrainName ; attack name
 	tx VenusaursMegaDrainDescription ; description
 	tx VenusaursMegaDrainDescriptionCont ; description (cont)
 	db 40 ; damage
@@ -392,14 +392,14 @@ Venusaur2Card: ; 30eeb (c:4eeb)
 	tx VenusaurName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db VENUSAUR2
+	db VENUSAUR2 ; const
 	db 100 ; hp
 	db STAGE2 ; stage
 	tx IvysaurName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx EnergyTransName ; name
+	tx EnergyTransName ; attack name
 	tx EnergyTransDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -413,7 +413,7 @@ Venusaur2Card: ; 30eeb (c:4eeb)
 
 	; attack 2
 	energy GRASS, 4 ; energies
-	tx SolarBeamName ; name
+	tx SolarBeamName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -443,14 +443,14 @@ CaterpieCard: ; 30f2c (c:4f2c)
 	tx CaterpieName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db CATERPIE
+	db CATERPIE ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx StringShotName ; name
+	tx StringShotName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -464,7 +464,7 @@ CaterpieCard: ; 30f2c (c:4f2c)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -494,14 +494,14 @@ MetapodCard: ; 30f6d (c:4f6d)
 	tx MetapodName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db METAPOD
+	db METAPOD ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx CaterpieName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx StiffenName ; name
+	tx StiffenName ; attack name
 	tx MetapodsStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -515,7 +515,7 @@ MetapodCard: ; 30f6d (c:4f6d)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx StunSporeName ; name
+	tx StunSporeName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -545,14 +545,14 @@ ButterfreeCard: ; 30fae (c:4fae)
 	tx ButterfreeName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db BUTTERFREE
+	db BUTTERFREE ; const
 	db 70 ; hp
 	db STAGE2 ; stage
 	tx MetapodName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx WhirlwindName ; name
+	tx WhirlwindName ; attack name
 	tx WhirlwindDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -566,7 +566,7 @@ ButterfreeCard: ; 30fae (c:4fae)
 
 	; attack 2
 	energy GRASS, 4 ; energies
-	tx MegaDrainName ; name
+	tx MegaDrainName ; attack name
 	tx ButterfreesMegaDrainDescription ; description
 	tx ButterfreesMegaDrainDescriptionCont ; description (cont)
 	db 40 ; damage
@@ -596,14 +596,14 @@ WeedleCard: ; 30fef (c:4fef)
 	tx WeedleName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db WEEDLE
+	db WEEDLE ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx PoisonStingName ; name
+	tx PoisonStingName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -617,7 +617,7 @@ WeedleCard: ; 30fef (c:4fef)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -647,14 +647,14 @@ KakunaCard: ; 31030 (c:5030)
 	tx KakunaName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db KAKUNA
+	db KAKUNA ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx WeedleName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx StiffenName ; name
+	tx StiffenName ; attack name
 	tx KakunasStiffenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -668,7 +668,7 @@ KakunaCard: ; 31030 (c:5030)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx PoisonPowderName ; name
+	tx PoisonPowderName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -698,14 +698,14 @@ BeedrillCard: ; 31071 (c:5071)
 	tx BeedrillName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db BEEDRILL
+	db BEEDRILL ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx KakunaName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx TwineedleName ; name
+	tx TwineedleName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -719,7 +719,7 @@ BeedrillCard: ; 31071 (c:5071)
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx PoisonStingName ; name
+	tx PoisonStingName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -749,14 +749,14 @@ EkansCard: ; 310b2 (c:50b2)
 	tx EkansName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db EKANS
+	db EKANS ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx SpitPoisonName ; name
+	tx SpitPoisonName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -770,7 +770,7 @@ EkansCard: ; 310b2 (c:50b2)
 
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
-	tx WrapName ; name
+	tx WrapName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -800,14 +800,14 @@ ArbokCard: ; 310f3 (c:50f3)
 	tx ArbokName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db ARBOK
+	db ARBOK ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx EkansName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx TerrorStrikeName ; name
+	tx TerrorStrikeName ; attack name
 	tx TerrorStrikeDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -821,7 +821,7 @@ ArbokCard: ; 310f3 (c:50f3)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 1 ; energies
-	tx PoisonFangName ; name
+	tx PoisonFangName ; attack name
 	tx InflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -851,14 +851,14 @@ NidoranFCard: ; 31134 (c:5134)
 	tx NidoranFName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db NIDORANF
+	db NIDORANF ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx FurySwipesName ; name
+	tx FurySwipesName ; attack name
 	tx TripleAttackX10Description ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -872,7 +872,7 @@ NidoranFCard: ; 31134 (c:5134)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx CallForFamilyName ; name
+	tx CallForFamilyName ; attack name
 	tx NidoranFsCallForFamilyDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -902,14 +902,14 @@ NidorinaCard: ; 31175 (c:5175)
 	tx NidorinaName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db NIDORINA
+	db NIDORINA ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx NidoranFName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx SupersonicName ; name
+	tx SupersonicName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -923,7 +923,7 @@ NidorinaCard: ; 31175 (c:5175)
 
 	; attack 2
 	energy GRASS, 1, COLORLESS, 2 ; energies
-	tx DoubleKickName ; name
+	tx DoubleKickName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -953,14 +953,14 @@ NidoqueenCard: ; 311b6 (c:51b6)
 	tx NidoqueenName ; name
 	db STAR ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db NIDOQUEEN
+	db NIDOQUEEN ; const
 	db 90 ; hp
 	db STAGE2 ; stage
 	tx NidorinaName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1, COLORLESS, 1 ; energies
-	tx BoyfriendsName ; name
+	tx BoyfriendsName ; attack name
 	tx BoyfriendsDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -974,7 +974,7 @@ NidoqueenCard: ; 311b6 (c:51b6)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 2 ; energies
-	tx MegaPunchName ; name
+	tx MegaPunchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -1004,14 +1004,14 @@ NidoranMCard: ; 311f7 (c:51f7)
 	tx NidoranMName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db NIDORANM
+	db NIDORANM ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx HornHazardName ; name
+	tx HornHazardName ; attack name
 	tx MayDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1025,7 +1025,7 @@ NidoranMCard: ; 311f7 (c:51f7)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1055,14 +1055,14 @@ NidorinoCard: ; 31238 (c:5238)
 	tx NidorinoName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db NIDORINO
+	db NIDORINO ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx NidoranMName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1, COLORLESS, 2 ; energies
-	tx DoubleKickName ; name
+	tx DoubleKickName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1076,7 +1076,7 @@ NidorinoCard: ; 31238 (c:5238)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 2 ; energies
-	tx HornDrillName ; name
+	tx HornDrillName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -1106,14 +1106,14 @@ NidokingCard: ; 31279 (c:5279)
 	tx NidokingName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db NIDOKING
+	db NIDOKING ; const
 	db 90 ; hp
 	db STAGE2 ; stage
 	tx NidorinoName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1, COLORLESS, 2 ; energies
-	tx ThrashName ; name
+	tx ThrashName ; attack name
 	tx ThrashDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1127,7 +1127,7 @@ NidokingCard: ; 31279 (c:5279)
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx ToxicName ; name
+	tx ToxicName ; attack name
 	tx ToxicDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1157,14 +1157,14 @@ ZubatCard: ; 312ba (c:52ba)
 	tx ZubatName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db ZUBAT
+	db ZUBAT ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx SupersonicName ; name
+	tx SupersonicName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1178,7 +1178,7 @@ ZubatCard: ; 312ba (c:52ba)
 
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
-	tx LeechLifeName ; name
+	tx LeechLifeName ; attack name
 	tx ZubatsLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1208,14 +1208,14 @@ GolbatCard: ; 312fb (c:52fb)
 	tx GolbatName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db GOLBAT
+	db GOLBAT ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx ZubatName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx WingAttackName ; name
+	tx WingAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1229,7 +1229,7 @@ GolbatCard: ; 312fb (c:52fb)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 1 ; energies
-	tx LeechLifeName ; name
+	tx LeechLifeName ; attack name
 	tx GolbatsLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1259,14 +1259,14 @@ OddishCard: ; 3133c (c:533c)
 	tx OddishName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db ODDISH
+	db ODDISH ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx StunSporeName ; name
+	tx StunSporeName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1280,7 +1280,7 @@ OddishCard: ; 3133c (c:533c)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx SproutName ; name
+	tx SproutName ; attack name
 	tx SproutDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1310,14 +1310,14 @@ GloomCard: ; 3137d (c:537d)
 	tx GloomName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db GLOOM
+	db GLOOM ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx OddishName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx PoisonPowderName ; name
+	tx PoisonPowderName ; attack name
 	tx InflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1331,7 +1331,7 @@ GloomCard: ; 3137d (c:537d)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx FoulOdorName ; name
+	tx FoulOdorName ; attack name
 	tx FoulOdorDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1361,14 +1361,14 @@ VileplumeCard: ; 313be (c:53be)
 	tx VileplumeName ; name
 	db STAR ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db VILEPLUME
+	db VILEPLUME ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx GloomName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx HealName ; name
+	tx HealName ; attack name
 	tx HealDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1382,7 +1382,7 @@ VileplumeCard: ; 313be (c:53be)
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx PetalDanceName ; name
+	tx PetalDanceName ; attack name
 	tx PetalDanceDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -1412,14 +1412,14 @@ ParasCard: ; 313ff (c:53ff)
 	tx ParasName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db PARAS
+	db PARAS ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx ScratchName ; name
+	tx ScratchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1433,7 +1433,7 @@ ParasCard: ; 313ff (c:53ff)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx SporeName ; name
+	tx SporeName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1463,14 +1463,14 @@ ParasectCard: ; 31440 (c:5440)
 	tx ParasectName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db PARASECT
+	db PARASECT ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx ParasName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 2 ; energies
-	tx SporeName ; name
+	tx SporeName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1484,7 +1484,7 @@ ParasectCard: ; 31440 (c:5440)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx SlashName ; name
+	tx SlashName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1514,14 +1514,14 @@ VenonatCard: ; 31481 (c:5481)
 	tx VenonatName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db VENONAT
+	db VENONAT ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx StunSporeName ; name
+	tx StunSporeName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1535,7 +1535,7 @@ VenonatCard: ; 31481 (c:5481)
 
 	; attack 2
 	energy GRASS, 1, COLORLESS, 1 ; energies
-	tx LeechLifeName ; name
+	tx LeechLifeName ; attack name
 	tx VenonatLeechLifeDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1565,14 +1565,14 @@ VenomothCard: ; 314c2 (c:54c2)
 	tx VenomothName ; name
 	db STAR ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db VENOMOTH
+	db VENOMOTH ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx VenonatName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx ShiftName ; name
+	tx ShiftName ; attack name
 	tx ShiftDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1586,7 +1586,7 @@ VenomothCard: ; 314c2 (c:54c2)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx VenomPowderName ; name
+	tx VenomPowderName ; attack name
 	tx VenomPowderDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1616,14 +1616,14 @@ BellsproutCard: ; 31503 (c:5503)
 	tx BellsproutName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db BELLSPROUT
+	db BELLSPROUT ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx VineWhipName ; name
+	tx VineWhipName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1637,7 +1637,7 @@ BellsproutCard: ; 31503 (c:5503)
 
 	; attack 2
 	energy GRASS, 1 ; energies
-	tx CallForFamilyName ; name
+	tx CallForFamilyName ; attack name
 	tx BellsproutsCallForFamilyDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1667,14 +1667,14 @@ WeepinbellCard: ; 31544 (c:5544)
 	tx WeepinbellName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db WEEPINBELL
+	db WEEPINBELL ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx BellsproutName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx PoisonPowderName ; name
+	tx PoisonPowderName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1688,7 +1688,7 @@ WeepinbellCard: ; 31544 (c:5544)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx RazorLeafName ; name
+	tx RazorLeafName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1718,14 +1718,14 @@ VictreebelCard: ; 31585 (c:5585)
 	tx VictreebelName ; name
 	db STAR ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db VICTREEBEL
+	db VICTREEBEL ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx WeepinbellName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx LureName ; name
+	tx LureName ; attack name
 	tx VictreebelsLureDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1739,7 +1739,7 @@ VictreebelCard: ; 31585 (c:5585)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx AcidName ; name
+	tx AcidName ; attack name
 	tx VictreebelsAcidDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1769,14 +1769,14 @@ GrimerCard: ; 315c6 (c:55c6)
 	tx GrimerName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db GRIMER
+	db GRIMER ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx NastyGooName ; name
+	tx NastyGooName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1790,7 +1790,7 @@ GrimerCard: ; 315c6 (c:55c6)
 
 	; attack 2
 	energy GRASS, 1 ; energies
-	tx MinimizeName ; name
+	tx MinimizeName ; attack name
 	tx GrimersMinimizeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1820,14 +1820,14 @@ MukCard: ; 31607 (c:5607)
 	tx MukName ; name
 	db STAR ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db MUK
+	db MUK ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx GrimerName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx ToxicGasName ; name
+	tx ToxicGasName ; attack name
 	tx ToxicGasDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1841,7 +1841,7 @@ MukCard: ; 31607 (c:5607)
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx SludgeName ; name
+	tx SludgeName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -1871,14 +1871,14 @@ ExeggcuteCard: ; 31648 (c:5648)
 	tx ExeggcuteName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db EXEGGCUTE
+	db EXEGGCUTE ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx HypnosisName ; name
+	tx HypnosisName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1892,7 +1892,7 @@ ExeggcuteCard: ; 31648 (c:5648)
 
 	; attack 2
 	energy GRASS, 2 ; energies
-	tx LeechSeedName ; name
+	tx LeechSeedName ; attack name
 	tx ExeggcutesLeechSeedDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1922,14 +1922,14 @@ ExeggutorCard: ; 31689 (c:5689)
 	tx ExeggutorName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db EXEGGUTOR
+	db EXEGGUTOR ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx ExeggcuteName ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx TeleportName ; name
+	tx TeleportName ; attack name
 	tx TeleportDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -1943,7 +1943,7 @@ ExeggutorCard: ; 31689 (c:5689)
 
 	; attack 2
 	energy COLORLESS, 1 ; energies
-	tx BigEggsplosionName ; name
+	tx BigEggsplosionName ; attack name
 	tx BigEggsplosionDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -1973,14 +1973,14 @@ KoffingCard: ; 316ca (c:56ca)
 	tx KoffingName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | NONE ; sets
-	db KOFFING
+	db KOFFING ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 2 ; energies
-	tx FoulGasName ; name
+	tx FoulGasName ; attack name
 	tx FoulGasDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -1994,7 +1994,7 @@ KoffingCard: ; 316ca (c:56ca)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -2024,14 +2024,14 @@ WeezingCard: ; 3170b (c:570b)
 	tx WeezingName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db WEEZING
+	db WEEZING ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx KoffingName ; pre-evo name
 
 	; attack 1
 	energy GRASS, 2 ; energies
-	tx SmogName ; name
+	tx SmogName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2045,7 +2045,7 @@ WeezingCard: ; 3170b (c:570b)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 1 ; energies
-	tx SelfdestructName ; name
+	tx SelfdestructName ; attack name
 	tx WeezingsSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -2075,14 +2075,14 @@ Tangela1Card: ; 3174c (c:574c)
 	tx TangelaName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | NONE ; sets
-	db TANGELA1
+	db TANGELA1 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1, COLORLESS, 1 ; energies
-	tx BindName ; name
+	tx BindName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2096,7 +2096,7 @@ Tangela1Card: ; 3174c (c:574c)
 
 	; attack 2
 	energy GRASS, 3 ; energies
-	tx PoisonPowderName ; name
+	tx PoisonPowderName ; attack name
 	tx InflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2126,14 +2126,14 @@ Tangela2Card: ; 3178d (c:578d)
 	tx TangelaName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | GB ; sets
-	db TANGELA2
+	db TANGELA2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx StunSporeName ; name
+	tx StunSporeName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2147,7 +2147,7 @@ Tangela2Card: ; 3178d (c:578d)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 1 ; energies
-	tx PoisonWhipName ; name
+	tx PoisonWhipName ; attack name
 	tx InflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2177,14 +2177,14 @@ ScytherCard: ; 317ce (c:57ce)
 	tx ScytherName ; name
 	db STAR ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db SCYTHER
+	db SCYTHER ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 1 ; energies
-	tx SwordsDanceName ; name
+	tx SwordsDanceName ; attack name
 	tx SwordsDanceDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -2198,7 +2198,7 @@ ScytherCard: ; 317ce (c:57ce)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx SlashName ; name
+	tx SlashName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2228,14 +2228,14 @@ PinsirCard: ; 3180f (c:580f)
 	tx PinsirName ; name
 	db STAR ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db PINSIR
+	db PINSIR ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy GRASS, 2 ; energies
-	tx IronGripName ; name
+	tx IronGripName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2249,7 +2249,7 @@ PinsirCard: ; 3180f (c:580f)
 
 	; attack 2
 	energy GRASS, 2, COLORLESS, 2 ; energies
-	tx GuillotineName ; name
+	tx GuillotineName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -2279,14 +2279,14 @@ CharmanderCard: ; 31850 (c:5850)
 	tx CharmanderName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db CHARMANDER
+	db CHARMANDER ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx ScratchName ; name
+	tx ScratchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2300,7 +2300,7 @@ CharmanderCard: ; 31850 (c:5850)
 
 	; attack 2
 	energy FIRE, 1, COLORLESS, 1 ; energies
-	tx EmberName ; name
+	tx EmberName ; attack name
 	tx EmberDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2330,14 +2330,14 @@ CharmeleonCard: ; 31891 (c:5891)
 	tx CharmeleonName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db CHARMELEON
+	db CHARMELEON ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx CharmanderName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx SlashName ; name
+	tx SlashName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2351,7 +2351,7 @@ CharmeleonCard: ; 31891 (c:5891)
 
 	; attack 2
 	energy FIRE, 2, COLORLESS, 1 ; energies
-	tx FlamethrowerName ; name
+	tx FlamethrowerName ; attack name
 	tx CharmeleonsFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -2381,14 +2381,14 @@ CharizardCard: ; 318d2 (c:58d2)
 	tx CharizardName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db CHARIZARD
+	db CHARIZARD ; const
 	db 120 ; hp
 	db STAGE2 ; stage
 	tx CharmeleonName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx EnergyBurnName ; name
+	tx EnergyBurnName ; attack name
 	tx EnergyBurnDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -2402,7 +2402,7 @@ CharizardCard: ; 318d2 (c:58d2)
 
 	; attack 2
 	energy FIRE, 4 ; energies
-	tx FireSpinName ; name
+	tx FireSpinName ; attack name
 	tx FireSpinDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
@@ -2432,14 +2432,14 @@ VulpixCard: ; 31913 (c:5913)
 	tx VulpixName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | NONE ; sets
-	db VULPIX
+	db VULPIX ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIRE, 2 ; energies
-	tx ConfuseRayName ; name
+	tx ConfuseRayName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2453,7 +2453,7 @@ VulpixCard: ; 31913 (c:5913)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -2483,14 +2483,14 @@ Ninetails1Card: ; 31954 (c:5954)
 	tx NinetailsName ; name
 	db STAR ; rarity
 	db MYSTERY | NONE ; sets
-	db NINETAILS1
+	db NINETAILS1 ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx VulpixName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx LureName ; name
+	tx LureName ; attack name
 	tx NinetailsLureDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -2504,7 +2504,7 @@ Ninetails1Card: ; 31954 (c:5954)
 
 	; attack 2
 	energy FIRE, 4 ; energies
-	tx FireBlastName ; name
+	tx FireBlastName ; attack name
 	tx FireBlastDescription ; description
 	dw NONE ; description (cont)
 	db 80 ; damage
@@ -2534,14 +2534,14 @@ Ninetails2Card: ; 31995 (c:5995)
 	tx NinetailsName ; name
 	db STAR ; rarity
 	db LABORATORY | GB ; sets
-	db NINETAILS2
+	db NINETAILS2 ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx VulpixName ; pre-evo name
 
 	; attack 1
 	energy FIRE, 2 ; energies
-	tx MixUpName ; name
+	tx MixUpName ; attack name
 	tx MixUpDescription ; description
 	tx MixUpDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -2555,7 +2555,7 @@ Ninetails2Card: ; 31995 (c:5995)
 
 	; attack 2
 	energy FIRE, 3 ; energies
-	tx DancingEmbersName ; name
+	tx DancingEmbersName ; attack name
 	tx DancingEmbersDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2585,14 +2585,14 @@ GrowlitheCard: ; 319d6 (c:59d6)
 	tx GrowlitheName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db GROWLITHE
+	db GROWLITHE ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIRE, 1, COLORLESS, 1 ; energies
-	tx FlareName ; name
+	tx FlareName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2606,7 +2606,7 @@ GrowlitheCard: ; 319d6 (c:59d6)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -2636,14 +2636,14 @@ Arcanine1Card: ; 31a17 (c:5a17)
 	tx ArcanineName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db ARCANINE1
+	db ARCANINE1 ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx GrowlitheName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx QuickAttackName ; name
+	tx QuickAttackName ; attack name
 	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2657,7 +2657,7 @@ Arcanine1Card: ; 31a17 (c:5a17)
 
 	; attack 2
 	energy FIRE, 2 ; energies
-	tx FlamesOfRageName ; name
+	tx FlamesOfRageName ; attack name
 	tx FlamesOfRageDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -2687,14 +2687,14 @@ Arcanine2Card: ; 31a58 (c:5a58)
 	tx ArcanineName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db ARCANINE2
+	db ARCANINE2 ; const
 	db 100 ; hp
 	db STAGE1 ; stage
 	tx GrowlitheName ; pre-evo name
 
 	; attack 1
 	energy FIRE, 2, COLORLESS, 1 ; energies
-	tx FlamethrowerName ; name
+	tx FlamethrowerName ; attack name
 	tx ArcaninesFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -2708,7 +2708,7 @@ Arcanine2Card: ; 31a58 (c:5a58)
 
 	; attack 2
 	energy FIRE, 2, COLORLESS, 2 ; energies
-	tx TakeDownName ; name
+	tx TakeDownName ; attack name
 	tx TakeDownDescription ; description
 	dw NONE ; description (cont)
 	db 80 ; damage
@@ -2738,14 +2738,14 @@ PonytaCard: ; 31a99 (c:5a99)
 	tx PonytaName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db PONYTA
+	db PONYTA ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx SmashKickName ; name
+	tx SmashKickName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2759,7 +2759,7 @@ PonytaCard: ; 31a99 (c:5a99)
 
 	; attack 2
 	energy FIRE, 2 ; energies
-	tx FlameTailName ; name
+	tx FlameTailName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2789,14 +2789,14 @@ RapidashCard: ; 31ada (c:5ada)
 	tx RapidashName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db RAPIDASH
+	db RAPIDASH ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx PonytaName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx StompName ; name
+	tx StompName ; attack name
 	tx StompDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2810,7 +2810,7 @@ RapidashCard: ; 31ada (c:5ada)
 
 	; attack 2
 	energy FIRE, 2, COLORLESS, 1 ; energies
-	tx AgilityName ; name
+	tx AgilityName ; attack name
 	tx RapidashsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2840,14 +2840,14 @@ Magmar1Card: ; 31b1b (c:5b1b)
 	tx MagmarName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db MAGMAR1
+	db MAGMAR1 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIRE, 2 ; energies
-	tx FirePunchName ; name
+	tx FirePunchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2861,7 +2861,7 @@ Magmar1Card: ; 31b1b (c:5b1b)
 
 	; attack 2
 	energy FIRE, 2, COLORLESS, 1 ; energies
-	tx FlamethrowerName ; name
+	tx FlamethrowerName ; attack name
 	tx FirePunchDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -2891,14 +2891,14 @@ Magmar2Card: ; 31b5c (c:5b5c)
 	tx MagmarName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db MAGMAR2
+	db MAGMAR2 ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIRE, 1 ; energies
-	tx SmokescreenName ; name
+	tx SmokescreenName ; attack name
 	tx MagmarsSmokescreenDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2912,7 +2912,7 @@ Magmar2Card: ; 31b5c (c:5b5c)
 
 	; attack 2
 	energy FIRE, 2 ; energies
-	tx SmogName ; name
+	tx SmogName ; attack name
 	tx MayInflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -2942,14 +2942,14 @@ Flareon1Card: ; 31b9d (c:5b9d)
 	tx FlareonName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | GB ; sets
-	db FLAREON1
+	db FLAREON1 ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx EeveeName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx BiteName ; name
+	tx BiteName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -2963,7 +2963,7 @@ Flareon1Card: ; 31b9d (c:5b9d)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx RageName ; name
+	tx RageName ; attack name
 	tx FlareonsRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -2993,14 +2993,14 @@ Flareon2Card: ; 31bde (c:5bde)
 	tx FlareonName ; name
 	db STAR ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db FLAREON2
+	db FLAREON2 ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx EeveeName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx QuickAttackName ; name
+	tx QuickAttackName ; attack name
 	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3014,7 +3014,7 @@ Flareon2Card: ; 31bde (c:5bde)
 
 	; attack 2
 	energy FIRE, 2, COLORLESS, 2 ; energies
-	tx FlamethrowerName ; name
+	tx FlamethrowerName ; attack name
 	tx FlareonsFlamethrowerDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -3044,14 +3044,14 @@ Moltres1Card: ; 31c1f (c:5c1f)
 	tx MoltresName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db MOLTRES1
+	db MOLTRES1 ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIRE, 1 ; energies
-	tx WildfireName ; name
+	tx WildfireName ; attack name
 	tx WildfireDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3065,7 +3065,7 @@ Moltres1Card: ; 31c1f (c:5c1f)
 
 	; attack 2
 	energy FIRE, 4 ; energies
-	tx DiveBombName ; name
+	tx DiveBombName ; attack name
 	tx MayDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 80 ; damage
@@ -3095,14 +3095,14 @@ Moltres2Card: ; 31c60 (c:5c60)
 	tx MoltresName ; name
 	db STAR ; rarity
 	db PROMOTIONAL | GB ; sets
-	db MOLTRES2
+	db MOLTRES2 ; const
 	db 100 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx FiregiverName ; name
+	tx FiregiverName ; attack name
 	tx FiregiverDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3116,7 +3116,7 @@ Moltres2Card: ; 31c60 (c:5c60)
 
 	; attack 2
 	energy FIRE, 3 ; energies
-	tx DiveBombName ; name
+	tx DiveBombName ; attack name
 	tx MayDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 70 ; damage
@@ -3146,14 +3146,14 @@ SquirtleCard: ; 31ca1 (c:5ca1)
 	tx SquirtleName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db SQUIRTLE
+	db SQUIRTLE ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx BubbleName ; name
+	tx BubbleName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3167,7 +3167,7 @@ SquirtleCard: ; 31ca1 (c:5ca1)
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx WithdrawName ; name
+	tx WithdrawName ; attack name
 	tx SquirtlesWithdrawDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3197,14 +3197,14 @@ WartortleCard: ; 31ce2 (c:5ce2)
 	tx WartortleName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db WARTORTLE
+	db WARTORTLE ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx SquirtleName ; pre-evo name
 
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx WithdrawName ; name
+	tx WithdrawName ; attack name
 	tx WartortlesWithdrawDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3218,7 +3218,7 @@ WartortleCard: ; 31ce2 (c:5ce2)
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
-	tx BiteName ; name
+	tx BiteName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -3248,14 +3248,14 @@ BlastoiseCard: ; 31d23 (c:5d23)
 	tx BlastoiseName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db BLASTOISE
+	db BLASTOISE ; const
 	db 100 ; hp
 	db STAGE2 ; stage
 	tx WartortleName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx RainDanceName ; name
+	tx RainDanceName ; attack name
 	tx RainDanceDescription ; description
 	tx RainDanceDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -3269,7 +3269,7 @@ BlastoiseCard: ; 31d23 (c:5d23)
 
 	; attack 2
 	energy WATER, 3 ; energies
-	tx HydroPumpName ; name
+	tx HydroPumpName ; attack name
 	tx HydroPumpDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -3299,14 +3299,14 @@ PsyduckCard: ; 31d64 (c:5d64)
 	tx PsyduckName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db PSYDUCK
+	db PSYDUCK ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx HeadacheName ; name
+	tx HeadacheName ; attack name
 	tx HeadacheDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3320,7 +3320,7 @@ PsyduckCard: ; 31d64 (c:5d64)
 
 	; attack 2
 	energy WATER, 1 ; energies
-	tx FurySwipesName ; name
+	tx FurySwipesName ; attack name
 	tx TripleAttackX10Description ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3350,14 +3350,14 @@ GolduckCard: ; 31da5 (c:5da5)
 	tx GolduckName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db GOLDUCK
+	db GOLDUCK ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx PsyduckName ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx PsyshockName ; name
+	tx PsyshockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3371,7 +3371,7 @@ GolduckCard: ; 31da5 (c:5da5)
 
 	; attack 2
 	energy WATER, 2, COLORLESS, 1 ; energies
-	tx HyperBeamName ; name
+	tx HyperBeamName ; attack name
 	tx Discard1EnergyFromTargetDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -3401,14 +3401,14 @@ PoliwagCard: ; 31de6 (c:5de6)
 	tx PoliwagName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | NONE ; sets
-	db POLIWAG
+	db POLIWAG ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx PoliwagsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3422,7 +3422,7 @@ PoliwagCard: ; 31de6 (c:5de6)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3452,14 +3452,14 @@ PoliwhirlCard: ; 31e27 (c:5e27)
 	tx PoliwhirlName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | NONE ; sets
-	db POLIWHIRL
+	db POLIWHIRL ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx PoliwagName ; pre-evo name
 
 	; attack 1
 	energy WATER, 2 ; energies
-	tx AmnesiaName ; name
+	tx AmnesiaName ; attack name
 	tx PoliwhirlsAmnesiaDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3473,7 +3473,7 @@ PoliwhirlCard: ; 31e27 (c:5e27)
 
 	; attack 2
 	energy WATER, 2, COLORLESS, 1 ; energies
-	tx DoubleslapName ; name
+	tx DoubleslapName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -3503,14 +3503,14 @@ PoliwrathCard: ; 31e68 (c:5e68)
 	tx PoliwrathName ; name
 	db STAR ; rarity
 	db LABORATORY | NONE ; sets
-	db POLIWRATH
+	db POLIWRATH ; const
 	db 90 ; hp
 	db STAGE2 ; stage
 	tx PoliwhirlName ; pre-evo name
 
 	; attack 1
 	energy WATER, 2, COLORLESS, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx PoliwrathsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -3524,7 +3524,7 @@ PoliwrathCard: ; 31e68 (c:5e68)
 
 	; attack 2
 	energy WATER, 2, COLORLESS, 2 ; energies
-	tx WhirlpoolName ; name
+	tx WhirlpoolName ; attack name
 	tx Discard1EnergyFromTargetDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -3554,14 +3554,14 @@ TentacoolCard: ; 31ea9 (c:5ea9)
 	tx TentacoolName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db TENTACOOL
+	db TENTACOOL ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx CowardiceName ; name
+	tx CowardiceName ; attack name
 	tx CowardiceDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3575,7 +3575,7 @@ TentacoolCard: ; 31ea9 (c:5ea9)
 
 	; attack 2
 	energy WATER, 1 ; energies
-	tx AcidName ; name
+	tx AcidName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3605,14 +3605,14 @@ TentacruelCard: ; 31eea (c:5eea)
 	tx TentacruelName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db TENTACRUEL
+	db TENTACRUEL ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx TentacoolName ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx SupersonicName ; name
+	tx SupersonicName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3626,7 +3626,7 @@ TentacruelCard: ; 31eea (c:5eea)
 
 	; attack 2
 	energy WATER, 2 ; energies
-	tx JellyfishStingName ; name
+	tx JellyfishStingName ; attack name
 	tx InflictPoisonDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3656,14 +3656,14 @@ SeelCard: ; 31f2b (c:5f2b)
 	tx SeelName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db SEEL
+	db SEEL ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx HeadbuttName ; name
+	tx HeadbuttName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3677,7 +3677,7 @@ SeelCard: ; 31f2b (c:5f2b)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3707,14 +3707,14 @@ DewgongCard: ; 31f6c (c:5f6c)
 	tx DewgongName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db DEWGONG
+	db DEWGONG ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx SeelName ; pre-evo name
 
 	; attack 1
 	energy WATER, 2, COLORLESS, 1 ; energies
-	tx AuroraBeamName ; name
+	tx AuroraBeamName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -3728,7 +3728,7 @@ DewgongCard: ; 31f6c (c:5f6c)
 
 	; attack 2
 	energy WATER, 2, COLORLESS, 2 ; energies
-	tx IceBeamName ; name
+	tx IceBeamName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -3758,14 +3758,14 @@ ShellderCard: ; 31fad (c:5fad)
 	tx ShellderName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db SHELLDER
+	db SHELLDER ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx SupersonicName ; name
+	tx SupersonicName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3779,7 +3779,7 @@ ShellderCard: ; 31fad (c:5fad)
 
 	; attack 2
 	energy WATER, 1 ; energies
-	tx HideInShellName ; name
+	tx HideInShellName ; attack name
 	tx HideInShellDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3809,14 +3809,14 @@ CloysterCard: ; 31fee (c:5fee)
 	tx CloysterName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db CLOYSTER
+	db CLOYSTER ; const
 	db 50 ; hp
 	db STAGE1 ; stage
 	tx ShellderName ; pre-evo name
 
 	; attack 1
 	energy WATER, 2 ; energies
-	tx ClampName ; name
+	tx ClampName ; attack name
 	tx ClampDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -3830,7 +3830,7 @@ CloysterCard: ; 31fee (c:5fee)
 
 	; attack 2
 	energy WATER, 2 ; energies
-	tx SpikeCannonName ; name
+	tx SpikeCannonName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -3860,14 +3860,14 @@ KrabbyCard: ; 3202f (c:602f)
 	tx KrabbyName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db KRABBY
+	db KRABBY ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx CallForFamilyName ; name
+	tx CallForFamilyName ; attack name
 	tx KrabbysCallForFamilyDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3881,7 +3881,7 @@ KrabbyCard: ; 3202f (c:602f)
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx IronGripName ; name
+	tx IronGripName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -3911,14 +3911,14 @@ KinglerCard: ; 32070 (c:6070)
 	tx KinglerName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db KINGLER
+	db KINGLER ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx KrabbyName ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx FlailName ; name
+	tx FlailName ; attack name
 	tx KinglersFlailDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3932,7 +3932,7 @@ KinglerCard: ; 32070 (c:6070)
 
 	; attack 2
 	energy WATER, 2, COLORLESS, 1 ; energies
-	tx CrabhammerName ; name
+	tx CrabhammerName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -3962,14 +3962,14 @@ HorseaCard: ; 320b1 (c:60b1)
 	tx HorseaName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db HORSEA
+	db HORSEA ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx SmokescreenName ; name
+	tx SmokescreenName ; attack name
 	tx OpponentAttackMayDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -3983,7 +3983,7 @@ HorseaCard: ; 320b1 (c:60b1)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4013,14 +4013,14 @@ SeadraCard: ; 320f2 (c:60f2)
 	tx SeadraName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db SEADRA
+	db SEADRA ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx HorseaName ; pre-evo name
 
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx SeadrasWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4034,7 +4034,7 @@ SeadraCard: ; 320f2 (c:60f2)
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
-	tx AgilityName ; name
+	tx AgilityName ; attack name
 	tx SeadrasAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4064,14 +4064,14 @@ GoldeenCard: ; 32133 (c:6133)
 	tx GoldeenName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db GOLDEEN
+	db GOLDEEN ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx HornAttackName ; name
+	tx HornAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4085,7 +4085,7 @@ GoldeenCard: ; 32133 (c:6133)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4115,14 +4115,14 @@ SeakingCard: ; 32174 (c:6174)
 	tx SeakingName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db SEAKING
+	db SEAKING ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx GoldeenName ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx HornAttackName ; name
+	tx HornAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4136,7 +4136,7 @@ SeakingCard: ; 32174 (c:6174)
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx WaterfallName ; name
+	tx WaterfallName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4166,14 +4166,14 @@ StaryuCard: ; 321b5 (c:61b5)
 	tx StaryuName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db STARYU
+	db STARYU ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx SlapName ; name
+	tx SlapName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4187,7 +4187,7 @@ StaryuCard: ; 321b5 (c:61b5)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4217,14 +4217,14 @@ StarmieCard: ; 321f6 (c:61f6)
 	tx StarmieName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db STARMIE
+	db STARMIE ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx StaryuName ; pre-evo name
 
 	; attack 1
 	energy WATER, 2 ; energies
-	tx RecoverName ; name
+	tx RecoverName ; attack name
 	tx StarmiesRecoverDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4238,7 +4238,7 @@ StarmieCard: ; 321f6 (c:61f6)
 
 	; attack 2
 	energy WATER, 1, COLORLESS, 2 ; energies
-	tx StarFreezeName ; name
+	tx StarFreezeName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4268,14 +4268,14 @@ MagikarpCard: ; 32237 (c:6237)
 	tx MagikarpName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db MAGIKARP
+	db MAGIKARP ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx TackleName ; name
+	tx TackleName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4289,7 +4289,7 @@ MagikarpCard: ; 32237 (c:6237)
 
 	; attack 2
 	energy WATER, 1 ; energies
-	tx FlailName ; name
+	tx FlailName ; attack name
 	tx MagikarpsFlailDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4319,14 +4319,14 @@ GyaradosCard: ; 32278 (c:6278)
 	tx GyaradosName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db GYARADOS
+	db GYARADOS ; const
 	db 100 ; hp
 	db STAGE1 ; stage
 	tx MagikarpName ; pre-evo name
 
 	; attack 1
 	energy WATER, 3 ; energies
-	tx DragonRageName ; name
+	tx DragonRageName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -4340,7 +4340,7 @@ GyaradosCard: ; 32278 (c:6278)
 
 	; attack 2
 	energy WATER, 4 ; energies
-	tx BubblebeamName ; name
+	tx BubblebeamName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -4370,14 +4370,14 @@ LaprasCard: ; 322b9 (c:62b9)
 	tx LaprasName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db LAPRAS
+	db LAPRAS ; const
 	db 80 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx LaprasWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4391,7 +4391,7 @@ LaprasCard: ; 322b9 (c:62b9)
 
 	; attack 2
 	energy WATER, 2 ; energies
-	tx ConfuseRayName ; name
+	tx ConfuseRayName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4421,14 +4421,14 @@ Vaporeon1Card: ; 322fa (c:62fa)
 	tx VaporeonName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | GB ; sets
-	db VAPOREON1
+	db VAPOREON1 ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx EeveeName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx FocusEnergyName ; name
+	tx FocusEnergyName ; attack name
 	tx FocusEnergyDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4442,7 +4442,7 @@ Vaporeon1Card: ; 322fa (c:62fa)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx BiteName ; name
+	tx BiteName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4472,14 +4472,14 @@ Vaporeon2Card: ; 3233b (c:633b)
 	tx VaporeonName ; name
 	db STAR ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db VAPOREON2
+	db VAPOREON2 ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx EeveeName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx QuickAttackName ; name
+	tx QuickAttackName ; attack name
 	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4493,7 +4493,7 @@ Vaporeon2Card: ; 3233b (c:633b)
 
 	; attack 2
 	energy WATER, 2, COLORLESS, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx VaporeonsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4523,14 +4523,14 @@ OmanyteCard: ; 3237c (c:637c)
 	tx OmanyteName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db OMANYTE
+	db OMANYTE ; const
 	db 40 ; hp
 	db STAGE1 ; stage
 	tx MysteriousFossilName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx ClairvoyanceName ; name
+	tx ClairvoyanceName ; attack name
 	tx ClairvoyanceDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4544,7 +4544,7 @@ OmanyteCard: ; 3237c (c:637c)
 
 	; attack 2
 	energy WATER, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx OmanytesWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4574,14 +4574,14 @@ OmastarCard: ; 323bd (c:63bd)
 	tx OmastarName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db OMASTAR
+	db OMASTAR ; const
 	db 70 ; hp
 	db STAGE2 ; stage
 	tx OmanyteName ; pre-evo name
 
 	; attack 1
 	energy WATER, 1, COLORLESS, 1 ; energies
-	tx WaterGunName ; name
+	tx WaterGunName ; attack name
 	tx OmastarsWaterGunDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4595,7 +4595,7 @@ OmastarCard: ; 323bd (c:63bd)
 
 	; attack 2
 	energy WATER, 2 ; energies
-	tx SpikeCannonName ; name
+	tx SpikeCannonName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4625,14 +4625,14 @@ Articuno1Card: ; 323fe (c:63fe)
 	tx ArticunoName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db ARTICUNO1
+	db ARTICUNO1 ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 3 ; energies
-	tx FreezeDryName ; name
+	tx FreezeDryName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4646,7 +4646,7 @@ Articuno1Card: ; 323fe (c:63fe)
 
 	; attack 2
 	energy WATER, 4 ; energies
-	tx BlizzardName ; name
+	tx BlizzardName ; attack name
 	tx BlizzardDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -4676,14 +4676,14 @@ Articuno2Card: ; 3243f (c:643f)
 	tx ArticunoName ; name
 	db STAR ; rarity
 	db PROMOTIONAL | GB ; sets
-	db ARTICUNO2
+	db ARTICUNO2 ; const
 	db 100 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx QuickfreezeName ; name
+	tx QuickfreezeName ; attack name
 	tx QuickfreezeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4697,7 +4697,7 @@ Articuno2Card: ; 3243f (c:643f)
 
 	; attack 2
 	energy WATER, 3 ; energies
-	tx IceBreathName ; name
+	tx IceBreathName ; attack name
 	tx IceBreathDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4727,14 +4727,14 @@ Pikachu1Card: ; 32480 (c:6480)
 	tx PikachuName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db PIKACHU1
+	db PIKACHU1 ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx GnawName ; name
+	tx GnawName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4748,7 +4748,7 @@ Pikachu1Card: ; 32480 (c:6480)
 
 	; attack 2
 	energy LIGHTNING, 1, COLORLESS, 1 ; energies
-	tx ThunderJoltName ; name
+	tx ThunderJoltName ; attack name
 	tx ThunderJoltDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4778,14 +4778,14 @@ Pikachu2Card: ; 324c1 (c:64c1)
 	tx PikachuName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db PIKACHU2
+	db PIKACHU2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 2 ; energies
-	tx SparkName ; name
+	tx SparkName ; attack name
 	tx SparkDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4799,7 +4799,7 @@ Pikachu2Card: ; 324c1 (c:64c1)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4829,14 +4829,14 @@ Pikachu3Card: ; 32502 (c:6502)
 	tx PikachuName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db PIKACHU3
+	db PIKACHU3 ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx GrowlName ; name
+	tx GrowlName ; attack name
 	tx GrowlDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4850,7 +4850,7 @@ Pikachu3Card: ; 32502 (c:6502)
 
 	; attack 2
 	energy LIGHTNING, 2 ; energies
-	tx ThundershockName ; name
+	tx ThundershockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4880,14 +4880,14 @@ Pikachu4Card: ; 32543 (c:6543)
 	tx PikachuName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db PIKACHU4
+	db PIKACHU4 ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx GrowlName ; name
+	tx GrowlName ; attack name
 	tx GrowlDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -4901,7 +4901,7 @@ Pikachu4Card: ; 32543 (c:6543)
 
 	; attack 2
 	energy LIGHTNING, 2 ; energies
-	tx ThundershockName ; name
+	tx ThundershockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -4931,14 +4931,14 @@ FlyingPikachuCard: ; 32584 (c:6584)
 	tx FlyingPikachuName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db FLYING_PIKACHU
+	db FLYING_PIKACHU ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 1 ; energies
-	tx ThundershockName ; name
+	tx ThundershockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -4952,7 +4952,7 @@ FlyingPikachuCard: ; 32584 (c:6584)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx FlyName ; name
+	tx FlyName ; attack name
 	tx FlyDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -4982,14 +4982,14 @@ SurfingPikachu1Card: ; 325c5 (c:65c5)
 	tx SurfingPikachuName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db SURFING_PIKACHU1
+	db SURFING_PIKACHU1 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 2 ; energies
-	tx SurfName ; name
+	tx SurfName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5003,7 +5003,7 @@ SurfingPikachu1Card: ; 325c5 (c:65c5)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5033,14 +5033,14 @@ SurfingPikachu2Card: ; 32606 (c:6606)
 	tx SurfingPikachuName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db SURFING_PIKACHU2
+	db SURFING_PIKACHU2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy WATER, 2 ; energies
-	tx SurfName ; name
+	tx SurfName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5054,7 +5054,7 @@ SurfingPikachu2Card: ; 32606 (c:6606)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5084,14 +5084,14 @@ Raichu1Card: ; 32647 (c:6647)
 	tx RaichuName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db RAICHU1
+	db RAICHU1 ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx PikachuName ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 1, COLORLESS, 2 ; energies
-	tx AgilityName ; name
+	tx AgilityName ; attack name
 	tx RaichusAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5105,7 +5105,7 @@ Raichu1Card: ; 32647 (c:6647)
 
 	; attack 2
 	energy LIGHTNING, 3, COLORLESS, 1 ; energies
-	tx ThunderName ; name
+	tx ThunderName ; attack name
 	tx RaichusThunderDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -5135,14 +5135,14 @@ Raichu2Card: ; 32688 (c:6688)
 	tx RaichuName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db RAICHU2
+	db RAICHU2 ; const
 	db 90 ; hp
 	db STAGE1 ; stage
 	tx PikachuName ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 4 ; energies
-	tx GigashockName ; name
+	tx GigashockName ; attack name
 	tx GigashockDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5156,7 +5156,7 @@ Raichu2Card: ; 32688 (c:6688)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5186,14 +5186,14 @@ Magnemite1Card: ; 326c9 (c:66c9)
 	tx MagnemiteName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db MAGNEMITE1
+	db MAGNEMITE1 ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 1 ; energies
-	tx ThunderWaveName ; name
+	tx ThunderWaveName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5207,7 +5207,7 @@ Magnemite1Card: ; 326c9 (c:66c9)
 
 	; attack 2
 	energy LIGHTNING, 1, COLORLESS, 1 ; energies
-	tx SelfdestructName ; name
+	tx SelfdestructName ; attack name
 	tx MagnemitesSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -5237,14 +5237,14 @@ Magnemite2Card: ; 3270a (c:670a)
 	tx MagnemiteName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | GB ; sets
-	db MAGNEMITE2
+	db MAGNEMITE2 ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx TackleName ; name
+	tx TackleName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5258,7 +5258,7 @@ Magnemite2Card: ; 3270a (c:670a)
 
 	; attack 2
 	energy LIGHTNING, 1, COLORLESS, 1 ; energies
-	tx MagneticStormName ; name
+	tx MagneticStormName ; attack name
 	tx MagneticStormDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5288,14 +5288,14 @@ Magneton1Card: ; 3274b (c:674b)
 	tx MagnetonName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db MAGNETON1
+	db MAGNETON1 ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx MagnemiteName ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 2, COLORLESS, 1 ; energies
-	tx ThunderWaveName ; name
+	tx ThunderWaveName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5309,7 +5309,7 @@ Magneton1Card: ; 3274b (c:674b)
 
 	; attack 2
 	energy LIGHTNING, 2, COLORLESS, 2 ; energies
-	tx SelfdestructName ; name
+	tx SelfdestructName ; attack name
 	tx Magneton1sSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 80 ; damage
@@ -5339,14 +5339,14 @@ Magneton2Card: ; 3278c (c:678c)
 	tx MagnetonName ; name
 	db STAR ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db MAGNETON2
+	db MAGNETON2 ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx MagnemiteName ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 1, COLORLESS, 1 ; energies
-	tx SonicboomName ; name
+	tx SonicboomName ; attack name
 	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5360,7 +5360,7 @@ Magneton2Card: ; 3278c (c:678c)
 
 	; attack 2
 	energy LIGHTNING, 4 ; energies
-	tx SelfdestructName ; name
+	tx SelfdestructName ; attack name
 	tx Magneton2sSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
@@ -5390,14 +5390,14 @@ VoltorbCard: ; 327cd (c:67cd)
 	tx VoltorbName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | NONE ; sets
-	db VOLTORB
+	db VOLTORB ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx TackleName ; name
+	tx TackleName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5411,7 +5411,7 @@ VoltorbCard: ; 327cd (c:67cd)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5441,14 +5441,14 @@ Electrode1Card: ; 3280e (c:680e)
 	tx ElectrodeName ; name
 	db STAR ; rarity
 	db LABORATORY | GB ; sets
-	db ELECTRODE1
+	db ELECTRODE1 ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx VoltorbName ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 2 ; energies
-	tx SonicboomName ; name
+	tx SonicboomName ; attack name
 	tx SonicboomDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5462,7 +5462,7 @@ Electrode1Card: ; 3280e (c:680e)
 
 	; attack 2
 	energy LIGHTNING, 3 ; energies
-	tx EnergySpikeName ; name
+	tx EnergySpikeName ; attack name
 	tx EnergySpikeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5492,14 +5492,14 @@ Electrode2Card: ; 3284f (c:684f)
 	tx ElectrodeName ; name
 	db STAR ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db ELECTRODE2
+	db ELECTRODE2 ; const
 	db 90 ; hp
 	db STAGE1 ; stage
 	tx VoltorbName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx TackleName ; name
+	tx TackleName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5513,7 +5513,7 @@ Electrode2Card: ; 3284f (c:684f)
 
 	; attack 2
 	energy LIGHTNING, 3 ; energies
-	tx ChainLightningName ; name
+	tx ChainLightningName ; attack name
 	tx ChainLightningDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5543,14 +5543,14 @@ Electabuzz1Card: ; 32890 (c:6890)
 	tx ElectabuzzName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db ELECTABUZZ1
+	db ELECTABUZZ1 ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 1 ; energies
-	tx LightScreenName ; name
+	tx LightScreenName ; attack name
 	tx LightScreenDescription ; description
 	tx LightScreenDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -5564,7 +5564,7 @@ Electabuzz1Card: ; 32890 (c:6890)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx QuickAttackName ; name
+	tx QuickAttackName ; attack name
 	tx ElectabuzzsQuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5594,14 +5594,14 @@ Electabuzz2Card: ; 328d1 (c:68d1)
 	tx ElectabuzzName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db ELECTABUZZ2
+	db ELECTABUZZ2 ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 1 ; energies
-	tx ThundershockName ; name
+	tx ThundershockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5615,7 +5615,7 @@ Electabuzz2Card: ; 328d1 (c:68d1)
 
 	; attack 2
 	energy LIGHTNING, 1, COLORLESS, 1 ; energies
-	tx ThunderpunchName ; name
+	tx ThunderpunchName ; attack name
 	tx ThunderpunchDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5645,14 +5645,14 @@ Jolteon1Card: ; 32912 (c:6912)
 	tx JolteonName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | GB ; sets
-	db JOLTEON1
+	db JOLTEON1 ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx EeveeName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx DoubleKickName ; name
+	tx DoubleKickName ; attack name
 	tx DoubleAttackX20Description ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5666,7 +5666,7 @@ Jolteon1Card: ; 32912 (c:6912)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx StunNeedleName ; name
+	tx StunNeedleName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -5696,14 +5696,14 @@ Jolteon2Card: ; 32953 (c:6953)
 	tx JolteonName ; name
 	db STAR ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db JOLTEON2
+	db JOLTEON2 ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx EeveeName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx QuickAttackName ; name
+	tx QuickAttackName ; attack name
 	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5717,7 +5717,7 @@ Jolteon2Card: ; 32953 (c:6953)
 
 	; attack 2
 	energy LIGHTNING, 2, COLORLESS, 1 ; energies
-	tx PinMissileName ; name
+	tx PinMissileName ; attack name
 	tx QuadrupleAttackX20Description ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5747,14 +5747,14 @@ Zapdos1Card: ; 32994 (c:6994)
 	tx ZapdosName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db ZAPDOS1
+	db ZAPDOS1 ; const
 	db 80 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 4 ; energies
-	tx ThunderstormName ; name
+	tx ThunderstormName ; attack name
 	tx ThunderstormDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -5768,7 +5768,7 @@ Zapdos1Card: ; 32994 (c:6994)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5798,14 +5798,14 @@ Zapdos2Card: ; 329d5 (c:69d5)
 	tx ZapdosName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db ZAPDOS2
+	db ZAPDOS2 ; const
 	db 90 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy LIGHTNING, 3, COLORLESS, 1 ; energies
-	tx ThunderName ; name
+	tx ThunderName ; attack name
 	tx ZapdosThunderDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -5819,7 +5819,7 @@ Zapdos2Card: ; 329d5 (c:69d5)
 
 	; attack 2
 	energy LIGHTNING, 4 ; energies
-	tx ThunderboltName ; name
+	tx ThunderboltName ; attack name
 	tx ThunderboltDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
@@ -5849,14 +5849,14 @@ Zapdos3Card: ; 32a16 (c:6a16)
 	tx ZapdosName ; name
 	db STAR ; rarity
 	db PROMOTIONAL | GB ; sets
-	db ZAPDOS3
+	db ZAPDOS3 ; const
 	db 100 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx PealOfThunderName ; name
+	tx PealOfThunderName ; attack name
 	tx PealOfThunderDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5870,7 +5870,7 @@ Zapdos3Card: ; 32a16 (c:6a16)
 
 	; attack 2
 	energy LIGHTNING, 3 ; energies
-	tx BigThunderName ; name
+	tx BigThunderName ; attack name
 	tx BigThunderDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5900,14 +5900,14 @@ SandshrewCard: ; 32a57 (c:6a57)
 	tx SandshrewName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db SANDSHREW
+	db SANDSHREW ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1 ; energies
-	tx SandAttackName ; name
+	tx SandAttackName ; attack name
 	tx OpponentAttackMayDoNothingDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -5921,7 +5921,7 @@ SandshrewCard: ; 32a57 (c:6a57)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -5951,14 +5951,14 @@ SandslashCard: ; 32a98 (c:6a98)
 	tx SandslashName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db SANDSLASH
+	db SANDSLASH ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx SandshrewName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx SlashName ; name
+	tx SlashName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -5972,7 +5972,7 @@ SandslashCard: ; 32a98 (c:6a98)
 
 	; attack 2
 	energy FIGHTING, 2 ; energies
-	tx FurySwipesName ; name
+	tx FurySwipesName ; attack name
 	tx TripleAttackX20Description ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -6002,14 +6002,14 @@ DiglettCard: ; 32ad9 (c:6ad9)
 	tx DiglettName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db DIGLETT
+	db DIGLETT ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1 ; energies
-	tx DigName ; name
+	tx DigName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6023,7 +6023,7 @@ DiglettCard: ; 32ad9 (c:6ad9)
 
 	; attack 2
 	energy FIGHTING, 2 ; energies
-	tx MudSlapName ; name
+	tx MudSlapName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -6053,14 +6053,14 @@ DugtrioCard: ; 32b1a (c:6b1a)
 	tx DugtrioName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db DUGTRIO
+	db DUGTRIO ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx DiglettName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
-	tx SlashName ; name
+	tx SlashName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -6074,7 +6074,7 @@ DugtrioCard: ; 32b1a (c:6b1a)
 
 	; attack 2
 	energy FIGHTING, 4 ; energies
-	tx EarthquakeName ; name
+	tx EarthquakeName ; attack name
 	tx EarthquakeDescription ; description
 	dw NONE ; description (cont)
 	db 70 ; damage
@@ -6104,14 +6104,14 @@ MankeyCard: ; 32b5b (c:6b5b)
 	tx MankeyName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db MANKEY
+	db MANKEY ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx PeekName ; name
+	tx PeekName ; attack name
 	tx PeekDescription ; description
 	tx PeekDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -6125,7 +6125,7 @@ MankeyCard: ; 32b5b (c:6b5b)
 
 	; attack 2
 	energy COLORLESS, 1 ; energies
-	tx ScratchName ; name
+	tx ScratchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6155,14 +6155,14 @@ PrimeapeCard: ; 32b9c (c:6b9c)
 	tx PrimeapeName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db PRIMEAPE
+	db PRIMEAPE ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx MankeyName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2 ; energies
-	tx FurySwipesName ; name
+	tx FurySwipesName ; attack name
 	tx TripleAttackX20Description ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -6176,7 +6176,7 @@ PrimeapeCard: ; 32b9c (c:6b9c)
 
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
-	tx TantrumName ; name
+	tx TantrumName ; attack name
 	tx TantrumDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -6206,14 +6206,14 @@ MachopCard: ; 32bdd (c:6bdd)
 	tx MachopName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db MACHOP
+	db MACHOP ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1 ; energies
-	tx LowKickName ; name
+	tx LowKickName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -6227,7 +6227,7 @@ MachopCard: ; 32bdd (c:6bdd)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6257,14 +6257,14 @@ MachokeCard: ; 32c1e (c:6c1e)
 	tx MachokeName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db MACHOKE
+	db MACHOKE ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx MachopName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
-	tx KarateChopName ; name
+	tx KarateChopName ; attack name
 	tx KarateChopDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -6278,7 +6278,7 @@ MachokeCard: ; 32c1e (c:6c1e)
 
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 2 ; energies
-	tx SubmissionName ; name
+	tx SubmissionName ; attack name
 	tx SubmissionDescription ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -6308,14 +6308,14 @@ MachampCard: ; 32c5f (c:6c5f)
 	tx MachampName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db MACHAMP
+	db MACHAMP ; const
 	db 100 ; hp
 	db STAGE2 ; stage
 	tx MachokeName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx StrikesBackName ; name
+	tx StrikesBackName ; attack name
 	tx StrikesBackDescription ; description
 	tx StrikesBackDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -6329,7 +6329,7 @@ MachampCard: ; 32c5f (c:6c5f)
 
 	; attack 2
 	energy FIGHTING, 3, COLORLESS, 1 ; energies
-	tx SeismicTossName ; name
+	tx SeismicTossName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -6359,14 +6359,14 @@ GeodudeCard: ; 32ca0 (c:6ca0)
 	tx GeodudeName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db GEODUDE
+	db GEODUDE ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1, COLORLESS, 1 ; energies
-	tx StoneBarrageName ; name
+	tx StoneBarrageName ; attack name
 	tx StoneBarrageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6380,7 +6380,7 @@ GeodudeCard: ; 32ca0 (c:6ca0)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6410,14 +6410,14 @@ GravelerCard: ; 32ce1 (c:6ce1)
 	tx GravelerName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db GRAVELER
+	db GRAVELER ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx GeodudeName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2 ; energies
-	tx HardenName ; name
+	tx HardenName ; attack name
 	tx GravelersHardenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6431,7 +6431,7 @@ GravelerCard: ; 32ce1 (c:6ce1)
 
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
-	tx RockThrowName ; name
+	tx RockThrowName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -6461,14 +6461,14 @@ GolemCard: ; 32d22 (c:6d22)
 	tx GolemName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db GOLEM
+	db GOLEM ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx GravelerName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 3, COLORLESS, 1 ; energies
-	tx AvalancheName ; name
+	tx AvalancheName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 60 ; damage
@@ -6482,7 +6482,7 @@ GolemCard: ; 32d22 (c:6d22)
 
 	; attack 2
 	energy FIGHTING, 4 ; energies
-	tx SelfdestructName ; name
+	tx SelfdestructName ; attack name
 	tx GolemsSelfdestructDescription ; description
 	dw NONE ; description (cont)
 	db 100 ; damage
@@ -6512,14 +6512,14 @@ OnixCard: ; 32d63 (c:6d63)
 	tx OnixName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | NONE ; sets
-	db ONIX
+	db ONIX ; const
 	db 90 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1 ; energies
-	tx RockThrowName ; name
+	tx RockThrowName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6533,7 +6533,7 @@ OnixCard: ; 32d63 (c:6d63)
 
 	; attack 2
 	energy FIGHTING, 2 ; energies
-	tx HardenName ; name
+	tx HardenName ; attack name
 	tx OnixsHardenDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6563,14 +6563,14 @@ CuboneCard: ; 32da4 (c:6da4)
 	tx CuboneName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db CUBONE
+	db CUBONE ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx SnivelName ; name
+	tx SnivelName ; attack name
 	tx SnivelDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6584,7 +6584,7 @@ CuboneCard: ; 32da4 (c:6da4)
 
 	; attack 2
 	energy FIGHTING, 2 ; energies
-	tx RageName ; name
+	tx RageName ; attack name
 	tx CubonesRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6614,14 +6614,14 @@ Marowak1Card: ; 32de5 (c:6de5)
 	tx MarowakName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db MAROWAK1
+	db MAROWAK1 ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx CuboneName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2 ; energies
-	tx BonemerangName ; name
+	tx BonemerangName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -6635,7 +6635,7 @@ Marowak1Card: ; 32de5 (c:6de5)
 
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
-	tx CallforFriendName ; name
+	tx CallforFriendName ; attack name
 	tx CallforFriendDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6665,14 +6665,14 @@ Marowak2Card: ; 32e26 (c:6e26)
 	tx MarowakName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | GB ; sets
-	db MAROWAK2
+	db MAROWAK2 ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx CuboneName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1, COLORLESS, 1 ; energies
-	tx BoneAttackName ; name
+	tx BoneAttackName ; attack name
 	tx BoneAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6686,7 +6686,7 @@ Marowak2Card: ; 32e26 (c:6e26)
 
 	; attack 2
 	energy FIGHTING, 3 ; energies
-	tx WailName ; name
+	tx WailName ; attack name
 	tx WailDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6716,14 +6716,14 @@ HitmonleeCard: ; 32e67 (c:6e67)
 	tx HitmonleeName ; name
 	db STAR ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db HITMONLEE
+	db HITMONLEE ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2 ; energies
-	tx StretchKickName ; name
+	tx StretchKickName ; attack name
 	tx StretchKickDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6737,7 +6737,7 @@ HitmonleeCard: ; 32e67 (c:6e67)
 
 	; attack 2
 	energy FIGHTING, 3 ; energies
-	tx HighJumpKickName ; name
+	tx HighJumpKickName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -6767,14 +6767,14 @@ HitmonchanCard: ; 32ea8 (c:6ea8)
 	tx HitmonchanName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db HITMONCHAN
+	db HITMONCHAN ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1 ; energies
-	tx JabName ; name
+	tx JabName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -6788,7 +6788,7 @@ HitmonchanCard: ; 32ea8 (c:6ea8)
 
 	; attack 2
 	energy FIGHTING, 2, COLORLESS, 1 ; energies
-	tx SpecialPunch ; name
+	tx SpecialPunch ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -6818,14 +6818,14 @@ RhyhornCard: ; 32ee9 (c:6ee9)
 	tx RhyhornName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db RHYHORN
+	db RHYHORN ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx LeerName ; name
+	tx LeerName ; attack name
 	tx LeerDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -6839,7 +6839,7 @@ RhyhornCard: ; 32ee9 (c:6ee9)
 
 	; attack 2
 	energy FIGHTING, 1, COLORLESS, 2 ; energies
-	tx HornAttackName ; name
+	tx HornAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -6869,14 +6869,14 @@ RhydonCard: ; 32f2a (c:6f2a)
 	tx RhydonName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db RHYDON
+	db RHYDON ; const
 	db 100 ; hp
 	db STAGE1 ; stage
 	tx RhyhornName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 1, COLORLESS, 2 ; energies
-	tx HornAttackName ; name
+	tx HornAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -6890,7 +6890,7 @@ RhydonCard: ; 32f2a (c:6f2a)
 
 	; attack 2
 	energy FIGHTING, 4 ; energies
-	tx RamName ; name
+	tx RamName ; attack name
 	tx RamDescription ; description
 	tx RamDescriptionCont ; description (cont)
 	db 50 ; damage
@@ -6920,14 +6920,14 @@ KabutoCard: ; 32f6b (c:6f6b)
 	tx KabutoName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db KABUTO
+	db KABUTO ; const
 	db 30 ; hp
 	db STAGE1 ; stage
 	tx MysteriousFossilName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx KabutoArmorName ; name
+	tx KabutoArmorName ; attack name
 	tx KabutoArmorDescription ; description
 	tx KabutoArmorDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -6941,7 +6941,7 @@ KabutoCard: ; 32f6b (c:6f6b)
 
 	; attack 2
 	energy COLORLESS, 1 ; energies
-	tx ScratchName ; name
+	tx ScratchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -6971,14 +6971,14 @@ KabutopsCard: ; 32fac (c:6fac)
 	tx KabutopsName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db KABUTOPS
+	db KABUTOPS ; const
 	db 60 ; hp
 	db STAGE2 ; stage
 	tx KabutoName ; pre-evo name
 
 	; attack 1
 	energy FIGHTING, 2 ; energies
-	tx SharpSickleName ; name
+	tx SharpSickleName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -6992,7 +6992,7 @@ KabutopsCard: ; 32fac (c:6fac)
 
 	; attack 2
 	energy FIGHTING, 4 ; energies
-	tx AbsorbName ; name
+	tx AbsorbName ; attack name
 	tx AbsorbDescription ; description
 	tx AbsorbDescriptionCont ; description (cont)
 	db 40 ; damage
@@ -7022,14 +7022,14 @@ AerodactylCard: ; 32fed (c:6fed)
 	tx AerodactylName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db AERODACTYL
+	db AERODACTYL ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx MysteriousFossilName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx PrehistoricPowerName ; name
+	tx PrehistoricPowerName ; attack name
 	tx PrehistoricPowerDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7043,7 +7043,7 @@ AerodactylCard: ; 32fed (c:6fed)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx WingAttackName ; name
+	tx WingAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -7073,14 +7073,14 @@ AbraCard: ; 3302e (c:702e)
 	tx AbraName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db ABRA
+	db ABRA ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx PsyshockName ; name
+	tx PsyshockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7094,7 +7094,7 @@ AbraCard: ; 3302e (c:702e)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7124,14 +7124,14 @@ KadabraCard: ; 3306f (c:706f)
 	tx KadabraName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db KADABRA
+	db KADABRA ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx AbraName ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 2 ; energies
-	tx RecoverName ; name
+	tx RecoverName ; attack name
 	tx KadabrasRecoverDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7145,7 +7145,7 @@ KadabraCard: ; 3306f (c:706f)
 
 	; attack 2
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
-	tx SuperPsiName ; name
+	tx SuperPsiName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -7175,14 +7175,14 @@ AlakazamCard: ; 330b0 (c:70b0)
 	tx AlakazamName ; name
 	db STAR ; rarity
 	db MYSTERY | NONE ; sets
-	db ALAKAZAM
+	db ALAKAZAM ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx KadabraName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx DamageSwapName ; name
+	tx DamageSwapName ; attack name
 	tx DamageSwapDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7196,7 +7196,7 @@ AlakazamCard: ; 330b0 (c:70b0)
 
 	; attack 2
 	energy PSYCHIC, 3 ; energies
-	tx ConfuseRayName ; name
+	tx ConfuseRayName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -7226,14 +7226,14 @@ Slowpoke1Card: ; 330f1 (c:70f1)
 	tx SlowpokeName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db SLOWPOKE1
+	db SLOWPOKE1 ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx HeadbuttName ; name
+	tx HeadbuttName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7247,7 +7247,7 @@ Slowpoke1Card: ; 330f1 (c:70f1)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx AmnesiaName ; name
+	tx AmnesiaName ; attack name
 	tx SlowpokesAmnesiaDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7277,14 +7277,14 @@ Slowpoke2Card: ; 33132 (c:7132)
 	tx SlowpokeName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db SLOWPOKE2
+	db SLOWPOKE2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx SpacingOutName ; name
+	tx SpacingOutName ; attack name
 	tx SpacingOutDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7298,7 +7298,7 @@ Slowpoke2Card: ; 33132 (c:7132)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx ScavengeName ; name
+	tx ScavengeName ; attack name
 	tx ScavengeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7328,14 +7328,14 @@ SlowbroCard: ; 33173 (c:7173)
 	tx SlowbroName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db SLOWBRO
+	db SLOWBRO ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx SlowpokeName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx StrangeBehaviorName ; name
+	tx StrangeBehaviorName ; attack name
 	tx StrangeBehaviorDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7349,7 +7349,7 @@ SlowbroCard: ; 33173 (c:7173)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx PsyshockName ; name
+	tx PsyshockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -7379,14 +7379,14 @@ Gastly1Card: ; 331b4 (c:71b4)
 	tx GastlyName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db GASTLY1
+	db GASTLY1 ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx SleepingGasName ; name
+	tx SleepingGasName ; attack name
 	tx MayInflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7400,7 +7400,7 @@ Gastly1Card: ; 331b4 (c:71b4)
 
 	; attack 2
 	energy PSYCHIC, 1, COLORLESS, 1 ; energies
-	tx DestinyBondName ; name
+	tx DestinyBondName ; attack name
 	tx DestinyBondDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7430,14 +7430,14 @@ Gastly2Card: ; 331f5 (c:71f5)
 	tx GastlyName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db GASTLY2
+	db GASTLY2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx LickName ; name
+	tx LickName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7451,7 +7451,7 @@ Gastly2Card: ; 331f5 (c:71f5)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx EnergyConversionName ; name
+	tx EnergyConversionName ; attack name
 	tx EnergyConversionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7481,14 +7481,14 @@ Haunter1Card: ; 33236 (c:7236)
 	tx HaunterName ; name
 	db STAR ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db HAUNTER1
+	db HAUNTER1 ; const
 	db 50 ; hp
 	db STAGE1 ; stage
 	tx GastlyName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx TransparencyName ; name
+	tx TransparencyName ; attack name
 	tx TransparencyDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7502,7 +7502,7 @@ Haunter1Card: ; 33236 (c:7236)
 
 	; attack 2
 	energy PSYCHIC, 1, COLORLESS, 1 ; energies
-	tx NightmareName ; name
+	tx NightmareName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7532,14 +7532,14 @@ Haunter2Card: ; 33277 (c:7277)
 	tx HaunterName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db HAUNTER2
+	db HAUNTER2 ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx GastlyName ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx HypnosisName ; name
+	tx HypnosisName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7553,7 +7553,7 @@ Haunter2Card: ; 33277 (c:7277)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx DreamEaterName ; name
+	tx DreamEaterName ; attack name
 	tx DreamEaterDescription ; description
 	dw NONE ; description (cont)
 	db 50 ; damage
@@ -7583,14 +7583,14 @@ GengarCard: ; 332b8 (c:72b8)
 	tx GengarName ; name
 	db STAR ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db GENGAR
+	db GENGAR ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx HaunterName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx CurseName ; name
+	tx CurseName ; attack name
 	tx CurseDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7604,7 +7604,7 @@ GengarCard: ; 332b8 (c:72b8)
 
 	; attack 2
 	energy PSYCHIC, 3 ; energies
-	tx DarkMindName ; name
+	tx DarkMindName ; attack name
 	tx DarkMindDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -7634,14 +7634,14 @@ DrowzeeCard: ; 332f9 (c:72f9)
 	tx DrowzeeName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | NONE ; sets
-	db DROWZEE
+	db DROWZEE ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx PoundName ; name
+	tx PoundName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7655,7 +7655,7 @@ DrowzeeCard: ; 332f9 (c:72f9)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx ConfuseRayName ; name
+	tx ConfuseRayName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7685,14 +7685,14 @@ HypnoCard: ; 3333a (c:733a)
 	tx HypnoName ; name
 	db STAR ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db HYPNO
+	db HYPNO ; const
 	db 90 ; hp
 	db STAGE1 ; stage
 	tx DrowzeeName ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx ProphecyName ; name
+	tx ProphecyName ; attack name
 	tx ProphecyDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7706,7 +7706,7 @@ HypnoCard: ; 3333a (c:733a)
 
 	; attack 2
 	energy PSYCHIC, 3 ; energies
-	tx DarkMindName ; name
+	tx DarkMindName ; attack name
 	tx DarkMindDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -7736,14 +7736,14 @@ MrMimeCard: ; 3337b (c:737b)
 	tx MrMimeName ; name
 	db STAR ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db MR_MIME
+	db MR_MIME ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx InvisibleWallName ; name
+	tx InvisibleWallName ; attack name
 	tx InvisibleWallDescription ; description
 	tx InvisibleWallDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -7757,7 +7757,7 @@ MrMimeCard: ; 3337b (c:737b)
 
 	; attack 2
 	energy PSYCHIC, 1, COLORLESS, 1 ; energies
-	tx MeditateName ; name
+	tx MeditateName ; attack name
 	tx MrMimesMeditateDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7787,14 +7787,14 @@ JynxCard: ; 333bc (c:73bc)
 	tx JynxName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db JYNX
+	db JYNX ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx DoubleslapName ; name
+	tx DoubleslapName ; attack name
 	tx DoubleAttackX10Description ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7808,7 +7808,7 @@ JynxCard: ; 333bc (c:73bc)
 
 	; attack 2
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
-	tx MeditateName ; name
+	tx MeditateName ; attack name
 	tx JynxsMeditateDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -7838,14 +7838,14 @@ Mewtwo1Card: ; 333fd (c:73fd)
 	tx MewtwoName ; name
 	db STAR ; rarity
 	db LABORATORY | NONE ; sets
-	db MEWTWO1
+	db MEWTWO1 ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1, COLORLESS, 1 ; energies
-	tx PsychicName ; name
+	tx PsychicName ; attack name
 	tx PsychicDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -7859,7 +7859,7 @@ Mewtwo1Card: ; 333fd (c:73fd)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx BarrierName ; name
+	tx BarrierName ; attack name
 	tx BarrierDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7889,14 +7889,14 @@ Mewtwo2Card: ; 3343e (c:743e)
 	tx MewtwoName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db MEWTWO2
+	db MEWTWO2 ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx EnergyAbsorptionName ; name
+	tx EnergyAbsorptionName ; attack name
 	tx EnergyAbsorptionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7910,7 +7910,7 @@ Mewtwo2Card: ; 3343e (c:743e)
 
 	; attack 2
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
-	tx PsyburnName ; name
+	tx PsyburnName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -7940,14 +7940,14 @@ Mewtwo3Card: ; 3347f (c:747f)
 	tx MewtwoName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db MEWTWO3
+	db MEWTWO3 ; const
 	db 70 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx EnergyAbsorptionName ; name
+	tx EnergyAbsorptionName ; attack name
 	tx EnergyAbsorptionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -7961,7 +7961,7 @@ Mewtwo3Card: ; 3347f (c:747f)
 
 	; attack 2
 	energy PSYCHIC, 2, COLORLESS, 1 ; energies
-	tx PsyburnName ; name
+	tx PsyburnName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -7991,14 +7991,14 @@ Mew1Card: ; 334c0 (c:74c0)
 	tx MewName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db MEW1
+	db MEW1 ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx NeutralizingShieldName ; name
+	tx NeutralizingShieldName ; attack name
 	tx NeutralizingShieldDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8012,7 +8012,7 @@ Mew1Card: ; 334c0 (c:74c0)
 
 	; attack 2
 	energy PSYCHIC, 1 ; energies
-	tx PsyshockName ; name
+	tx PsyshockName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8042,14 +8042,14 @@ Mew2Card: ; 33501 (c:7501)
 	tx MewName ; name
 	db STAR ; rarity
 	db PROMOTIONAL | GB ; sets
-	db MEW2
+	db MEW2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1, COLORLESS, 1 ; energies
-	tx MysteryAttackName ; name
+	tx MysteryAttackName ; attack name
 	tx MysteryAttackDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8063,7 +8063,7 @@ Mew2Card: ; 33501 (c:7501)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8093,14 +8093,14 @@ Mew3Card: ; 33542 (c:7542)
 	tx MewName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db MEW3
+	db MEW3 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy PSYCHIC, 1 ; energies
-	tx PsywaveName ; name
+	tx PsywaveName ; attack name
 	tx PsywaveDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8114,7 +8114,7 @@ Mew3Card: ; 33542 (c:7542)
 
 	; attack 2
 	energy PSYCHIC, 2 ; energies
-	tx DevolutionBeamName ; name
+	tx DevolutionBeamName ; attack name
 	tx DevolutionBeamDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8144,14 +8144,14 @@ PidgeyCard: ; 33583 (c:7583)
 	tx PidgeyName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db PIDGEY
+	db PIDGEY ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx WhirlwindName ; name
+	tx WhirlwindName ; attack name
 	tx WhirlwindDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8165,7 +8165,7 @@ PidgeyCard: ; 33583 (c:7583)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8195,14 +8195,14 @@ PidgeottoCard: ; 335c4 (c:75c4)
 	tx PidgeottoName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db PIDGEOTTO
+	db PIDGEOTTO ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx PidgeyName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx WhirlwindName ; name
+	tx WhirlwindName ; attack name
 	tx WhirlwindDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8216,7 +8216,7 @@ PidgeottoCard: ; 335c4 (c:75c4)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx MirrorMoveName ; name
+	tx MirrorMoveName ; attack name
 	tx PidgeottosMirrorMoveDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8246,14 +8246,14 @@ Pidgeot1Card: ; 33605 (c:7605)
 	tx PidgeotName ; name
 	db STAR ; rarity
 	db LABORATORY | GB ; sets
-	db PIDGEOT1
+	db PIDGEOT1 ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx PidgeottoName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx SlicingWindName ; name
+	tx SlicingWindName ; attack name
 	tx SlicingWildDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8267,7 +8267,7 @@ Pidgeot1Card: ; 33605 (c:7605)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx GaleName ; name
+	tx GaleName ; attack name
 	tx GaleDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8297,14 +8297,14 @@ Pidgeot2Card: ; 33646 (c:7646)
 	tx PidgeotName ; name
 	db STAR ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db PIDGEOT2
+	db PIDGEOT2 ; const
 	db 80 ; hp
 	db STAGE2 ; stage
 	tx PidgeottoName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx WingAttackName ; name
+	tx WingAttackName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8318,7 +8318,7 @@ Pidgeot2Card: ; 33646 (c:7646)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx HurricaneName ; name
+	tx HurricaneName ; attack name
 	tx HurricaneDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -8348,14 +8348,14 @@ RattataCard: ; 33687 (c:7687)
 	tx RattataName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db RATTATA
+	db RATTATA ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx BiteName ; name
+	tx BiteName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8369,7 +8369,7 @@ RattataCard: ; 33687 (c:7687)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8399,14 +8399,14 @@ RaticateCard: ; 336c8 (c:76c8)
 	tx RaticateName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db RATICATE
+	db RATICATE ; const
 	db 60 ; hp
 	db STAGE1 ; stage
 	tx RattataName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx BiteName ; name
+	tx BiteName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8420,7 +8420,7 @@ RaticateCard: ; 336c8 (c:76c8)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx SuperFangName ; name
+	tx SuperFangName ; attack name
 	tx SuperFangDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8450,14 +8450,14 @@ SpearowCard: ; 33709 (c:7709)
 	tx SpearowName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db SPEAROW
+	db SPEAROW ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx PeckName ; name
+	tx PeckName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8471,7 +8471,7 @@ SpearowCard: ; 33709 (c:7709)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx MirrorMoveName ; name
+	tx MirrorMoveName ; attack name
 	tx SpearowsMirrorMoveDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8501,14 +8501,14 @@ FearowCard: ; 3374a (c:774a)
 	tx FearowName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db FEAROW
+	db FEAROW ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx SpearowName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx AgilityName ; name
+	tx AgilityName ; attack name
 	tx FearowsAgilityDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8522,7 +8522,7 @@ FearowCard: ; 3374a (c:774a)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx DrillPeckName ; name
+	tx DrillPeckName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -8552,14 +8552,14 @@ ClefairyCard: ; 3378b (c:778b)
 	tx ClefairyName ; name
 	db STAR ; rarity
 	db MYSTERY | NONE ; sets
-	db CLEFAIRY
+	db CLEFAIRY ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx SingName ; name
+	tx SingName ; attack name
 	tx MayInflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8573,7 +8573,7 @@ ClefairyCard: ; 3378b (c:778b)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx MetronomeName ; name
+	tx MetronomeName ; attack name
 	tx ClefairysMetronomeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8603,14 +8603,14 @@ ClefableCard: ; 337cc (c:77cc)
 	tx ClefableName ; name
 	db STAR ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db CLEFABLE
+	db CLEFABLE ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx ClefairyName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx MetronomeName ; name
+	tx MetronomeName ; attack name
 	tx ClefablesMetronomeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8624,7 +8624,7 @@ ClefableCard: ; 337cc (c:77cc)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx MinimizeName ; name
+	tx MinimizeName ; attack name
 	tx ClefablesMinimizeDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8654,14 +8654,14 @@ Jigglypuff1Card: ; 3380d (c:780d)
 	tx JigglypuffName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db JIGGLYPUFF1
+	db JIGGLYPUFF1 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx FirstAidName ; name
+	tx FirstAidName ; attack name
 	tx FirstAidDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8675,7 +8675,7 @@ Jigglypuff1Card: ; 3380d (c:780d)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx DoubleEdgeName ; name
+	tx DoubleEdgeName ; attack name
 	tx JigglypuffsDoubleEdgeDescription ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -8705,14 +8705,14 @@ Jigglypuff2Card: ; 3384e (c:784e)
 	tx JigglypuffName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | GB ; sets
-	db JIGGLYPUFF2
+	db JIGGLYPUFF2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx FriendshipSongName ; name
+	tx FriendshipSongName ; attack name
 	tx FriendshipSongDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8726,7 +8726,7 @@ Jigglypuff2Card: ; 3384e (c:784e)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx ExpandName ; name
+	tx ExpandName ; attack name
 	tx ExpandDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8756,14 +8756,14 @@ Jigglypuff3Card: ; 3388f (c:788f)
 	tx JigglypuffName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db JIGGLYPUFF3
+	db JIGGLYPUFF3 ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx LullabyName ; name
+	tx LullabyName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8777,7 +8777,7 @@ Jigglypuff3Card: ; 3388f (c:788f)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx PoundName ; name
+	tx PoundName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8807,14 +8807,14 @@ WigglytuffCard: ; 338d0 (c:78d0)
 	tx WigglytuffName ; name
 	db STAR ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db WIGGLYTUFF
+	db WIGGLYTUFF ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx JigglypuffName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx LullabyName ; name
+	tx LullabyName ; attack name
 	tx InflictSleepDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8828,7 +8828,7 @@ WigglytuffCard: ; 338d0 (c:78d0)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx DoTheWaveName ; name
+	tx DoTheWaveName ; attack name
 	tx DoTheWaveDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8858,14 +8858,14 @@ Meowth1Card: ; 33911 (c:7911)
 	tx MeowthName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | GB ; sets
-	db MEOWTH1
+	db MEOWTH1 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx CatPunchName ; name
+	tx CatPunchName ; attack name
 	tx CatPunchDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8879,7 +8879,7 @@ Meowth1Card: ; 33911 (c:7911)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8909,14 +8909,14 @@ Meowth2Card: ; 33952 (c:7952)
 	tx MeowthName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db MEOWTH2
+	db MEOWTH2 ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx PayDayName ; name
+	tx PayDayName ; attack name
 	tx PayDayDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -8930,7 +8930,7 @@ Meowth2Card: ; 33952 (c:7952)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -8960,14 +8960,14 @@ PersianCard: ; 33993 (c:7993)
 	tx PersianName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db PERSIAN
+	db PERSIAN ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx MeowthName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx ScratchName ; name
+	tx ScratchName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -8981,7 +8981,7 @@ PersianCard: ; 33993 (c:7993)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx PounceName ; name
+	tx PounceName ; attack name
 	tx PounceDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -9011,14 +9011,14 @@ FarfetchdCard: ; 339d4 (c:79d4)
 	tx FarfetchdName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | NONE ; sets
-	db FARFETCHD
+	db FARFETCHD ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx LeekSlapName ; name
+	tx LeekSlapName ; attack name
 	tx LeekSlapDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -9032,7 +9032,7 @@ FarfetchdCard: ; 339d4 (c:79d4)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx PotSmashName ; name
+	tx PotSmashName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -9062,14 +9062,14 @@ DoduoCard: ; 33a15 (c:7a15)
 	tx DoduoName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | NONE ; sets
-	db DODUO
+	db DODUO ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx FuryAttackName ; name
+	tx FuryAttackName ; attack name
 	tx DoubleAttackX10Description ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -9083,7 +9083,7 @@ DoduoCard: ; 33a15 (c:7a15)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9113,14 +9113,14 @@ DodrioCard: ; 33a56 (c:7a56)
 	tx DodrioName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | JUNGLE ; sets
-	db DODRIO
+	db DODRIO ; const
 	db 70 ; hp
 	db STAGE1 ; stage
 	tx DoduoName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx RetreatAidName ; name
+	tx RetreatAidName ; attack name
 	tx RetreatAidDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9134,7 +9134,7 @@ DodrioCard: ; 33a56 (c:7a56)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx RageName ; name
+	tx RageName ; attack name
 	tx DodriosRageDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -9164,14 +9164,14 @@ LickitungCard: ; 33a97 (c:7a97)
 	tx LickitungName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db LICKITUNG
+	db LICKITUNG ; const
 	db 90 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx TongueWrapName ; name
+	tx TongueWrapName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -9185,7 +9185,7 @@ LickitungCard: ; 33a97 (c:7a97)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx SupersonicName ; name
+	tx SupersonicName ; attack name
 	tx MayInflictConfusionDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9215,14 +9215,14 @@ ChanseyCard: ; 33ad8 (c:7ad8)
 	tx ChanseyName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db CHANSEY
+	db CHANSEY ; const
 	db 120 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx ScrunchName ; name
+	tx ScrunchName ; attack name
 	tx ScrunchDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9236,7 +9236,7 @@ ChanseyCard: ; 33ad8 (c:7ad8)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx DoubleEdgeName ; name
+	tx DoubleEdgeName ; attack name
 	tx ChanseysDoubleEdgeDescription ; description
 	dw NONE ; description (cont)
 	db 80 ; damage
@@ -9266,14 +9266,14 @@ KangaskhanCard: ; 33b19 (c:7b19)
 	tx KangaskhanName ; name
 	db STAR ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db KANGASKHAN
+	db KANGASKHAN ; const
 	db 90 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx FetchName ; name
+	tx FetchName ; attack name
 	tx FetchDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9287,7 +9287,7 @@ KangaskhanCard: ; 33b19 (c:7b19)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx CometPunchName ; name
+	tx CometPunchName ; attack name
 	tx QuadrupleAttackX20Description ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -9317,14 +9317,14 @@ TaurosCard: ; 33b5a (c:7b5a)
 	tx TaurosName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | JUNGLE ; sets
-	db TAUROS
+	db TAUROS ; const
 	db 60 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx StompName ; name
+	tx StompName ; attack name
 	tx StompDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -9338,7 +9338,7 @@ TaurosCard: ; 33b5a (c:7b5a)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx RampageName ; name
+	tx RampageName ; attack name
 	tx RampageDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -9368,14 +9368,14 @@ DittoCard: ; 33b9b (c:7b9b)
 	tx DittoName ; name
 	db STAR ; rarity
 	db LABORATORY | GB ; sets
-	db DITTO
+	db DITTO ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx PoundName ; name
+	tx PoundName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -9389,7 +9389,7 @@ DittoCard: ; 33b9b (c:7b9b)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx MorphName ; name
+	tx MorphName ; attack name
 	tx MorphDescription ; description
 	tx MorphDescriptionCont ; description (cont)
 	db 0 ; damage
@@ -9419,14 +9419,14 @@ EeveeCard: ; 33bdc (c:7bdc)
 	tx EeveeName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | JUNGLE ; sets
-	db EEVEE
+	db EEVEE ; const
 	db 50 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx TailWagName ; name
+	tx TailWagName ; attack name
 	tx TailWagDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9440,7 +9440,7 @@ EeveeCard: ; 33bdc (c:7bdc)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx QuickAttackName ; name
+	tx QuickAttackName ; attack name
 	tx QuickAttackDescription ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -9470,14 +9470,14 @@ PorygonCard: ; 33c1d (c:7c1d)
 	tx PorygonName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | NONE ; sets
-	db PORYGON
+	db PORYGON ; const
 	db 30 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx Conversion1Name ; name
+	tx Conversion1Name ; attack name
 	tx Conversion1Description ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9491,7 +9491,7 @@ PorygonCard: ; 33c1d (c:7c1d)
 
 	; attack 2
 	energy COLORLESS, 2 ; energies
-	tx Conversion2Name ; name
+	tx Conversion2Name ; attack name
 	tx Conversion2Description ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9521,14 +9521,14 @@ SnorlaxCard: ; 33c5e (c:7c5e)
 	tx SnorlaxName ; name
 	db STAR ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db SNORLAX
+	db SNORLAX ; const
 	db 90 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx ThickSkinnedName ; name
+	tx ThickSkinnedName ; attack name
 	tx ThickSkinnedDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9542,7 +9542,7 @@ SnorlaxCard: ; 33c5e (c:7c5e)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx BodySlamName ; name
+	tx BodySlamName ; attack name
 	tx MayInflictParalysisDescription ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -9572,14 +9572,14 @@ DratiniCard: ; 33c9f (c:7c9f)
 	tx DratiniName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | NONE ; sets
-	db DRATINI
+	db DRATINI ; const
 	db 40 ; hp
 	db BASIC ; stage
 	dw NONE ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 1 ; energies
-	tx PoundName ; name
+	tx PoundName ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 10 ; damage
@@ -9593,7 +9593,7 @@ DratiniCard: ; 33c9f (c:7c9f)
 
 	; attack 2
 	energy 0 ; energies
-	dw NONE ; name
+	dw NONE ; attack name
 	dw NONE ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9623,14 +9623,14 @@ DragonairCard: ; 33ce0 (c:7ce0)
 	tx DragonairName ; name
 	db STAR ; rarity
 	db MYSTERY | NONE ; sets
-	db DRAGONAIR
+	db DRAGONAIR ; const
 	db 80 ; hp
 	db STAGE1 ; stage
 	tx DratiniName ; pre-evo name
 
 	; attack 1
 	energy COLORLESS, 3 ; energies
-	tx SlamName ; name
+	tx SlamName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -9644,7 +9644,7 @@ DragonairCard: ; 33ce0 (c:7ce0)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx HyperBeamName ; name
+	tx HyperBeamName ; attack name
 	tx Discard1EnergyFromTargetDescription ; description
 	dw NONE ; description (cont)
 	db 20 ; damage
@@ -9674,14 +9674,14 @@ Dragonite1Card: ; 33d21 (c:7d21)
 	tx DragoniteName ; name
 	db STAR ; rarity
 	db PROMOTIONAL | GB ; sets
-	db DRAGONITE1
+	db DRAGONITE1 ; const
 	db 100 ; hp
 	db STAGE2 ; stage
 	tx DragonairName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx HealingWindName ; name
+	tx HealingWindName ; attack name
 	tx HealingWindDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9695,7 +9695,7 @@ Dragonite1Card: ; 33d21 (c:7d21)
 
 	; attack 2
 	energy COLORLESS, 3 ; energies
-	tx SlamName ; name
+	tx SlamName ; attack name
 	tx DoubleAttackX30Description ; description
 	dw NONE ; description (cont)
 	db 30 ; damage
@@ -9725,14 +9725,14 @@ Dragonite2Card: ; 33d62 (c:7d62)
 	tx DragoniteName ; name
 	db STAR ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db DRAGONITE2
+	db DRAGONITE2 ; const
 	db 100 ; hp
 	db STAGE2 ; stage
 	tx DragonairName ; pre-evo name
 
 	; attack 1
 	energy 0 ; energies
-	tx StepInName ; name
+	tx StepInName ; attack name
 	tx StepInDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -9746,7 +9746,7 @@ Dragonite2Card: ; 33d62 (c:7d62)
 
 	; attack 2
 	energy COLORLESS, 4 ; energies
-	tx SlamName ; name
+	tx SlamName ; attack name
 	tx DoubleAttackX40Description ; description
 	dw NONE ; description (cont)
 	db 40 ; damage
@@ -9776,7 +9776,7 @@ GrassEnergyCard: ; 33da3 (c:7da3)
 	tx GrassEnergyName ; name
 	db CIRCLE ; rarity
 	db ENERGY | NONE ; sets
-	db GRASS_ENERGY
+	db GRASS_ENERGY ; const
 	dw GrassEnergyEffectCommands ; effect commands
 	tx GrassEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9787,7 +9787,7 @@ FireEnergyCard: ; 33db1 (c:7db1)
 	tx FireEnergyName ; name
 	db CIRCLE ; rarity
 	db ENERGY | NONE ; sets
-	db FIRE_ENERGY
+	db FIRE_ENERGY ; const
 	dw FireEnergyEffectCommands ; effect commands
 	tx FireEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9798,7 +9798,7 @@ WaterEnergyCard: ; 33dbf (c:7dbf)
 	tx WaterEnergyName ; name
 	db CIRCLE ; rarity
 	db ENERGY | NONE ; sets
-	db WATER_ENERGY
+	db WATER_ENERGY ; const
 	dw WaterEnergyEffectCommands ; effect commands
 	tx WaterEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9809,7 +9809,7 @@ LightningEnergyCard: ; 33dcd (c:7dcd)
 	tx LightningEnergyName ; name
 	db CIRCLE ; rarity
 	db ENERGY | NONE ; sets
-	db LIGHTNING_ENERGY
+	db LIGHTNING_ENERGY ; const
 	dw LightningEnergyEffectCommands ; effect commands
 	tx LightningEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9820,7 +9820,7 @@ FightingEnergyCard: ; 33ddb (c:7ddb)
 	tx FightingEnergyName ; name
 	db CIRCLE ; rarity
 	db ENERGY | NONE ; sets
-	db FIGHTING_ENERGY
+	db FIGHTING_ENERGY ; const
 	dw FightingEnergyEffectCommands ; effect commands
 	tx FightingEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9831,7 +9831,7 @@ PsychicEnergyCard: ; 33de9 (c:7de9)
 	tx PsychicEnergyName ; name
 	db CIRCLE ; rarity
 	db ENERGY | NONE ; sets
-	db PSYCHIC_ENERGY
+	db PSYCHIC_ENERGY ; const
 	dw PsychicEnergyEffectCommands ; effect commands
 	tx PsychicEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9842,7 +9842,7 @@ DoubleColorlessEnergyCard: ; 33df7 (c:7df7)
 	tx DoubleColorlessEnergyName ; name
 	db DIAMOND ; rarity
 	db ENERGY | NONE ; sets
-	db DOUBLE_COLORLESS_ENERGY
+	db DOUBLE_COLORLESS_ENERGY ; const
 	dw DoubleColorlessEnergyEffectCommands ; effect commands
 	tx DoubleColorlessEnergyDescription ; description
 	dw NONE ; description (cont)
@@ -9853,7 +9853,7 @@ ProfessorOakCard: ; 33e05 (c:7e05)
 	tx ProfessorOakName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db PROFESSOR_OAK
+	db PROFESSOR_OAK ; const
 	dw ProfessorOakEffectCommands ; effect commands
 	tx ProfessorOakDescription ; description
 	dw NONE ; description (cont)
@@ -9864,7 +9864,7 @@ ImposterProfessorOakCard: ; 33e13 (c:7e13)
 	tx ImposterProfessorOakName ; name
 	db STAR ; rarity
 	db LABORATORY | NONE ; sets
-	db IMPOSTER_PROFESSOR_OAK
+	db IMPOSTER_PROFESSOR_OAK ; const
 	dw ImposterProfessorOakEffectCommands ; effect commands
 	tx ImposterProfessorOakDescription ; description
 	dw NONE ; description (cont)
@@ -9875,7 +9875,7 @@ BillCard: ; 33e21 (c:7e21)
 	tx BillName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db BILL
+	db BILL ; const
 	dw BillEffectCommands ; effect commands
 	tx BillDescription ; description
 	dw NONE ; description (cont)
@@ -9886,7 +9886,7 @@ MrFujiCard: ; 33e2f (c:7e2f)
 	tx MrFujiName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db MR_FUJI
+	db MR_FUJI ; const
 	dw MrFujiEffectCommands ; effect commands
 	tx MrFujiDescription ; description
 	dw NONE ; description (cont)
@@ -9897,7 +9897,7 @@ LassCard: ; 33e3d (c:7e3d)
 	tx LassName ; name
 	db STAR ; rarity
 	db LABORATORY | NONE ; sets
-	db LASS
+	db LASS ; const
 	dw LassEffectCommands ; effect commands
 	tx LassDescription ; description
 	dw NONE ; description (cont)
@@ -9908,7 +9908,7 @@ ImakuniCard: ; 33e4b (c:7e4b)
 	tx ImakuniName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db IMAKUNI_CARD
+	db IMAKUNI_CARD ; const
 	dw ImakuniEffectCommands ; effect commands
 	tx ImakuniDescription ; description
 	dw NONE ; description (cont)
@@ -9919,7 +9919,7 @@ PokemonTraderCard: ; 33e59 (c:7e59)
 	tx PokemonTraderName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db POKEMON_TRADER
+	db POKEMON_TRADER ; const
 	dw PokemonTraderEffectCommands ; effect commands
 	tx PokemonTraderDescription ; description
 	dw NONE ; description (cont)
@@ -9930,7 +9930,7 @@ PokemonBreederCard: ; 33e67 (c:7e67)
 	tx PokemonBreederName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db POKEMON_BREEDER
+	db POKEMON_BREEDER ; const
 	dw PokemonBreederEffectCommands ; effect commands
 	tx PokemonBreederDescription ; description
 	dw NONE ; description (cont)
@@ -9941,7 +9941,7 @@ ClefairyDollCard: ; 33e75 (c:7e75)
 	tx ClefairyDollName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db CLEFAIRY_DOLL
+	db CLEFAIRY_DOLL ; const
 	dw ClefairyDollEffectCommands ; effect commands
 	tx ClefairyDollDescription ; description
 	tx ClefairyDollDescriptionCont ; description (cont)
@@ -9952,7 +9952,7 @@ MysteriousFossilCard: ; 33e83 (c:7e83)
 	tx MysteriousFossilName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | FOSSIL ; sets
-	db MYSTERIOUS_FOSSIL
+	db MYSTERIOUS_FOSSIL ; const
 	dw MysteriousFossilEffectCommands ; effect commands
 	tx MysteriousFossilDescription ; description
 	tx MysteriousFossilDescriptionCont ; description (cont)
@@ -9963,7 +9963,7 @@ EnergyRetrievalCard: ; 33e91 (c:7e91)
 	tx EnergyRetrievalName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db ENERGY_RETRIEVAL
+	db ENERGY_RETRIEVAL ; const
 	dw EnergyRetrievalEffectCommands ; effect commands
 	tx EnergyRetrievalDescription ; description
 	dw NONE ; description (cont)
@@ -9974,7 +9974,7 @@ SuperEnergyRetrievalCard: ; 33e9f (c:7e9f)
 	tx SuperEnergyRetrievalName ; name
 	db PROMOSTAR ; rarity
 	db PROMOTIONAL | PRO ; sets
-	db SUPER_ENERGY_RETRIEVAL
+	db SUPER_ENERGY_RETRIEVAL ; const
 	dw SuperEnergyRetrievalEffectCommands ; effect commands
 	tx SuperEnergyRetrievalDescription ; description
 	dw NONE ; description (cont)
@@ -9985,7 +9985,7 @@ EnergySearchCard: ; 33ead (c:7ead)
 	tx EnergySearchName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | FOSSIL ; sets
-	db ENERGY_SEARCH
+	db ENERGY_SEARCH ; const
 	dw EnergySearchEffectCommands ; effect commands
 	tx EnergySearchDescription ; description
 	dw NONE ; description (cont)
@@ -9996,7 +9996,7 @@ EnergyRemovalCard: ; 33ebb (c:7ebb)
 	tx EnergyRemovalName ; name
 	db CIRCLE ; rarity
 	db MYSTERY | NONE ; sets
-	db ENERGY_REMOVAL
+	db ENERGY_REMOVAL ; const
 	dw EnergyRemovalEffectCommands ; effect commands
 	tx EnergyRemovalDescription ; description
 	dw NONE ; description (cont)
@@ -10007,7 +10007,7 @@ SuperEnergyRemovalCard: ; 33ec9 (c:7ec9)
 	tx SuperEnergyRemovalName ; name
 	db STAR ; rarity
 	db LABORATORY | NONE ; sets
-	db SUPER_ENERGY_REMOVAL
+	db SUPER_ENERGY_REMOVAL ; const
 	dw SuperEnergyRemovalEffectCommands ; effect commands
 	tx SuperEnergyRemovalDescription ; description
 	dw NONE ; description (cont)
@@ -10018,7 +10018,7 @@ SwitchCard: ; 33ed7 (c:7ed7)
 	tx SwitchName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db SWITCH
+	db SWITCH ; const
 	dw SwitchEffectCommands ; effect commands
 	tx SwitchDescription ; description
 	dw NONE ; description (cont)
@@ -10029,7 +10029,7 @@ PokemonCenterCard: ; 33ee5 (c:7ee5)
 	tx PokemonCenterName ; name
 	db DIAMOND ; rarity
 	db MYSTERY | NONE ; sets
-	db POKEMON_CENTER
+	db POKEMON_CENTER ; const
 	dw PokemonCenterEffectCommands ; effect commands
 	tx PokemonCenterDescription ; description
 	dw NONE ; description (cont)
@@ -10040,7 +10040,7 @@ PokeBallCard: ; 33ef3 (c:7ef3)
 	tx PokeBallName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | JUNGLE ; sets
-	db POKE_BALL
+	db POKE_BALL ; const
 	dw PokeBallEffectCommands ; effect commands
 	tx PokeBallDescription ; description
 	dw NONE ; description (cont)
@@ -10051,7 +10051,7 @@ ScoopUpCard: ; 33f01 (c:7f01)
 	tx ScoopUpName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db SCOOP_UP
+	db SCOOP_UP ; const
 	dw ScoopUpEffectCommands ; effect commands
 	tx ScoopUpDescription ; description
 	dw NONE ; description (cont)
@@ -10062,7 +10062,7 @@ ComputerSearchCard: ; 33f0f (c:7f0f)
 	tx ComputerSearchName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db COMPUTER_SEARCH
+	db COMPUTER_SEARCH ; const
 	dw ComputerSearchEffectCommands ; effect commands
 	tx ComputerSearchDescription ; description
 	dw NONE ; description (cont)
@@ -10073,7 +10073,7 @@ PokedexCard: ; 33f1d (c:7f1d)
 	tx PokedexName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | NONE ; sets
-	db POKEDEX
+	db POKEDEX ; const
 	dw PokedexEffectCommands ; effect commands
 	tx PokedexDescription ; description
 	dw NONE ; description (cont)
@@ -10084,7 +10084,7 @@ PlusPowerCard: ; 33f2b (c:7f2b)
 	tx PlusPowerName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db PLUSPOWER
+	db PLUSPOWER ; const
 	dw PlusPowerEffectCommands ; effect commands
 	tx PlusPowerDescription ; description
 	dw NONE ; description (cont)
@@ -10095,7 +10095,7 @@ DefenderCard: ; 33f39 (c:7f39)
 	tx DefenderName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db DEFENDER
+	db DEFENDER ; const
 	dw DefenderEffectCommands ; effect commands
 	tx DefenderDescription ; description
 	dw NONE ; description (cont)
@@ -10106,7 +10106,7 @@ ItemFinderCard: ; 33f47 (c:7f47)
 	tx ItemFinderName ; name
 	db STAR ; rarity
 	db COLOSSEUM | NONE ; sets
-	db ITEM_FINDER
+	db ITEM_FINDER ; const
 	dw ItemFinderEffectCommands ; effect commands
 	tx ItemFinderDescription ; description
 	dw NONE ; description (cont)
@@ -10117,7 +10117,7 @@ GustOfWindCard: ; 33f55 (c:7f55)
 	tx GustOfWindName ; name
 	db CIRCLE ; rarity
 	db EVOLUTION | NONE ; sets
-	db GUST_OF_WIND
+	db GUST_OF_WIND ; const
 	dw GustOfWindEffectCommands ; effect commands
 	tx GustOfWindDescription ; description
 	dw NONE ; description (cont)
@@ -10128,7 +10128,7 @@ DevolutionSprayCard: ; 33f63 (c:7f63)
 	tx DevolutionSprayName ; name
 	db STAR ; rarity
 	db LABORATORY | NONE ; sets
-	db DEVOLUTION_SPRAY
+	db DEVOLUTION_SPRAY ; const
 	dw DevolutionSprayEffectCommands ; effect commands
 	tx DevolutionSprayDescription ; description
 	tx DevolutionSprayDescriptionCont ; description (cont)
@@ -10139,7 +10139,7 @@ PotionCard: ; 33f71 (c:7f71)
 	tx PotionName ; name
 	db CIRCLE ; rarity
 	db COLOSSEUM | NONE ; sets
-	db POTION
+	db POTION ; const
 	dw PotionEffectCommands ; effect commands
 	tx PotionDescription ; description
 	dw NONE ; description (cont)
@@ -10150,7 +10150,7 @@ SuperPotionCard: ; 33f7f (c:7f7f)
 	tx SuperPotionName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db SUPER_POTION
+	db SUPER_POTION ; const
 	dw SuperPotionEffectCommands ; effect commands
 	tx SuperPotionDescription ; description
 	dw NONE ; description (cont)
@@ -10161,7 +10161,7 @@ FullHealCard: ; 33f8d (c:7f8d)
 	tx FullHealName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db FULL_HEAL
+	db FULL_HEAL ; const
 	dw FullHealEffectCommands ; effect commands
 	tx FullHealDescription ; description
 	dw NONE ; description (cont)
@@ -10172,7 +10172,7 @@ ReviveCard: ; 33f9b (c:7f9b)
 	tx ReviveName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db REVIVE
+	db REVIVE ; const
 	dw ReviveEffectCommands ; effect commands
 	tx ReviveDescription ; description
 	dw NONE ; description (cont)
@@ -10183,7 +10183,7 @@ MaintenanceCard: ; 33fa9 (c:7fa9)
 	tx MaintenanceName ; name
 	db DIAMOND ; rarity
 	db LABORATORY | NONE ; sets
-	db MAINTENANCE
+	db MAINTENANCE ; const
 	dw MaintenanceEffectCommands ; effect commands
 	tx MaintenanceDescription ; description
 	dw NONE ; description (cont)
@@ -10194,7 +10194,7 @@ PokemonFluteCard: ; 33fb7 (c:7fb7)
 	tx PokemonFluteName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db POKEMON_FLUTE
+	db POKEMON_FLUTE ; const
 	dw PokemonFluteEffectCommands ; effect commands
 	tx PokemonFluteDescription ; description
 	dw NONE ; description (cont)
@@ -10205,7 +10205,7 @@ GamblerCard: ; 33fc5 (c:7fc5)
 	tx GamblerName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db GAMBLER
+	db GAMBLER ; const
 	dw GamblerEffectCommands ; effect commands
 	tx GamblerDescription ; description
 	dw NONE ; description (cont)
@@ -10216,7 +10216,7 @@ RecycleCard: ; 33fd3 (c:7fd3)
 	tx RecycleName ; name
 	db CIRCLE ; rarity
 	db LABORATORY | FOSSIL ; sets
-	db RECYCLE
+	db RECYCLE ; const
 	dw RecycleEffectCommands ; effect commands
 	tx RecycleDescription ; description
 	dw NONE ; description (cont)

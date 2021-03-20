@@ -1,0 +1,3658 @@
+{
+  "BulbasaurCard": {
+    "name": "BulbasaurCard",
+    "text_name": "BulbasaurName",
+    "id": 1,
+    "group": 1,
+    "constant": "BULBASAUR",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "IvysaurCard": {
+    "name": "IvysaurCard",
+    "text_name": "IvysaurName",
+    "id": 2,
+    "group": 1,
+    "constant": "IVYSAUR",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 2
+    },
+    "target_group": "BulbasaurName"
+  },
+  "Venusaur1Card": {
+    "name": "Venusaur1Card",
+    "text_name": "VenusaurName",
+    "id": 3,
+    "group": 1,
+    "constant": "VENUSAUR1",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4
+    },
+    "target_group": "IvysaurName"
+  },
+  "Venusaur2Card": {
+    "name": "Venusaur2Card",
+    "text_name": "VenusaurName",
+    "id": 4,
+    "group": 1,
+    "constant": "VENUSAUR2",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4
+    },
+    "target_group": "IvysaurName"
+  },
+  "CaterpieCard": {
+    "name": "CaterpieCard",
+    "text_name": "CaterpieName",
+    "id": 5,
+    "group": 5,
+    "constant": "CATERPIE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "MetapodCard": {
+    "name": "MetapodCard",
+    "text_name": "MetapodName",
+    "id": 6,
+    "group": 5,
+    "constant": "METAPOD",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 2
+    },
+    "target_group": "CaterpieName"
+  },
+  "ButterfreeCard": {
+    "name": "ButterfreeCard",
+    "text_name": "ButterfreeName",
+    "id": 7,
+    "group": 5,
+    "constant": "BUTTERFREE",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 4
+    },
+    "target_group": "MetapodName"
+  },
+  "WeedleCard": {
+    "name": "WeedleCard",
+    "text_name": "WeedleName",
+    "id": 8,
+    "group": 8,
+    "constant": "WEEDLE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "KakunaCard": {
+    "name": "KakunaCard",
+    "text_name": "KakunaName",
+    "id": 9,
+    "group": 8,
+    "constant": "KAKUNA",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 2
+    },
+    "target_group": "WeedleName"
+  },
+  "BeedrillCard": {
+    "name": "BeedrillCard",
+    "text_name": "BeedrillName",
+    "id": 10,
+    "group": 8,
+    "constant": "BEEDRILL",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3,
+      "GRASS": 3
+    },
+    "target_group": "KakunaName"
+  },
+  "EkansCard": {
+    "name": "EkansCard",
+    "text_name": "EkansName",
+    "id": 11,
+    "group": 11,
+    "constant": "EKANS",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "ArbokCard": {
+    "name": "ArbokCard",
+    "text_name": "ArbokName",
+    "id": 12,
+    "group": 11,
+    "constant": "ARBOK",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "EkansName"
+  },
+  "NidoranFCard": {
+    "name": "NidoranFCard",
+    "text_name": "NidoranFName",
+    "id": 13,
+    "group": 13,
+    "constant": "NIDORANF",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": ""
+  },
+  "NidorinaCard": {
+    "name": "NidorinaCard",
+    "text_name": "NidorinaName",
+    "id": 14,
+    "group": 13,
+    "constant": "NIDORINA",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 2
+    },
+    "target_group": "NidoranFName"
+  },
+  "NidoqueenCard": {
+    "name": "NidoqueenCard",
+    "text_name": "NidoqueenName",
+    "id": 15,
+    "group": 13,
+    "constant": "NIDOQUEEN",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 3
+    },
+    "target_group": "NidorinaName"
+  },
+  "NidoranMCard": {
+    "name": "NidoranMCard",
+    "text_name": "NidoranMName",
+    "id": 16,
+    "group": 16,
+    "constant": "NIDORANM",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "NidorinoCard": {
+    "name": "NidorinoCard",
+    "text_name": "NidorinoName",
+    "id": 17,
+    "group": 16,
+    "constant": "NIDORINO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 4
+    },
+    "target_group": "NidoranMName"
+  },
+  "NidokingCard": {
+    "name": "NidokingCard",
+    "text_name": "NidokingName",
+    "id": 18,
+    "group": 16,
+    "constant": "NIDOKING",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 2
+    },
+    "target_group": "NidorinoName"
+  },
+  "ZubatCard": {
+    "name": "ZubatCard",
+    "text_name": "ZubatName",
+    "id": 19,
+    "group": 19,
+    "constant": "ZUBAT",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3,
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "GolbatCard": {
+    "name": "GolbatCard",
+    "text_name": "GolbatName",
+    "id": 20,
+    "group": 19,
+    "constant": "GOLBAT",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4,
+      "GRASS": 2
+    },
+    "target_group": "ZubatName"
+  },
+  "OddishCard": {
+    "name": "OddishCard",
+    "text_name": "OddishName",
+    "id": 21,
+    "group": 21,
+    "constant": "ODDISH",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": ""
+  },
+  "GloomCard": {
+    "name": "GloomCard",
+    "text_name": "GloomName",
+    "id": 22,
+    "group": 21,
+    "constant": "GLOOM",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "OddishName"
+  },
+  "VileplumeCard": {
+    "name": "VileplumeCard",
+    "text_name": "VileplumeName",
+    "id": 23,
+    "group": 21,
+    "constant": "VILEPLUME",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "GloomName"
+  },
+  "ParasCard": {
+    "name": "ParasCard",
+    "text_name": "ParasName",
+    "id": 24,
+    "group": 24,
+    "constant": "PARAS",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "ParasectCard": {
+    "name": "ParasectCard",
+    "text_name": "ParasectName",
+    "id": 25,
+    "group": 24,
+    "constant": "PARASECT",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 3
+    },
+    "target_group": "ParasName"
+  },
+  "VenonatCard": {
+    "name": "VenonatCard",
+    "text_name": "VenonatName",
+    "id": 26,
+    "group": 26,
+    "constant": "VENONAT",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "VenomothCard": {
+    "name": "VenomothCard",
+    "text_name": "VenomothName",
+    "id": 27,
+    "group": 26,
+    "constant": "VENOMOTH",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": "VenonatName"
+  },
+  "BellsproutCard": {
+    "name": "BellsproutCard",
+    "text_name": "BellsproutName",
+    "id": 28,
+    "group": 28,
+    "constant": "BELLSPROUT",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "WeepinbellCard": {
+    "name": "WeepinbellCard",
+    "text_name": "WeepinbellName",
+    "id": 29,
+    "group": 28,
+    "constant": "WEEPINBELL",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "BellsproutName"
+  },
+  "VictreebelCard": {
+    "name": "VictreebelCard",
+    "text_name": "VictreebelName",
+    "id": 30,
+    "group": 28,
+    "constant": "VICTREEBEL",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "WeepinbellName"
+  },
+  "GrimerCard": {
+    "name": "GrimerCard",
+    "text_name": "GrimerName",
+    "id": 31,
+    "group": 31,
+    "constant": "GRIMER",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "GRASS": 1
+    },
+    "target_group": ""
+  },
+  "MukCard": {
+    "name": "MukCard",
+    "text_name": "MukName",
+    "id": 32,
+    "group": 31,
+    "constant": "MUK",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3
+    },
+    "target_group": "GrimerName"
+  },
+  "ExeggcuteCard": {
+    "name": "ExeggcuteCard",
+    "text_name": "ExeggcuteName",
+    "id": 33,
+    "group": 33,
+    "constant": "EXEGGCUTE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "ExeggutorCard": {
+    "name": "ExeggutorCard",
+    "text_name": "ExeggutorName",
+    "id": 34,
+    "group": 33,
+    "constant": "EXEGGUTOR",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": "ExeggcuteName"
+  },
+  "KoffingCard": {
+    "name": "KoffingCard",
+    "text_name": "KoffingName",
+    "id": 35,
+    "group": 35,
+    "constant": "KOFFING",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 2
+    },
+    "target_group": ""
+  },
+  "WeezingCard": {
+    "name": "WeezingCard",
+    "text_name": "WeezingName",
+    "id": 36,
+    "group": 35,
+    "constant": "WEEZING",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "KoffingName"
+  },
+  "Tangela1Card": {
+    "name": "Tangela1Card",
+    "text_name": "TangelaName",
+    "id": 37,
+    "group": 37,
+    "constant": "TANGELA1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Tangela2Card": {
+    "name": "Tangela2Card",
+    "text_name": "TangelaName",
+    "id": 38,
+    "group": 38,
+    "constant": "TANGELA2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "ScytherCard": {
+    "name": "ScytherCard",
+    "text_name": "ScytherName",
+    "id": 39,
+    "group": 39,
+    "constant": "SCYTHER",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 1,
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "PinsirCard": {
+    "name": "PinsirCard",
+    "text_name": "PinsirName",
+    "id": 40,
+    "group": 40,
+    "constant": "PINSIR",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "GRASS": 4,
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "CharmanderCard": {
+    "name": "CharmanderCard",
+    "text_name": "CharmanderName",
+    "id": 41,
+    "group": 41,
+    "constant": "CHARMANDER",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 1
+    },
+    "target_group": ""
+  },
+  "CharmeleonCard": {
+    "name": "CharmeleonCard",
+    "text_name": "CharmeleonName",
+    "id": 42,
+    "group": 41,
+    "constant": "CHARMELEON",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4,
+      "FIRE": 2
+    },
+    "target_group": "CharmanderName"
+  },
+  "CharizardCard": {
+    "name": "CharizardCard",
+    "text_name": "CharizardName",
+    "id": 43,
+    "group": 41,
+    "constant": "CHARIZARD",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 4
+    },
+    "target_group": "CharmeleonName"
+  },
+  "VulpixCard": {
+    "name": "VulpixCard",
+    "text_name": "VulpixName",
+    "id": 44,
+    "group": 44,
+    "constant": "VULPIX",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 2
+    },
+    "target_group": ""
+  },
+  "Ninetails1Card": {
+    "name": "Ninetails1Card",
+    "text_name": "NinetailsName",
+    "id": 45,
+    "group": 44,
+    "constant": "NINETAILS1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 4
+    },
+    "target_group": "VulpixName"
+  },
+  "Ninetails2Card": {
+    "name": "Ninetails2Card",
+    "text_name": "NinetailsName",
+    "id": 46,
+    "group": 44,
+    "constant": "NINETAILS2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 5
+    },
+    "target_group": "VulpixName"
+  },
+  "GrowlitheCard": {
+    "name": "GrowlitheCard",
+    "text_name": "GrowlitheName",
+    "id": 47,
+    "group": 47,
+    "constant": "GROWLITHE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Arcanine1Card": {
+    "name": "Arcanine1Card",
+    "text_name": "ArcanineName",
+    "id": 48,
+    "group": 47,
+    "constant": "ARCANINE1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 2
+    },
+    "target_group": "GrowlitheName"
+  },
+  "Arcanine2Card": {
+    "name": "Arcanine2Card",
+    "text_name": "ArcanineName",
+    "id": 49,
+    "group": 47,
+    "constant": "ARCANINE2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "GrowlitheName"
+  },
+  "PonytaCard": {
+    "name": "PonytaCard",
+    "text_name": "PonytaName",
+    "id": 50,
+    "group": 50,
+    "constant": "PONYTA",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "FIRE": 2
+    },
+    "target_group": ""
+  },
+  "RapidashCard": {
+    "name": "RapidashCard",
+    "text_name": "RapidashName",
+    "id": 51,
+    "group": 50,
+    "constant": "RAPIDASH",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3,
+      "FIRE": 2
+    },
+    "target_group": "PonytaName"
+  },
+  "Magmar1Card": {
+    "name": "Magmar1Card",
+    "text_name": "MagmarName",
+    "id": 52,
+    "group": 52,
+    "constant": "MAGMAR1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 4,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Magmar2Card": {
+    "name": "Magmar2Card",
+    "text_name": "MagmarName",
+    "id": 53,
+    "group": 53,
+    "constant": "MAGMAR2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 3
+    },
+    "target_group": ""
+  },
+  "Flareon1Card": {
+    "name": "Flareon1Card",
+    "text_name": "FlareonName",
+    "id": 54,
+    "group": 181,
+    "constant": "FLAREON1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 6
+    },
+    "target_group": "EeveeName"
+  },
+  "Flareon2Card": {
+    "name": "Flareon2Card",
+    "text_name": "FlareonName",
+    "id": 55,
+    "group": 181,
+    "constant": "FLAREON2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4,
+      "FIRE": 2
+    },
+    "target_group": "EeveeName"
+  },
+  "Moltres1Card": {
+    "name": "Moltres1Card",
+    "text_name": "MoltresName",
+    "id": 56,
+    "group": 56,
+    "constant": "MOLTRES1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 5
+    },
+    "target_group": ""
+  },
+  "Moltres2Card": {
+    "name": "Moltres2Card",
+    "text_name": "MoltresName",
+    "id": 57,
+    "group": 57,
+    "constant": "MOLTRES2",
+    "type": 0,
+    "stage": 0,
+    "limit": 1,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIRE": 3
+    },
+    "target_group": ""
+  },
+  "SquirtleCard": {
+    "name": "SquirtleCard",
+    "text_name": "SquirtleName",
+    "id": 58,
+    "group": 58,
+    "constant": "SQUIRTLE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "WartortleCard": {
+    "name": "WartortleCard",
+    "text_name": "WartortleName",
+    "id": 59,
+    "group": 58,
+    "constant": "WARTORTLE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 3
+    },
+    "target_group": "SquirtleName"
+  },
+  "BlastoiseCard": {
+    "name": "BlastoiseCard",
+    "text_name": "BlastoiseName",
+    "id": 60,
+    "group": 58,
+    "constant": "BLASTOISE",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": "WartortleName"
+  },
+  "PsyduckCard": {
+    "name": "PsyduckCard",
+    "text_name": "PsyduckName",
+    "id": 61,
+    "group": 61,
+    "constant": "PSYDUCK",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "GolduckCard": {
+    "name": "GolduckCard",
+    "text_name": "GolduckName",
+    "id": 62,
+    "group": 61,
+    "constant": "GOLDUCK",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": "PsyduckName"
+  },
+  "PoliwagCard": {
+    "name": "PoliwagCard",
+    "text_name": "PoliwagName",
+    "id": 63,
+    "group": 63,
+    "constant": "POLIWAG",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "PoliwhirlCard": {
+    "name": "PoliwhirlCard",
+    "text_name": "PoliwhirlName",
+    "id": 64,
+    "group": 63,
+    "constant": "POLIWHIRL",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "PoliwagName"
+  },
+  "PoliwrathCard": {
+    "name": "PoliwrathCard",
+    "text_name": "PoliwrathName",
+    "id": 65,
+    "group": 63,
+    "constant": "POLIWRATH",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "PoliwhirlName"
+  },
+  "TentacoolCard": {
+    "name": "TentacoolCard",
+    "text_name": "TentacoolName",
+    "id": 66,
+    "group": 66,
+    "constant": "TENTACOOL",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "TentacruelCard": {
+    "name": "TentacruelCard",
+    "text_name": "TentacruelName",
+    "id": 67,
+    "group": 66,
+    "constant": "TENTACRUEL",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": "TentacoolName"
+  },
+  "SeelCard": {
+    "name": "SeelCard",
+    "text_name": "SeelName",
+    "id": 68,
+    "group": 68,
+    "constant": "SEEL",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "DewgongCard": {
+    "name": "DewgongCard",
+    "text_name": "DewgongName",
+    "id": 69,
+    "group": 68,
+    "constant": "DEWGONG",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "SeelName"
+  },
+  "ShellderCard": {
+    "name": "ShellderCard",
+    "text_name": "ShellderName",
+    "id": 70,
+    "group": 70,
+    "constant": "SHELLDER",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2
+    },
+    "target_group": ""
+  },
+  "CloysterCard": {
+    "name": "CloysterCard",
+    "text_name": "CloysterName",
+    "id": 71,
+    "group": 70,
+    "constant": "CLOYSTER",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 4
+    },
+    "target_group": "ShellderName"
+  },
+  "KrabbyCard": {
+    "name": "KrabbyCard",
+    "text_name": "KrabbyName",
+    "id": 72,
+    "group": 72,
+    "constant": "KRABBY",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "KinglerCard": {
+    "name": "KinglerCard",
+    "text_name": "KinglerName",
+    "id": 73,
+    "group": 72,
+    "constant": "KINGLER",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "KrabbyName"
+  },
+  "HorseaCard": {
+    "name": "HorseaCard",
+    "text_name": "HorseaName",
+    "id": 74,
+    "group": 74,
+    "constant": "HORSEA",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "SeadraCard": {
+    "name": "SeadraCard",
+    "text_name": "SeadraName",
+    "id": 75,
+    "group": 74,
+    "constant": "SEADRA",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 3
+    },
+    "target_group": "HorseaName"
+  },
+  "GoldeenCard": {
+    "name": "GoldeenCard",
+    "text_name": "GoldeenName",
+    "id": 76,
+    "group": 76,
+    "constant": "GOLDEEN",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "SeakingCard": {
+    "name": "SeakingCard",
+    "text_name": "SeakingName",
+    "id": 77,
+    "group": 76,
+    "constant": "SEAKING",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2,
+      "COLORLESS": 1
+    },
+    "target_group": "GoldeenName"
+  },
+  "StaryuCard": {
+    "name": "StaryuCard",
+    "text_name": "StaryuName",
+    "id": 78,
+    "group": 78,
+    "constant": "STARYU",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "StarmieCard": {
+    "name": "StarmieCard",
+    "text_name": "StarmieName",
+    "id": 79,
+    "group": 78,
+    "constant": "STARMIE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3,
+      "COLORLESS": 2
+    },
+    "target_group": "StaryuName"
+  },
+  "MagikarpCard": {
+    "name": "MagikarpCard",
+    "text_name": "MagikarpName",
+    "id": 80,
+    "group": 80,
+    "constant": "MAGIKARP",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "WATER": 1
+    },
+    "target_group": ""
+  },
+  "GyaradosCard": {
+    "name": "GyaradosCard",
+    "text_name": "GyaradosName",
+    "id": 81,
+    "group": 80,
+    "constant": "GYARADOS",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 7
+    },
+    "target_group": "MagikarpName"
+  },
+  "LaprasCard": {
+    "name": "LaprasCard",
+    "text_name": "LaprasName",
+    "id": 82,
+    "group": 82,
+    "constant": "LAPRAS",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": ""
+  },
+  "Vaporeon1Card": {
+    "name": "Vaporeon1Card",
+    "text_name": "VaporeonName",
+    "id": 83,
+    "group": 181,
+    "constant": "VAPOREON1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "EeveeName"
+  },
+  "Vaporeon2Card": {
+    "name": "Vaporeon2Card",
+    "text_name": "VaporeonName",
+    "id": 84,
+    "group": 181,
+    "constant": "VAPOREON2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3,
+      "WATER": 2
+    },
+    "target_group": "EeveeName"
+  },
+  "OmanyteCard": {
+    "name": "OmanyteCard",
+    "text_name": "OmanyteName",
+    "id": 85,
+    "group": 204,
+    "constant": "OMANYTE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 1
+    },
+    "target_group": "MysteriousFossilName"
+  },
+  "OmastarCard": {
+    "name": "OmastarCard",
+    "text_name": "OmastarName",
+    "id": 86,
+    "group": 204,
+    "constant": "OMASTAR",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "OmanyteName"
+  },
+  "Articuno1Card": {
+    "name": "Articuno1Card",
+    "text_name": "ArticunoName",
+    "id": 87,
+    "group": 87,
+    "constant": "ARTICUNO1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 7
+    },
+    "target_group": ""
+  },
+  "Articuno2Card": {
+    "name": "Articuno2Card",
+    "text_name": "ArticunoName",
+    "id": 88,
+    "group": 88,
+    "constant": "ARTICUNO2",
+    "type": 0,
+    "stage": 0,
+    "limit": 1,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 3
+    },
+    "target_group": ""
+  },
+  "Pikachu1Card": {
+    "name": "Pikachu1Card",
+    "text_name": "PikachuName",
+    "id": 89,
+    "group": 89,
+    "constant": "PIKACHU1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "LIGHTNING": 1
+    },
+    "target_group": ""
+  },
+  "Pikachu2Card": {
+    "name": "Pikachu2Card",
+    "text_name": "PikachuName",
+    "id": 90,
+    "group": 90,
+    "constant": "PIKACHU2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 2
+    },
+    "target_group": ""
+  },
+  "Pikachu3Card": {
+    "name": "Pikachu3Card",
+    "text_name": "PikachuName",
+    "id": 91,
+    "group": 91,
+    "constant": "PIKACHU3",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "LIGHTNING": 2
+    },
+    "target_group": ""
+  },
+  "Pikachu4Card": {
+    "name": "Pikachu4Card",
+    "text_name": "PikachuName",
+    "id": 92,
+    "group": 92,
+    "constant": "PIKACHU4",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "LIGHTNING": 2
+    },
+    "target_group": ""
+  },
+  "FlyingPikachuCard": {
+    "name": "FlyingPikachuCard",
+    "text_name": "FlyingPikachuName",
+    "id": 93,
+    "group": 93,
+    "constant": "FLYING_PIKACHU",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 1,
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "SurfingPikachu1Card": {
+    "name": "SurfingPikachu1Card",
+    "text_name": "SurfingPikachuName",
+    "id": 94,
+    "group": 94,
+    "constant": "SURFING_PIKACHU1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2
+    },
+    "target_group": ""
+  },
+  "SurfingPikachu2Card": {
+    "name": "SurfingPikachu2Card",
+    "text_name": "SurfingPikachuName",
+    "id": 95,
+    "group": 95,
+    "constant": "SURFING_PIKACHU2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "WATER": 2
+    },
+    "target_group": ""
+  },
+  "Raichu1Card": {
+    "name": "Raichu1Card",
+    "text_name": "RaichuName",
+    "id": 96,
+    "group": 92,
+    "constant": "RAICHU1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "PikachuName"
+  },
+  "Raichu2Card": {
+    "name": "Raichu2Card",
+    "text_name": "RaichuName",
+    "id": 97,
+    "group": 92,
+    "constant": "RAICHU2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 4
+    },
+    "target_group": "PikachuName"
+  },
+  "Magnemite1Card": {
+    "name": "Magnemite1Card",
+    "text_name": "MagnemiteName",
+    "id": 98,
+    "group": 98,
+    "constant": "MAGNEMITE1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Magnemite2Card": {
+    "name": "Magnemite2Card",
+    "text_name": "MagnemiteName",
+    "id": 99,
+    "group": 99,
+    "constant": "MAGNEMITE2",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "LIGHTNING": 1
+    },
+    "target_group": ""
+  },
+  "Magneton1Card": {
+    "name": "Magneton1Card",
+    "text_name": "MagnetonName",
+    "id": 100,
+    "group": 99,
+    "constant": "MAGNETON1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "MagnemiteName"
+  },
+  "Magneton2Card": {
+    "name": "Magneton2Card",
+    "text_name": "MagnetonName",
+    "id": 101,
+    "group": 99,
+    "constant": "MAGNETON2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 5,
+      "COLORLESS": 1
+    },
+    "target_group": "MagnemiteName"
+  },
+  "VoltorbCard": {
+    "name": "VoltorbCard",
+    "text_name": "VoltorbName",
+    "id": 102,
+    "group": 102,
+    "constant": "VOLTORB",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Electrode1Card": {
+    "name": "Electrode1Card",
+    "text_name": "ElectrodeName",
+    "id": 103,
+    "group": 102,
+    "constant": "ELECTRODE1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 5
+    },
+    "target_group": "VoltorbName"
+  },
+  "Electrode2Card": {
+    "name": "Electrode2Card",
+    "text_name": "ElectrodeName",
+    "id": 104,
+    "group": 102,
+    "constant": "ELECTRODE2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "LIGHTNING": 3
+    },
+    "target_group": "VoltorbName"
+  },
+  "Electabuzz1Card": {
+    "name": "Electabuzz1Card",
+    "text_name": "ElectabuzzName",
+    "id": 105,
+    "group": 105,
+    "constant": "ELECTABUZZ1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 1,
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "Electabuzz2Card": {
+    "name": "Electabuzz2Card",
+    "text_name": "ElectabuzzName",
+    "id": 106,
+    "group": 106,
+    "constant": "ELECTABUZZ2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Jolteon1Card": {
+    "name": "Jolteon1Card",
+    "text_name": "JolteonName",
+    "id": 107,
+    "group": 181,
+    "constant": "JOLTEON1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 6
+    },
+    "target_group": "EeveeName"
+  },
+  "Jolteon2Card": {
+    "name": "Jolteon2Card",
+    "text_name": "JolteonName",
+    "id": 108,
+    "group": 181,
+    "constant": "JOLTEON2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3,
+      "LIGHTNING": 2
+    },
+    "target_group": "EeveeName"
+  },
+  "Zapdos1Card": {
+    "name": "Zapdos1Card",
+    "text_name": "ZapdosName",
+    "id": 109,
+    "group": 109,
+    "constant": "ZAPDOS1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 4
+    },
+    "target_group": ""
+  },
+  "Zapdos2Card": {
+    "name": "Zapdos2Card",
+    "text_name": "ZapdosName",
+    "id": 110,
+    "group": 110,
+    "constant": "ZAPDOS2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 7,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Zapdos3Card": {
+    "name": "Zapdos3Card",
+    "text_name": "ZapdosName",
+    "id": 111,
+    "group": 111,
+    "constant": "ZAPDOS3",
+    "type": 0,
+    "stage": 0,
+    "limit": 1,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "LIGHTNING": 3
+    },
+    "target_group": ""
+  },
+  "SandshrewCard": {
+    "name": "SandshrewCard",
+    "text_name": "SandshrewName",
+    "id": 112,
+    "group": 112,
+    "constant": "SANDSHREW",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 1
+    },
+    "target_group": ""
+  },
+  "SandslashCard": {
+    "name": "SandslashCard",
+    "text_name": "SandslashName",
+    "id": 113,
+    "group": 112,
+    "constant": "SANDSLASH",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2,
+      "FIGHTING": 2
+    },
+    "target_group": "SandshrewName"
+  },
+  "DiglettCard": {
+    "name": "DiglettCard",
+    "text_name": "DiglettName",
+    "id": 114,
+    "group": 114,
+    "constant": "DIGLETT",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 3
+    },
+    "target_group": ""
+  },
+  "DugtrioCard": {
+    "name": "DugtrioCard",
+    "text_name": "DugtrioName",
+    "id": 115,
+    "group": 114,
+    "constant": "DUGTRIO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 6,
+      "COLORLESS": 1
+    },
+    "target_group": "DiglettName"
+  },
+  "MankeyCard": {
+    "name": "MankeyCard",
+    "text_name": "MankeyName",
+    "id": 116,
+    "group": 116,
+    "constant": "MANKEY",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "PrimeapeCard": {
+    "name": "PrimeapeCard",
+    "text_name": "PrimeapeName",
+    "id": 117,
+    "group": 116,
+    "constant": "PRIMEAPE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "MankeyName"
+  },
+  "MachopCard": {
+    "name": "MachopCard",
+    "text_name": "MachopName",
+    "id": 118,
+    "group": 118,
+    "constant": "MACHOP",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 1
+    },
+    "target_group": ""
+  },
+  "MachokeCard": {
+    "name": "MachokeCard",
+    "text_name": "MachokeName",
+    "id": 119,
+    "group": 118,
+    "constant": "MACHOKE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 3
+    },
+    "target_group": "MachopName"
+  },
+  "MachampCard": {
+    "name": "MachampCard",
+    "text_name": "MachampName",
+    "id": 120,
+    "group": 118,
+    "constant": "MACHAMP",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 3,
+      "COLORLESS": 1
+    },
+    "target_group": "MachokeName"
+  },
+  "GeodudeCard": {
+    "name": "GeodudeCard",
+    "text_name": "GeodudeName",
+    "id": 121,
+    "group": 121,
+    "constant": "GEODUDE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "GravelerCard": {
+    "name": "GravelerCard",
+    "text_name": "GravelerName",
+    "id": 122,
+    "group": 121,
+    "constant": "GRAVELER",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "GeodudeName"
+  },
+  "GolemCard": {
+    "name": "GolemCard",
+    "text_name": "GolemName",
+    "id": 123,
+    "group": 121,
+    "constant": "GOLEM",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 7,
+      "COLORLESS": 1
+    },
+    "target_group": "GravelerName"
+  },
+  "OnixCard": {
+    "name": "OnixCard",
+    "text_name": "OnixName",
+    "id": 124,
+    "group": 124,
+    "constant": "ONIX",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 3
+    },
+    "target_group": ""
+  },
+  "CuboneCard": {
+    "name": "CuboneCard",
+    "text_name": "CuboneName",
+    "id": 125,
+    "group": 125,
+    "constant": "CUBONE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "FIGHTING": 2
+    },
+    "target_group": ""
+  },
+  "Marowak1Card": {
+    "name": "Marowak1Card",
+    "text_name": "MarowakName",
+    "id": 126,
+    "group": 125,
+    "constant": "MAROWAK1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "CuboneName"
+  },
+  "Marowak2Card": {
+    "name": "Marowak2Card",
+    "text_name": "MarowakName",
+    "id": 127,
+    "group": 125,
+    "constant": "MAROWAK2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "CuboneName"
+  },
+  "HitmonleeCard": {
+    "name": "HitmonleeCard",
+    "text_name": "HitmonleeName",
+    "id": 128,
+    "group": 128,
+    "constant": "HITMONLEE",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 5
+    },
+    "target_group": ""
+  },
+  "HitmonchanCard": {
+    "name": "HitmonchanCard",
+    "text_name": "HitmonchanName",
+    "id": 129,
+    "group": 129,
+    "constant": "HITMONCHAN",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "RhyhornCard": {
+    "name": "RhyhornCard",
+    "text_name": "RhyhornName",
+    "id": 130,
+    "group": 130,
+    "constant": "RHYHORN",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3,
+      "FIGHTING": 1
+    },
+    "target_group": ""
+  },
+  "RhydonCard": {
+    "name": "RhydonCard",
+    "text_name": "RhydonName",
+    "id": 131,
+    "group": 130,
+    "constant": "RHYDON",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 5,
+      "COLORLESS": 2
+    },
+    "target_group": "RhyhornName"
+  },
+  "KabutoCard": {
+    "name": "KabutoCard",
+    "text_name": "KabutoName",
+    "id": 132,
+    "group": 204,
+    "constant": "KABUTO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": "MysteriousFossilName"
+  },
+  "KabutopsCard": {
+    "name": "KabutopsCard",
+    "text_name": "KabutopsName",
+    "id": 133,
+    "group": 204,
+    "constant": "KABUTOPS",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "FIGHTING": 6
+    },
+    "target_group": "KabutoName"
+  },
+  "AerodactylCard": {
+    "name": "AerodactylCard",
+    "text_name": "AerodactylName",
+    "id": 134,
+    "group": 204,
+    "constant": "AERODACTYL",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "MysteriousFossilName"
+  },
+  "AbraCard": {
+    "name": "AbraCard",
+    "text_name": "AbraName",
+    "id": 135,
+    "group": 135,
+    "constant": "ABRA",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1
+    },
+    "target_group": ""
+  },
+  "KadabraCard": {
+    "name": "KadabraCard",
+    "text_name": "KadabraName",
+    "id": 136,
+    "group": 135,
+    "constant": "KADABRA",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 4,
+      "COLORLESS": 1
+    },
+    "target_group": "AbraName"
+  },
+  "AlakazamCard": {
+    "name": "AlakazamCard",
+    "text_name": "AlakazamName",
+    "id": 137,
+    "group": 135,
+    "constant": "ALAKAZAM",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": "KadabraName"
+  },
+  "Slowpoke1Card": {
+    "name": "Slowpoke1Card",
+    "text_name": "SlowpokeName",
+    "id": 138,
+    "group": 138,
+    "constant": "SLOWPOKE1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "PSYCHIC": 2
+    },
+    "target_group": ""
+  },
+  "Slowpoke2Card": {
+    "name": "Slowpoke2Card",
+    "text_name": "SlowpokeName",
+    "id": 139,
+    "group": 139,
+    "constant": "SLOWPOKE2",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "PSYCHIC": 2
+    },
+    "target_group": ""
+  },
+  "SlowbroCard": {
+    "name": "SlowbroCard",
+    "text_name": "SlowbroName",
+    "id": 140,
+    "group": 139,
+    "constant": "SLOWBRO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 2
+    },
+    "target_group": "SlowpokeName"
+  },
+  "Gastly1Card": {
+    "name": "Gastly1Card",
+    "text_name": "GastlyName",
+    "id": 141,
+    "group": 141,
+    "constant": "GASTLY1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 2,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Gastly2Card": {
+    "name": "Gastly2Card",
+    "text_name": "GastlyName",
+    "id": 142,
+    "group": 142,
+    "constant": "GASTLY2",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": ""
+  },
+  "Haunter1Card": {
+    "name": "Haunter1Card",
+    "text_name": "HaunterName",
+    "id": 143,
+    "group": 142,
+    "constant": "HAUNTER1",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": "GastlyName"
+  },
+  "Haunter2Card": {
+    "name": "Haunter2Card",
+    "text_name": "HaunterName",
+    "id": 144,
+    "group": 142,
+    "constant": "HAUNTER2",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": "GastlyName"
+  },
+  "GengarCard": {
+    "name": "GengarCard",
+    "text_name": "GengarName",
+    "id": 145,
+    "group": 142,
+    "constant": "GENGAR",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": "HaunterName"
+  },
+  "DrowzeeCard": {
+    "name": "DrowzeeCard",
+    "text_name": "DrowzeeName",
+    "id": 146,
+    "group": 146,
+    "constant": "DROWZEE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1,
+      "PSYCHIC": 2
+    },
+    "target_group": ""
+  },
+  "HypnoCard": {
+    "name": "HypnoCard",
+    "text_name": "HypnoName",
+    "id": 147,
+    "group": 146,
+    "constant": "HYPNO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 4
+    },
+    "target_group": "DrowzeeName"
+  },
+  "MrMimeCard": {
+    "name": "MrMimeCard",
+    "text_name": "MrMimeName",
+    "id": 148,
+    "group": 148,
+    "constant": "MR_MIME",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "JynxCard": {
+    "name": "JynxCard",
+    "text_name": "JynxName",
+    "id": 149,
+    "group": 149,
+    "constant": "JYNX",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mewtwo1Card": {
+    "name": "Mewtwo1Card",
+    "text_name": "MewtwoName",
+    "id": 150,
+    "group": 150,
+    "constant": "MEWTWO1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mewtwo2Card": {
+    "name": "Mewtwo2Card",
+    "text_name": "MewtwoName",
+    "id": 151,
+    "group": 151,
+    "constant": "MEWTWO2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mewtwo3Card": {
+    "name": "Mewtwo3Card",
+    "text_name": "MewtwoName",
+    "id": 152,
+    "group": 152,
+    "constant": "MEWTWO3",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mew1Card": {
+    "name": "Mew1Card",
+    "text_name": "MewName",
+    "id": 153,
+    "group": 153,
+    "constant": "MEW1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1
+    },
+    "target_group": ""
+  },
+  "Mew2Card": {
+    "name": "Mew2Card",
+    "text_name": "MewName",
+    "id": 154,
+    "group": 154,
+    "constant": "MEW2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 1,
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "Mew3Card": {
+    "name": "Mew3Card",
+    "text_name": "MewName",
+    "id": 155,
+    "group": 155,
+    "constant": "MEW3",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "PSYCHIC": 3
+    },
+    "target_group": ""
+  },
+  "PidgeyCard": {
+    "name": "PidgeyCard",
+    "text_name": "PidgeyName",
+    "id": 156,
+    "group": 156,
+    "constant": "PIDGEY",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "PidgeottoCard": {
+    "name": "PidgeottoCard",
+    "text_name": "PidgeottoName",
+    "id": 157,
+    "group": 156,
+    "constant": "PIDGEOTTO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": "PidgeyName"
+  },
+  "Pidgeot1Card": {
+    "name": "Pidgeot1Card",
+    "text_name": "PidgeotName",
+    "id": 158,
+    "group": 156,
+    "constant": "PIDGEOT1",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 7
+    },
+    "target_group": "PidgeottoName"
+  },
+  "Pidgeot2Card": {
+    "name": "Pidgeot2Card",
+    "text_name": "PidgeotName",
+    "id": 159,
+    "group": 156,
+    "constant": "PIDGEOT2",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": "PidgeottoName"
+  },
+  "RattataCard": {
+    "name": "RattataCard",
+    "text_name": "RattataName",
+    "id": 160,
+    "group": 160,
+    "constant": "RATTATA",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "RaticateCard": {
+    "name": "RaticateCard",
+    "text_name": "RaticateName",
+    "id": 161,
+    "group": 160,
+    "constant": "RATICATE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "RattataName"
+  },
+  "SpearowCard": {
+    "name": "SpearowCard",
+    "text_name": "SpearowName",
+    "id": 162,
+    "group": 162,
+    "constant": "SPEAROW",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "FearowCard": {
+    "name": "FearowCard",
+    "text_name": "FearowName",
+    "id": 163,
+    "group": 162,
+    "constant": "FEAROW",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 7
+    },
+    "target_group": "SpearowName"
+  },
+  "ClefairyCard": {
+    "name": "ClefairyCard",
+    "text_name": "ClefairyName",
+    "id": 164,
+    "group": 164,
+    "constant": "CLEFAIRY",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "ClefableCard": {
+    "name": "ClefableCard",
+    "text_name": "ClefableName",
+    "id": 165,
+    "group": 164,
+    "constant": "CLEFABLE",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "ClefairyName"
+  },
+  "Jigglypuff1Card": {
+    "name": "Jigglypuff1Card",
+    "text_name": "JigglypuffName",
+    "id": 166,
+    "group": 166,
+    "constant": "JIGGLYPUFF1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "Jigglypuff2Card": {
+    "name": "Jigglypuff2Card",
+    "text_name": "JigglypuffName",
+    "id": 167,
+    "group": 167,
+    "constant": "JIGGLYPUFF2",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "Jigglypuff3Card": {
+    "name": "Jigglypuff3Card",
+    "text_name": "JigglypuffName",
+    "id": 168,
+    "group": 168,
+    "constant": "JIGGLYPUFF3",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "WigglytuffCard": {
+    "name": "WigglytuffCard",
+    "text_name": "WigglytuffName",
+    "id": 169,
+    "group": 168,
+    "constant": "WIGGLYTUFF",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "JigglypuffName"
+  },
+  "Meowth1Card": {
+    "name": "Meowth1Card",
+    "text_name": "MeowthName",
+    "id": 170,
+    "group": 170,
+    "constant": "MEOWTH1",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "Meowth2Card": {
+    "name": "Meowth2Card",
+    "text_name": "MeowthName",
+    "id": 171,
+    "group": 171,
+    "constant": "MEOWTH2",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 2
+    },
+    "target_group": ""
+  },
+  "PersianCard": {
+    "name": "PersianCard",
+    "text_name": "PersianName",
+    "id": 172,
+    "group": 171,
+    "constant": "PERSIAN",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": "MeowthName"
+  },
+  "FarfetchdCard": {
+    "name": "FarfetchdCard",
+    "text_name": "FarfetchdName",
+    "id": 173,
+    "group": 173,
+    "constant": "FARFETCHD",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "DoduoCard": {
+    "name": "DoduoCard",
+    "text_name": "DoduoName",
+    "id": 174,
+    "group": 174,
+    "constant": "DODUO",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "DodrioCard": {
+    "name": "DodrioCard",
+    "text_name": "DodrioName",
+    "id": 175,
+    "group": 174,
+    "constant": "DODRIO",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "DoduoName"
+  },
+  "LickitungCard": {
+    "name": "LickitungCard",
+    "text_name": "LickitungName",
+    "id": 176,
+    "group": 176,
+    "constant": "LICKITUNG",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "ChanseyCard": {
+    "name": "ChanseyCard",
+    "text_name": "ChanseyName",
+    "id": 177,
+    "group": 177,
+    "constant": "CHANSEY",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 6
+    },
+    "target_group": ""
+  },
+  "KangaskhanCard": {
+    "name": "KangaskhanCard",
+    "text_name": "KangaskhanName",
+    "id": 178,
+    "group": 178,
+    "constant": "KANGASKHAN",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": ""
+  },
+  "TaurosCard": {
+    "name": "TaurosCard",
+    "text_name": "TaurosName",
+    "id": 179,
+    "group": 179,
+    "constant": "TAUROS",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 5
+    },
+    "target_group": ""
+  },
+  "DittoCard": {
+    "name": "DittoCard",
+    "text_name": "DittoName",
+    "id": 180,
+    "group": 180,
+    "constant": "DITTO",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "EeveeCard": {
+    "name": "EeveeCard",
+    "text_name": "EeveeName",
+    "id": 181,
+    "group": 181,
+    "constant": "EEVEE",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "PorygonCard": {
+    "name": "PorygonCard",
+    "text_name": "PorygonName",
+    "id": 182,
+    "group": 182,
+    "constant": "PORYGON",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": ""
+  },
+  "SnorlaxCard": {
+    "name": "SnorlaxCard",
+    "text_name": "SnorlaxName",
+    "id": 183,
+    "group": 183,
+    "constant": "SNORLAX",
+    "type": 0,
+    "stage": 0,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": ""
+  },
+  "DratiniCard": {
+    "name": "DratiniCard",
+    "text_name": "DratiniName",
+    "id": 184,
+    "group": 184,
+    "constant": "DRATINI",
+    "type": 0,
+    "stage": 0,
+    "limit": 4,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 1
+    },
+    "target_group": ""
+  },
+  "DragonairCard": {
+    "name": "DragonairCard",
+    "text_name": "DragonairName",
+    "id": 185,
+    "group": 184,
+    "constant": "DRAGONAIR",
+    "type": 0,
+    "stage": 1,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 7
+    },
+    "target_group": "DratiniName"
+  },
+  "Dragonite1Card": {
+    "name": "Dragonite1Card",
+    "text_name": "DragoniteName",
+    "id": 186,
+    "group": 184,
+    "constant": "DRAGONITE1",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 3
+    },
+    "target_group": "DragonairName"
+  },
+  "Dragonite2Card": {
+    "name": "Dragonite2Card",
+    "text_name": "DragoniteName",
+    "id": 187,
+    "group": 184,
+    "constant": "DRAGONITE2",
+    "type": 0,
+    "stage": 2,
+    "limit": 1,
+    "has_evolution": true,
+    "uses_attacks": true,
+    "energy": {
+      "COLORLESS": 4
+    },
+    "target_group": "DragonairName"
+  },
+  "GrassEnergyCard": {
+    "name": "GrassEnergyCard",
+    "text_name": "GrassEnergyName",
+    "id": 188,
+    "group": 188,
+    "constant": "GRASS_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 60,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "FireEnergyCard": {
+    "name": "FireEnergyCard",
+    "text_name": "FireEnergyName",
+    "id": 189,
+    "group": 189,
+    "constant": "FIRE_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 60,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "WaterEnergyCard": {
+    "name": "WaterEnergyCard",
+    "text_name": "WaterEnergyName",
+    "id": 190,
+    "group": 190,
+    "constant": "WATER_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 60,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "LightningEnergyCard": {
+    "name": "LightningEnergyCard",
+    "text_name": "LightningEnergyName",
+    "id": 191,
+    "group": 191,
+    "constant": "LIGHTNING_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 60,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "FightingEnergyCard": {
+    "name": "FightingEnergyCard",
+    "text_name": "FightingEnergyName",
+    "id": 192,
+    "group": 192,
+    "constant": "FIGHTING_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 60,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PsychicEnergyCard": {
+    "name": "PsychicEnergyCard",
+    "text_name": "PsychicEnergyName",
+    "id": 193,
+    "group": 193,
+    "constant": "PSYCHIC_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 60,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "DoubleColorlessEnergyCard": {
+    "name": "DoubleColorlessEnergyCard",
+    "text_name": "DoubleColorlessEnergyName",
+    "id": 194,
+    "group": 194,
+    "constant": "DOUBLE_COLORLESS_ENERGY",
+    "type": 1,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ProfessorOakCard": {
+    "name": "ProfessorOakCard",
+    "text_name": "ProfessorOakName",
+    "id": 195,
+    "group": 195,
+    "constant": "PROFESSOR_OAK",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ImposterProfessorOakCard": {
+    "name": "ImposterProfessorOakCard",
+    "text_name": "ImposterProfessorOakName",
+    "id": 196,
+    "group": 196,
+    "constant": "IMPOSTER_PROFESSOR_OAK",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "BillCard": {
+    "name": "BillCard",
+    "text_name": "BillName",
+    "id": 197,
+    "group": 197,
+    "constant": "BILL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "MrFujiCard": {
+    "name": "MrFujiCard",
+    "text_name": "MrFujiName",
+    "id": 198,
+    "group": 198,
+    "constant": "MR_FUJI",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "LassCard": {
+    "name": "LassCard",
+    "text_name": "LassName",
+    "id": 199,
+    "group": 199,
+    "constant": "LASS",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ImakuniCard": {
+    "name": "ImakuniCard",
+    "text_name": "ImakuniName",
+    "id": 200,
+    "group": 200,
+    "constant": "IMAKUNI_CARD",
+    "type": 2,
+    "stage": 3,
+    "limit": 1,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonTraderCard": {
+    "name": "PokemonTraderCard",
+    "text_name": "PokemonTraderName",
+    "id": 201,
+    "group": 201,
+    "constant": "POKEMON_TRADER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonBreederCard": {
+    "name": "PokemonBreederCard",
+    "text_name": "PokemonBreederName",
+    "id": 202,
+    "group": 202,
+    "constant": "POKEMON_BREEDER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ClefairyDollCard": {
+    "name": "ClefairyDollCard",
+    "text_name": "ClefairyDollName",
+    "id": 203,
+    "group": 203,
+    "constant": "CLEFAIRY_DOLL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "MysteriousFossilCard": {
+    "name": "MysteriousFossilCard",
+    "text_name": "MysteriousFossilName",
+    "id": 204,
+    "group": 204,
+    "constant": "MYSTERIOUS_FOSSIL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": true,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "EnergyRetrievalCard": {
+    "name": "EnergyRetrievalCard",
+    "text_name": "EnergyRetrievalName",
+    "id": 205,
+    "group": 205,
+    "constant": "ENERGY_RETRIEVAL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "SuperEnergyRetrievalCard": {
+    "name": "SuperEnergyRetrievalCard",
+    "text_name": "SuperEnergyRetrievalName",
+    "id": 206,
+    "group": 206,
+    "constant": "SUPER_ENERGY_RETRIEVAL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "EnergySearchCard": {
+    "name": "EnergySearchCard",
+    "text_name": "EnergySearchName",
+    "id": 207,
+    "group": 207,
+    "constant": "ENERGY_SEARCH",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "EnergyRemovalCard": {
+    "name": "EnergyRemovalCard",
+    "text_name": "EnergyRemovalName",
+    "id": 208,
+    "group": 208,
+    "constant": "ENERGY_REMOVAL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "SuperEnergyRemovalCard": {
+    "name": "SuperEnergyRemovalCard",
+    "text_name": "SuperEnergyRemovalName",
+    "id": 209,
+    "group": 209,
+    "constant": "SUPER_ENERGY_REMOVAL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "SwitchCard": {
+    "name": "SwitchCard",
+    "text_name": "SwitchName",
+    "id": 210,
+    "group": 210,
+    "constant": "SWITCH",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonCenterCard": {
+    "name": "PokemonCenterCard",
+    "text_name": "PokemonCenterName",
+    "id": 211,
+    "group": 211,
+    "constant": "POKEMON_CENTER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokeBallCard": {
+    "name": "PokeBallCard",
+    "text_name": "PokeBallName",
+    "id": 212,
+    "group": 212,
+    "constant": "POKE_BALL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ScoopUpCard": {
+    "name": "ScoopUpCard",
+    "text_name": "ScoopUpName",
+    "id": 213,
+    "group": 213,
+    "constant": "SCOOP_UP",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ComputerSearchCard": {
+    "name": "ComputerSearchCard",
+    "text_name": "ComputerSearchName",
+    "id": 214,
+    "group": 214,
+    "constant": "COMPUTER_SEARCH",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokedexCard": {
+    "name": "PokedexCard",
+    "text_name": "PokedexName",
+    "id": 215,
+    "group": 215,
+    "constant": "POKEDEX",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PlusPowerCard": {
+    "name": "PlusPowerCard",
+    "text_name": "PlusPowerName",
+    "id": 216,
+    "group": 216,
+    "constant": "PLUSPOWER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "DefenderCard": {
+    "name": "DefenderCard",
+    "text_name": "DefenderName",
+    "id": 217,
+    "group": 217,
+    "constant": "DEFENDER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ItemFinderCard": {
+    "name": "ItemFinderCard",
+    "text_name": "ItemFinderName",
+    "id": 218,
+    "group": 218,
+    "constant": "ITEM_FINDER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "GustOfWindCard": {
+    "name": "GustOfWindCard",
+    "text_name": "GustOfWindName",
+    "id": 219,
+    "group": 219,
+    "constant": "GUST_OF_WIND",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "DevolutionSprayCard": {
+    "name": "DevolutionSprayCard",
+    "text_name": "DevolutionSprayName",
+    "id": 220,
+    "group": 220,
+    "constant": "DEVOLUTION_SPRAY",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PotionCard": {
+    "name": "PotionCard",
+    "text_name": "PotionName",
+    "id": 221,
+    "group": 221,
+    "constant": "POTION",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "SuperPotionCard": {
+    "name": "SuperPotionCard",
+    "text_name": "SuperPotionName",
+    "id": 222,
+    "group": 222,
+    "constant": "SUPER_POTION",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "FullHealCard": {
+    "name": "FullHealCard",
+    "text_name": "FullHealName",
+    "id": 223,
+    "group": 223,
+    "constant": "FULL_HEAL",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "ReviveCard": {
+    "name": "ReviveCard",
+    "text_name": "ReviveName",
+    "id": 224,
+    "group": 224,
+    "constant": "REVIVE",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "MaintenanceCard": {
+    "name": "MaintenanceCard",
+    "text_name": "MaintenanceName",
+    "id": 225,
+    "group": 225,
+    "constant": "MAINTENANCE",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "PokemonFluteCard": {
+    "name": "PokemonFluteCard",
+    "text_name": "PokemonFluteName",
+    "id": 226,
+    "group": 226,
+    "constant": "POKEMON_FLUTE",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "GamblerCard": {
+    "name": "GamblerCard",
+    "text_name": "GamblerName",
+    "id": 227,
+    "group": 227,
+    "constant": "GAMBLER",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  },
+  "RecycleCard": {
+    "name": "RecycleCard",
+    "text_name": "RecycleName",
+    "id": 228,
+    "group": 228,
+    "constant": "RECYCLE",
+    "type": 2,
+    "stage": 3,
+    "limit": 2,
+    "has_evolution": false,
+    "uses_attacks": false,
+    "energy": {},
+    "target_group": ""
+  }
+}

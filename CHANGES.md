@@ -6,9 +6,10 @@
 * Disable attack animations by default.
 
 ## Features
-* Shuffle master requirements. Each requirement is applied to 1 master. (Nikki is excluded)
-    * 0-7 medals. (Murray's 4 medals)
-    * 100-300 cards. (Ken's 300 cards)
+* Starter deck randomization.
+* Shuffle master requirements. Each requirement is applied to 1 master.
+    * 4 medals. (Murray's 4 medals)
+    * 300 cards. (Ken's 300 cards)
     * Beating Jennifer, Nicholas, and Brandon. (Isaac's club members)
     * Beating Michael, Chris, and Jessica. (Mitch's pupils)
 * Randomize booster sets. Promo cards are added into the normal card pool, rarity is unaffected.
@@ -17,9 +18,12 @@
 * Randomize trainers. They can get random prize requirements, decks, music, and booster rewards.
 
 ## Planned Features
+* Changing master requirements to be variable.
+    * 0-7 medals instead of 4 medals.
+    * x-y cards instead of 300 cards.
+    * Beating trainers other than Jennifer, Nicholas, Brandon, Michael, Chris, and Jessica.
 * NPC name randomization.
     * Supply a list of names to randomly substitute in.
 * NPC text randomization
     * Supply a list of text to randomly substitute in at certain points.
-* Starter deck randomization.
 * NPC deck randomization.
