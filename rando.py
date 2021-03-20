@@ -244,9 +244,9 @@ class PTCGRando:
         pokemons = []
         for color in colors:
             if color == 'COLORLESS':
-                pokemons += PTCGRando.pkmn_by_energy(self.data['pokemon_cards'], color)
-            else:
                 pokemons += PTCGRando.pkmn_colorless(self.data['pokemon_cards'])
+            else:
+                pokemons += PTCGRando.pkmn_by_energy(self.data['pokemon_cards'], color)
 
         while remaining_pokemon > 0:
             card = pick(pokemons, noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed))
