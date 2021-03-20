@@ -329,15 +329,15 @@ if len(sys.argv) > 1:
 ptcg = PTCGRando()
 ptcg.load_data('data.json', 'cards.json')
 ptcg.seed = seed
-# ptcg.randomize_cards()
-# ptcg.randomize_bank03()
+ptcg.randomize_cards()
+ptcg.randomize_bank03()
 ptcg.randomize_decks()
-# ptcg.randomize_text_offsets()
-# ptcg.randomize_text2()
-# ptcg.randomize_text3()
-# ptcg.randomize_text4()
-# ptcg.randomize_text7()
-# ptcg.randomize_text8()
+ptcg.randomize_text_offsets()
+ptcg.randomize_text2()
+ptcg.randomize_text3()
+ptcg.randomize_text4()
+ptcg.randomize_text7()
+ptcg.randomize_text8()
 
 if sys.platform == 'linux':
     make = subprocess.run(['make'], stdout=subprocess.PIPE, universal_newlines=True)
