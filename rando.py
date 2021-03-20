@@ -211,6 +211,11 @@ class PTCGRando:
                 else:
                     target.write(line)
 
+    def randomize_bank04(self):
+        with open_utf8('templates/bank04.asm', 'r') as src, open_utf8('src/engine/bank04.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
     def generate_deck(self, target, z):
         y = 10
         remaining_trainer = noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed)
@@ -331,6 +336,7 @@ ptcg.load_data('data.json', 'cards.json')
 ptcg.seed = seed
 ptcg.randomize_cards()
 ptcg.randomize_bank03()
+ptcg.randomize_bank04()
 ptcg.randomize_decks()
 ptcg.randomize_text_offsets()
 ptcg.randomize_text2()
