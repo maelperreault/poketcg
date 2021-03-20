@@ -421,7 +421,9 @@ def is_tool(name):
 if is_tool('make'):
     make = subprocess.run(['make'], stdout=subprocess.PIPE, universal_newlines=True)
     if make.returncode == 0:
-        shutil.move('poketcg.gbc', 'ptcgr_{:06d}.gbc'.format(seed))
+        lipx = subprocess.run(['python', 'lipx.py', '-c', 'baserom.gbc', 'poketcg.gbc', 'ptcgr_{:06d}.ips'.format(seed)], stdout=subprocess.PIPE, universal_newlines=True)
         print('Successfully compiled with seed: {:06d}'.format(seed))
+        sys.exit(0)
     else:
         print(make.stdout)
+        sys.exit(1)
