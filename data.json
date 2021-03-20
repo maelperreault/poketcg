@@ -9,10 +9,10 @@
     "COLORLESS"
   ],
   "energies": {
-    "FIRE": "GrassEnergyCard",
-    "GRASS": "FireEnergyCard",
-    "LIGHTNING": "WaterEnergyCard",
-    "WATER": "LightningEnergyCard",
+    "GRASS": "GrassEnergyCard",
+    "FIRE": "FireEnergyCard",
+    "LIGHTNING": "LightningEnergyCard",
+    "WATER": "WaterEnergyCard",
     "FIGHTING": "FightingEnergyCard",
     "PSYCHIC": "PsychicEnergyCard",
     "COLORLESS": "DoubleColorlessEnergyCard"
