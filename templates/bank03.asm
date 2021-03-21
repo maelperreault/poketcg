@@ -3490,7 +3490,7 @@ Script_Tech1: ; d583 (3:5583)
 	dec c
 	jr nz, .count_loop
 	ld a, b
-	cp 10
+	cp 50
 	jr c, .low_on_energies
 
 	start_script
@@ -3502,7 +3502,7 @@ Script_Tech1: ; d583 (3:5583)
 	ld c, EnergyCardList.end - EnergyCardList
 	ld hl, EnergyCardList
 .next_energy_card
-	ld b, 10
+	ld b, 20
 	ld a, [hli]
 .add_loop
 	push af
