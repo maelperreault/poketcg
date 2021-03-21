@@ -1,9 +1,10 @@
 # PTCG Randomizer Changes
 
 ## QoL tweaks
-* Sam is dead. (skip tutorial)
+* Sam is dead. (skip tutorial and most of the intro cutscene)
 * Set text speed to 5 by default.
 * Disable attack animations by default.
+* Get 20 of each energy from TECH 1 if you have less than 50 energies.
 
 ## Features
 * Starter deck randomization.
