@@ -2094,13 +2094,13 @@ Func_1996e: ; 1996e (6:596e)
 	; $0 = enable
 	; $1 = disable
 	ld [sAnimationsDisabled], a
+	ld [sSkipDelayAllowed], a
 	xor a
 	; default text speed
 	; $4 = 1
 	; $0 = 5
 	ld [sTextSpeed], a
 	ld [wTextSpeed], a
-	ld [s0a009], a
 	ld [s0a004], a
 	ld [sTotalCardPopsDone], a
 	ld [s0a00a], a

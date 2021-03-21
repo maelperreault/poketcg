@@ -3718,7 +3718,7 @@ Script_DrMason: ; d727 (3:5727)
 	print_text_quit_fully Text05dd
 
 .ows_d72f
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 2, .ows_d738
 	print_text_quit_fully Text05de
 
@@ -4739,7 +4739,7 @@ FightingClubAfterDuel: ; dda3 (3:5da3)
 
 Script_Mitch: ; ddc3 (3:5dc3)
 	start_script
-	try_give_pc_pack $02
+	; try_give_pc_pack $02
 	jump_if_event_true EVENT_BEAT_MITCH, Script_Mitch_AlreadyHaveMedal
 	; MASTER_CHECK:Mitch
 
@@ -4759,7 +4759,7 @@ Script_BeatMitch: ; ddff (3:5dff)
 	jump_if_event_true EVENT_BEAT_MITCH, Script_Mitch_GiveBoosters
 	print_npc_text Text047f
 	max_out_event_value EVENT_BEAT_MITCH
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_MITCH
 	record_master_win $01
 	print_npc_text Text0480
@@ -4969,7 +4969,7 @@ NPCMovement_df34: ; df34 (3:5f34)
 
 Script_Matthew: ; df39 (3:5f39)
 	start_script
-	try_give_pc_pack $03
+	; try_give_pc_pack $03
 	jump_if_event_true EVENT_RECEIVED_LEGENDARY_CARDS, .ows_df4c
 	test_if_event_zero EVENT_MATTHEW_STATE
 	print_variable_npc_text Text0781, Text0782
@@ -5076,7 +5076,7 @@ RockClubAfterDuel: ; dfd6 (3:5fd6)
 
 Script_Ryan: ; dff0 (3:5ff0)
 	start_script
-	try_give_pc_pack $03
+	; try_give_pc_pack $03
 	print_npc_text Text0795
 	ask_question_jump Text0796, .ows_dfff
 	print_npc_text Text0797
@@ -5102,7 +5102,7 @@ Script_LostToRyan: ; e013 (3:6013)
 
 Script_Andrew: ; e017 (3:6017)
 	start_script
-	try_give_pc_pack $03
+	; try_give_pc_pack $03
 	print_npc_text Text079c
 	ask_question_jump Text079d, .ows_e026
 	print_npc_text Text079e
@@ -5131,7 +5131,7 @@ Script_Gene: ; e03e (3:603e)
 	; MASTER_CHECK:Gene
 
 .start_dialogue
-	try_give_pc_pack $03
+	; try_give_pc_pack $03
 	jump_if_event_true EVENT_BEAT_GENE, Script_LostToGene.ows_e07b
 	print_npc_text Text07a3
 	ask_question_jump Text07a4, .ows_e051
@@ -5149,7 +5149,7 @@ Script_BeatGene: ; e059 (3:6059)
 	jump_if_event_true EVENT_BEAT_GENE, Script_LostToGene.ows_e08f
 	print_npc_text Text07a7
 	max_out_event_value EVENT_BEAT_GENE
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_GENE
 	record_master_win $02
 	print_npc_text Text07a8
@@ -5469,7 +5469,7 @@ Script_Joshua: ; e21c (3:621c)
 
 .start_duel
 	print_npc_text Text0442
-	try_give_pc_pack $04
+	; try_give_pc_pack $04
 	; DUEL:Joshua
 	; start_duel PRIZES_4, SOUND_OF_THE_WAVES_DECK_ID, MUSIC_DUEL_THEME_1
 	quit_script_fully
@@ -5583,7 +5583,7 @@ Script_BeatAmy: ; e322 (3:6322)
 	jump_if_event_true EVENT_BEAT_AMY, .give_booster_packs
 	print_npc_text Text0454
 	max_out_event_value EVENT_BEAT_AMY
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_AMY
 	record_master_win $03
 	print_npc_text Text0455
@@ -5796,7 +5796,7 @@ Script_Brandon: ; e456 (3:6456)
 
 Script_BeatBrandon: ; e480 (3:6480)
 	start_script
-	try_give_pc_pack $05
+	; try_give_pc_pack $05
 	max_out_event_value EVENT_BEAT_BRANDON
 	print_npc_text Text062f
 	; BOOSTERS:Brandon
@@ -5845,7 +5845,7 @@ Script_BeatIsaac: ; e4e1 (3:64e1)
 	jump_if_event_true EVENT_BEAT_ISAAC, Script_LostToIsaac.ows_e517
 	print_npc_text Text0638
 	max_out_event_value EVENT_BEAT_ISAAC
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_ISAAC
 	record_master_win $04
 	print_npc_text Text0639
@@ -6178,7 +6178,7 @@ Script_Kristin: ; e701 (3:6701)
 
 Script_BeatKristin: ; e71c (3:671c)
 	start_script
-	try_give_pc_pack $06
+	; try_give_pc_pack $06
 	print_npc_text Text0709
 	; BOOSTERS:Kristin
 	; give_booster_packs BOOSTER_EVOLUTION_GRASS, BOOSTER_EVOLUTION_GRASS, NO_BOOSTER
@@ -6271,7 +6271,7 @@ Script_BeatNikki: ; e7d3 (3:67d3)
 	print_variable_npc_text Text071f, Text0720
 	jump_if_event_true EVENT_BEAT_NIKKI, .ows_e7eb
 	max_out_event_value EVENT_BEAT_NIKKI
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_NIKKI
 	record_master_win $05
 	print_npc_text Text0721
@@ -6681,7 +6681,7 @@ PsychicClubAfterDuel: ; ea46 (3:6a46)
 
 Script_Daniel: ; ea60 (3:6a60)
 	start_script
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 4, .ows_ea7e
 	jump_if_event_true EVENT_DANIEL_TALKED, .ows_ea70
 	max_out_event_value EVENT_DANIEL_TALKED
@@ -6721,7 +6721,7 @@ Script_LostToDaniel: ; ea9e (3:6a9e)
 
 Script_Stephanie: ; eaa2 (3:6aa2)
 	start_script
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 2, .ows_eaac
 	print_text_quit_fully Text0673
 
@@ -6762,7 +6762,7 @@ Preload_Murray1: ; eada (3:6ada)
 
 Script_Murray: ; eadf (3:6adf)
 	start_script
-	try_give_pc_pack $07
+	; try_give_pc_pack $07
 	; MASTER_CHECK:Murray
 
 .start_dialogue
@@ -6785,7 +6785,7 @@ Script_BeatMurray: ; eb0f (3:6b0f)
 	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.murray_already_beat
 	print_npc_text Text0682
 	max_out_event_value EVENT_BEAT_MURRAY
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_MURRAY
 	record_master_win $06
 	print_npc_text Text0683
@@ -7028,7 +7028,7 @@ Script_BeatRick: ; ec80 (3:6c80)
 	jump_if_event_true EVENT_BEAT_RICK, Script_LostToRick.ows_ecb6
 	print_npc_text Text0762
 	max_out_event_value EVENT_BEAT_RICK
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_RICK
 	record_master_win $07
 	print_npc_text Text0763
@@ -7081,7 +7081,7 @@ Preload_Joseph: ; ecc4 (3:6cc4)
 
 Script_Joseph: ; ecdb (3:6cdb)
 	start_script
-	try_give_pc_pack $08
+	; try_give_pc_pack $08
 	jump_if_event_true EVENT_BEAT_JOSEPH, Script_LostToJoseph.ows_ed24
 	print_npc_text Text076c
 	ask_question_jump Text076d, .ows_ecee
@@ -7307,7 +7307,7 @@ Preload_Lad2: ; ee25 (3:6e25)
 
 Script_Lad2: ; ee2c (3:6e2c)
 	start_script
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 3, .ows_ee36
 	print_text_quit_fully Text069b
 
@@ -7480,7 +7480,7 @@ Script_LostToJonathan: ; ef1e (3:6f1e)
 
 Script_Ken: ; ef22 (3:6f22)
 	start_script
-	try_give_pc_pack $09
+	; try_give_pc_pack $09
 	; MASTER_CHECK:Ken
 
 .start_dialogue
@@ -7503,7 +7503,7 @@ Script_BeatKen: ; ef5e (3:6f5e)
 	print_npc_text Text06c1
 	jump_if_event_true EVENT_BEAT_KEN, .give_booster_packs
 	max_out_event_value EVENT_BEAT_KEN
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_KEN
 	record_master_win $08
 	print_npc_text Text06c2
@@ -8542,7 +8542,7 @@ NPCMovement_f6a6: ; f6a6 (3:76a6)
 
 Script_f6af: ; f6af (3:76af)
 	start_script
-	try_give_medal_pc_packs
+	; try_give_medal_pc_packs
 	; GRAND MASTER MEDAL CHECK
 	jump_if_event_equal EVENT_MEDAL_COUNT, 8, .ows_f6b9
 	print_text_quit_fully Text0558
@@ -8901,7 +8901,7 @@ Script_f84c: ; f84c (3:784c)
 
 .ows_f918
 	start_script
-	try_give_pc_pack $0e
+	; try_give_pc_pack $0e
 	set_event EVENT_COURTNEY_STATE, COURTNEY_CHALLENGED
 	set_dialog_npc NPC_ROD
 	test_if_event_false EVENT_RECEIVED_LEGENDARY_CARDS
@@ -8946,7 +8946,7 @@ Script_BeatCourtney: ; f95a (3:795a)
 
 .ows_f974
 	start_script
-	try_give_pc_pack $0f
+	; try_give_pc_pack $0f
 	set_event EVENT_STEVE_STATE, STEVE_CHALLENGED
 	set_dialog_npc NPC_ROD
 	test_if_event_false EVENT_RECEIVED_LEGENDARY_CARDS

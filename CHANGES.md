@@ -5,6 +5,7 @@
 * Set text speed to 5 by default.
 * Disable attack animations by default.
 * Get 20 of each energy from TECH 1 if you have less than 50 energies.
+* Removed PC packs. (fixed card rewards turn into boosters instead)
 
 ## Features
 * Starter deck randomization.

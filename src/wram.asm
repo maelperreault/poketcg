@@ -1153,7 +1153,7 @@ wNoEffectFromWhichStatus:: ; ccf1
 	ds $1
 
 ; when non-0, allows the player to skip some delays during a duel by pressing B.
-; value read from s0a009. probably only used for debugging.
+; value read from sSkipDelayAllowed. probably only used for debugging.
 wSkipDelayAllowed:: ; ccf2
 	ds $1
 

@@ -23,7 +23,7 @@ sAnimationsDisabled:: ; a007
 
 s0a008:: ; a008
 	ds $1
-s0a009:: ; a009
+sSkipDelayAllowed:: ; a009
 	ds $1
 s0a00a:: ; a00a
 	ds $1
