@@ -92,10 +92,10 @@ class PTCGRando:
         self.booster_max = 6
 
         # DECK GENERATION
-        self.min_pokemon = 20
-        self.max_pokemon = 32
+        self.min_pokemon = 25
+        self.max_pokemon = 40
         self.min_trainer = 5
-        self.max_trainer = 12
+        self.max_trainer = 10
 
         self.exclude_npcs = False
 
@@ -419,7 +419,7 @@ if len(sys.argv) > 1:
     seed = int(sys.argv[1])
 
 ptcg = PTCGRando()
-ptcg.load_data('data.json', 'cards.json', 'npc_names.json')
+ptcg.load_data('data/data.json', 'data/cards.json', 'data/npc_names.json')
 ptcg.seed = seed
 ptcg.randomize_cards()
 ptcg.randomize_bank03()
