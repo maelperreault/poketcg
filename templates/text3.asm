@@ -1608,7 +1608,7 @@ LaboratoryBoosterText: ; 3f663 (f:7663)
 	done
 
 DrMasonNPCName: ; 3f66f (f:766f)
-; NPC_NAMES:	text "Dr. Mason"
+	text "Dr. Mason"
 	done
 
 RonaldNPCName: ; 3f67a (f:767a)
@@ -1624,7 +1624,7 @@ ImakuniNPCName: ; 3f68c (f:768c)
 	done
 
 ClerkNPCName: ; 3f696 (f:7696)
-; NPC_NAMES:	text "CLERK"
+	text "CLERK"
 	done
 
 SamNPCName: ; 3f69d (f:769d)
@@ -1632,11 +1632,11 @@ SamNPCName: ; 3f69d (f:769d)
 	done
 
 TechNPCName: ; 3f6a2 (f:76a2)
-; NPC_NAMES:	text "TECH"
+	text "TECH"
 	done
 
 ClerkNPCName2: ; 3f6a8 (f:76a8)
-; NPC_NAMES:	text "CLERK"
+	text "CLERK"
 	done
 
 ChrisNPCName: ; 3f6af (f:76af)
@@ -1784,23 +1784,23 @@ RodNPCName: ; 3f7be (f:77be)
 	done
 
 ManNPCName: ; 3f7c3 (f:77c3)
-; NPC_NAMES:	text "Man"
+	text "Man"
 	done
 
 WomanNPCName: ; 3f7c8 (f:77c8)
-; NPC_NAMES:	text "Woman"
+	text "Woman"
 	done
 
 ChapNPCName: ; 3f7cf (f:77cf)
-; NPC_NAMES:	text "CHAP"
+	text "CHAP"
 	done
 
 GalNPCName: ; 3f7d5 (f:77d5)
-; NPC_NAMES:	text "GAL"
+	text "GAL"
 	done
 
 LassNPCName: ; 3f7da (f:77da)
-; NPC_NAMES:	text "Lass"
+	text "Lass"
 	done
 
 PappyNPCName: ; 3f7e0 (f:77e0)
@@ -1808,43 +1808,43 @@ PappyNPCName: ; 3f7e0 (f:77e0)
 	done
 
 LadNPCName: ; 3f7e7 (f:77e7)
-; NPC_NAMES:	text "Lad"
+	text "Lad"
 	done
 
 HostNPCName: ; 3f7ec (f:77ec)
-; NPC_NAMES:	text "HOST"
+	text "HOST"
 	done
 
 SpecsNPCName: ; 3f7f2 (f:77f2)
-; NPC_NAMES:	text "Specs"
+	text "Specs"
 	done
 
 ButchNPCName: ; 3f7f9 (f:77f9)
-; NPC_NAMES:	text "Butch"
+	text "Butch"
 	done
 
 HoodNPCName: ; 3f800 (f:7800)
-; NPC_NAMES:	text "Hood"
+	text "Hood"
 	done
 
 ChampNPCName: ; 3f806 (f:7806)
-; NPC_NAMES:	text "Champ"
+	text "Champ"
 	done
 
 ManiaNPCName: ; 3f80d (f:780d)
-; NPC_NAMES:	text "Mania"
+	text "Mania"
 	done
 
 GrannyNPCName: ; 3f814 (f:7814)
-; NPC_NAMES:	text "Granny"
+	text "Granny"
 	done
 
 GuideNPCName: ; 3f81c (f:781c)
-; NPC_NAMES:	text "Guide"
+	text "Guide"
 	done
 
 AaronNPCName: ; 3f823 (f:7823)
-; NPC_NAMES:	text "Aaron"
+	text "Aaron"
 	done
 
 MewtwoTradeCardName: ; 3f82a (f:782a)

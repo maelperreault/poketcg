@@ -429,8 +429,11 @@ ptcg.randomize_text_offsets()
 ptcg.randomize_text2()
 ptcg.randomize_text3()
 ptcg.randomize_text4()
+ptcg.randomize_text5()
+ptcg.randomize_text6()
 ptcg.randomize_text7()
 ptcg.randomize_text8()
+ptcg.randomize_text9()
 
 def is_tool(name):
     """Check whether `name` is on PATH and marked as executable."""

@@ -1416,7 +1416,7 @@ KaleidoscopeDeckName: ; 3b674 (e:7674)
 	done
 
 MusclesforBrainsDeckName: ; 3b682 (e:7682)
-	text "Muscles for Brains"
+	text ""
 	done
 
 HeatedBattleDeckName: ; 3b696 (e:7696)
