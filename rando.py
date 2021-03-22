@@ -221,6 +221,11 @@ class PTCGRando:
             for i, line in enumerate(src):
                 target.write(line)
 
+    def randomize_home(self):
+        with open_utf8('templates/home.asm', 'r') as src, open_utf8('src/engine/home.asm', 'w') as target:
+            for i, line in enumerate(src):
+                target.write(line)
+
     def generate_deck(self, target, z, deck_name):
         y = 10
         remaining_trainer = noise3d(PTCGRando.RAND_STARTER_DECKS, y, z, self.seed)
@@ -424,6 +429,7 @@ ptcg.seed = seed
 ptcg.randomize_cards()
 ptcg.randomize_bank03()
 ptcg.randomize_bank04()
+ptcg.randomize_home()
 ptcg.randomize_decks()
 ptcg.randomize_text_offsets()
 ptcg.randomize_text2()
