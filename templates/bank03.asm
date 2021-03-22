@@ -1705,13 +1705,13 @@ TryGiveMedalPCPacks: ; cad8 (3:4ad8)
 	set_event_value EVENT_MEDAL_COUNT
 	ld a, c
 	push af
+	jr .done
 	cp 8
 	jr nc, .give_packs_for_eight_medals
 	cp 7
 	jr nc, .give_packs_for_seven_medals
 	cp 3
 	jr nc, .give_packs_for_three_medals
-	jr .done
 
 .give_packs_for_eight_medals
 	ld a, $c
@@ -3718,7 +3718,7 @@ Script_DrMason: ; d727 (3:5727)
 	print_text_quit_fully Text05dd
 
 .ows_d72f
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 2, .ows_d738
 	print_text_quit_fully Text05de
 
@@ -4759,7 +4759,7 @@ Script_BeatMitch: ; ddff (3:5dff)
 	jump_if_event_true EVENT_BEAT_MITCH, Script_Mitch_GiveBoosters
 	print_npc_text Text047f
 	max_out_event_value EVENT_BEAT_MITCH
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_MITCH
 	record_master_win $01
 	print_npc_text Text0480
@@ -5149,7 +5149,7 @@ Script_BeatGene: ; e059 (3:6059)
 	jump_if_event_true EVENT_BEAT_GENE, Script_LostToGene.ows_e08f
 	print_npc_text Text07a7
 	max_out_event_value EVENT_BEAT_GENE
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_GENE
 	record_master_win $02
 	print_npc_text Text07a8
@@ -5583,7 +5583,7 @@ Script_BeatAmy: ; e322 (3:6322)
 	jump_if_event_true EVENT_BEAT_AMY, .give_booster_packs
 	print_npc_text Text0454
 	max_out_event_value EVENT_BEAT_AMY
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_AMY
 	record_master_win $03
 	print_npc_text Text0455
@@ -5845,7 +5845,7 @@ Script_BeatIsaac: ; e4e1 (3:64e1)
 	jump_if_event_true EVENT_BEAT_ISAAC, Script_LostToIsaac.ows_e517
 	print_npc_text Text0638
 	max_out_event_value EVENT_BEAT_ISAAC
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_ISAAC
 	record_master_win $04
 	print_npc_text Text0639
@@ -6271,7 +6271,7 @@ Script_BeatNikki: ; e7d3 (3:67d3)
 	print_variable_npc_text Text071f, Text0720
 	jump_if_event_true EVENT_BEAT_NIKKI, .ows_e7eb
 	max_out_event_value EVENT_BEAT_NIKKI
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_NIKKI
 	record_master_win $05
 	print_npc_text Text0721
@@ -6681,7 +6681,7 @@ PsychicClubAfterDuel: ; ea46 (3:6a46)
 
 Script_Daniel: ; ea60 (3:6a60)
 	start_script
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 4, .ows_ea7e
 	jump_if_event_true EVENT_DANIEL_TALKED, .ows_ea70
 	max_out_event_value EVENT_DANIEL_TALKED
@@ -6721,7 +6721,7 @@ Script_LostToDaniel: ; ea9e (3:6a9e)
 
 Script_Stephanie: ; eaa2 (3:6aa2)
 	start_script
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 2, .ows_eaac
 	print_text_quit_fully Text0673
 
@@ -6785,7 +6785,7 @@ Script_BeatMurray: ; eb0f (3:6b0f)
 	jump_if_event_true EVENT_BEAT_MURRAY, Script_LostToMurray.murray_already_beat
 	print_npc_text Text0682
 	max_out_event_value EVENT_BEAT_MURRAY
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_MURRAY
 	record_master_win $06
 	print_npc_text Text0683
@@ -7028,7 +7028,7 @@ Script_BeatRick: ; ec80 (3:6c80)
 	jump_if_event_true EVENT_BEAT_RICK, Script_LostToRick.ows_ecb6
 	print_npc_text Text0762
 	max_out_event_value EVENT_BEAT_RICK
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_RICK
 	record_master_win $07
 	print_npc_text Text0763
@@ -7307,7 +7307,7 @@ Preload_Lad2: ; ee25 (3:6e25)
 
 Script_Lad2: ; ee2c (3:6e2c)
 	start_script
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	jump_if_event_greater_or_equal EVENT_MEDAL_COUNT, 3, .ows_ee36
 	print_text_quit_fully Text069b
 
@@ -7503,7 +7503,7 @@ Script_BeatKen: ; ef5e (3:6f5e)
 	print_npc_text Text06c1
 	jump_if_event_true EVENT_BEAT_KEN, .give_booster_packs
 	max_out_event_value EVENT_BEAT_KEN
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	show_medal_received_screen EVENT_BEAT_KEN
 	record_master_win $08
 	print_npc_text Text06c2
@@ -8542,7 +8542,7 @@ NPCMovement_f6a6: ; f6a6 (3:76a6)
 
 Script_f6af: ; f6af (3:76af)
 	start_script
-	; try_give_medal_pc_packs
+	try_give_medal_pc_packs
 	; GRAND MASTER MEDAL CHECK
 	jump_if_event_equal EVENT_MEDAL_COUNT, 8, .ows_f6b9
 	print_text_quit_fully Text0558
