@@ -13,6 +13,7 @@
     "energy": {
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "IvysaurCard": {
@@ -30,6 +31,7 @@
       "GRASS": 4,
       "COLORLESS": 2
     },
+    "card_group": "GRASS",
     "target_group": "BulbasaurName"
   },
   "Venusaur1Card": {
@@ -46,6 +48,7 @@
     "energy": {
       "GRASS": 4
     },
+    "card_group": "GRASS",
     "target_group": "IvysaurName"
   },
   "Venusaur2Card": {
@@ -62,6 +65,7 @@
     "energy": {
       "GRASS": 4
     },
+    "card_group": "GRASS",
     "target_group": "IvysaurName"
   },
   "CaterpieCard": {
@@ -78,6 +82,7 @@
     "energy": {
       "GRASS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "MetapodCard": {
@@ -95,6 +100,7 @@
       "COLORLESS": 2,
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": "CaterpieName"
   },
   "ButterfreeCard": {
@@ -112,6 +118,7 @@
       "COLORLESS": 2,
       "GRASS": 4
     },
+    "card_group": "GRASS",
     "target_group": "MetapodName"
   },
   "WeedleCard": {
@@ -128,6 +135,7 @@
     "energy": {
       "GRASS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "KakunaCard": {
@@ -145,6 +153,7 @@
       "COLORLESS": 2,
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": "WeedleName"
   },
   "BeedrillCard": {
@@ -162,6 +171,7 @@
       "COLORLESS": 3,
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": "KakunaName"
   },
   "EkansCard": {
@@ -179,6 +189,7 @@
       "GRASS": 2,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "ArbokCard": {
@@ -196,6 +207,7 @@
       "GRASS": 3,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": "EkansName"
   },
   "NidoranFCard": {
@@ -212,6 +224,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "NidorinaCard": {
@@ -229,6 +242,7 @@
       "GRASS": 2,
       "COLORLESS": 2
     },
+    "card_group": "GRASS",
     "target_group": "NidoranFName"
   },
   "NidoqueenCard": {
@@ -246,6 +260,7 @@
       "GRASS": 3,
       "COLORLESS": 3
     },
+    "card_group": "GRASS",
     "target_group": "NidorinaName"
   },
   "NidoranMCard": {
@@ -262,6 +277,7 @@
     "energy": {
       "GRASS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "NidorinoCard": {
@@ -279,6 +295,7 @@
       "GRASS": 3,
       "COLORLESS": 4
     },
+    "card_group": "GRASS",
     "target_group": "NidoranMName"
   },
   "NidokingCard": {
@@ -296,6 +313,7 @@
       "GRASS": 4,
       "COLORLESS": 2
     },
+    "card_group": "GRASS",
     "target_group": "NidorinoName"
   },
   "ZubatCard": {
@@ -313,6 +331,7 @@
       "COLORLESS": 3,
       "GRASS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "GolbatCard": {
@@ -330,6 +349,7 @@
       "COLORLESS": 4,
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": "ZubatName"
   },
   "OddishCard": {
@@ -346,6 +366,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "GloomCard": {
@@ -362,6 +383,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": "OddishName"
   },
   "VileplumeCard": {
@@ -378,6 +400,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": "GloomName"
   },
   "ParasCard": {
@@ -395,6 +418,7 @@
       "COLORLESS": 2,
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "ParasectCard": {
@@ -412,6 +436,7 @@
       "GRASS": 2,
       "COLORLESS": 3
     },
+    "card_group": "GRASS",
     "target_group": "ParasName"
   },
   "VenonatCard": {
@@ -429,6 +454,7 @@
       "GRASS": 2,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "VenomothCard": {
@@ -445,6 +471,7 @@
     "energy": {
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": "VenonatName"
   },
   "BellsproutCard": {
@@ -461,6 +488,7 @@
     "energy": {
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "WeepinbellCard": {
@@ -477,6 +505,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": "BellsproutName"
   },
   "VictreebelCard": {
@@ -493,6 +522,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": "WeepinbellName"
   },
   "GrimerCard": {
@@ -510,6 +540,7 @@
       "COLORLESS": 1,
       "GRASS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "MukCard": {
@@ -526,6 +557,7 @@
     "energy": {
       "GRASS": 3
     },
+    "card_group": "GRASS",
     "target_group": "GrimerName"
   },
   "ExeggcuteCard": {
@@ -543,6 +575,7 @@
       "PSYCHIC": 1,
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "ExeggutorCard": {
@@ -560,6 +593,7 @@
       "PSYCHIC": 1,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": "ExeggcuteName"
   },
   "KoffingCard": {
@@ -576,6 +610,7 @@
     "energy": {
       "GRASS": 2
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "WeezingCard": {
@@ -593,6 +628,7 @@
       "GRASS": 4,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": "KoffingName"
   },
   "Tangela1Card": {
@@ -610,6 +646,7 @@
       "GRASS": 4,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "Tangela2Card": {
@@ -627,6 +664,7 @@
       "GRASS": 3,
       "COLORLESS": 1
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "ScytherCard": {
@@ -644,6 +682,7 @@
       "GRASS": 1,
       "COLORLESS": 3
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "PinsirCard": {
@@ -661,6 +700,7 @@
       "GRASS": 4,
       "COLORLESS": 2
     },
+    "card_group": "GRASS",
     "target_group": ""
   },
   "CharmanderCard": {
@@ -678,6 +718,7 @@
       "COLORLESS": 2,
       "FIRE": 1
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "CharmeleonCard": {
@@ -695,6 +736,7 @@
       "COLORLESS": 4,
       "FIRE": 2
     },
+    "card_group": "FIRE",
     "target_group": "CharmanderName"
   },
   "CharizardCard": {
@@ -711,6 +753,7 @@
     "energy": {
       "FIRE": 4
     },
+    "card_group": "FIRE",
     "target_group": "CharmeleonName"
   },
   "VulpixCard": {
@@ -727,6 +770,7 @@
     "energy": {
       "FIRE": 2
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "Ninetails1Card": {
@@ -744,6 +788,7 @@
       "COLORLESS": 2,
       "FIRE": 4
     },
+    "card_group": "FIRE",
     "target_group": "VulpixName"
   },
   "Ninetails2Card": {
@@ -760,6 +805,7 @@
     "energy": {
       "FIRE": 5
     },
+    "card_group": "FIRE",
     "target_group": "VulpixName"
   },
   "GrowlitheCard": {
@@ -777,6 +823,7 @@
       "FIRE": 1,
       "COLORLESS": 1
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "Arcanine1Card": {
@@ -794,6 +841,7 @@
       "COLORLESS": 2,
       "FIRE": 2
     },
+    "card_group": "FIRE",
     "target_group": "GrowlitheName"
   },
   "Arcanine2Card": {
@@ -811,6 +859,7 @@
       "FIRE": 4,
       "COLORLESS": 3
     },
+    "card_group": "FIRE",
     "target_group": "GrowlitheName"
   },
   "PonytaCard": {
@@ -828,6 +877,7 @@
       "COLORLESS": 2,
       "FIRE": 2
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "RapidashCard": {
@@ -845,6 +895,7 @@
       "COLORLESS": 3,
       "FIRE": 2
     },
+    "card_group": "FIRE",
     "target_group": "PonytaName"
   },
   "Magmar1Card": {
@@ -862,6 +913,7 @@
       "FIRE": 4,
       "COLORLESS": 1
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "Magmar2Card": {
@@ -878,6 +930,7 @@
     "energy": {
       "FIRE": 3
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "Flareon1Card": {
@@ -894,6 +947,7 @@
     "energy": {
       "COLORLESS": 6
     },
+    "card_group": "FIRE",
     "target_group": "EeveeName"
   },
   "Flareon2Card": {
@@ -911,6 +965,7 @@
       "COLORLESS": 4,
       "FIRE": 2
     },
+    "card_group": "FIRE",
     "target_group": "EeveeName"
   },
   "Moltres1Card": {
@@ -927,6 +982,7 @@
     "energy": {
       "FIRE": 5
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "Moltres2Card": {
@@ -943,6 +999,7 @@
     "energy": {
       "FIRE": 3
     },
+    "card_group": "FIRE",
     "target_group": ""
   },
   "SquirtleCard": {
@@ -960,6 +1017,7 @@
       "WATER": 2,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "WartortleCard": {
@@ -977,6 +1035,7 @@
       "WATER": 2,
       "COLORLESS": 3
     },
+    "card_group": "WATER",
     "target_group": "SquirtleName"
   },
   "BlastoiseCard": {
@@ -993,6 +1052,7 @@
     "energy": {
       "WATER": 3
     },
+    "card_group": "WATER",
     "target_group": "WartortleName"
   },
   "PsyduckCard": {
@@ -1010,6 +1070,7 @@
       "PSYCHIC": 1,
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "GolduckCard": {
@@ -1028,6 +1089,7 @@
       "WATER": 2,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": "PsyduckName"
   },
   "PoliwagCard": {
@@ -1044,6 +1106,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "PoliwhirlCard": {
@@ -1061,6 +1124,7 @@
       "WATER": 4,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": "PoliwagName"
   },
   "PoliwrathCard": {
@@ -1078,6 +1142,7 @@
       "WATER": 4,
       "COLORLESS": 3
     },
+    "card_group": "WATER",
     "target_group": "PoliwhirlName"
   },
   "TentacoolCard": {
@@ -1094,6 +1159,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "TentacruelCard": {
@@ -1110,6 +1176,7 @@
     "energy": {
       "WATER": 3
     },
+    "card_group": "WATER",
     "target_group": "TentacoolName"
   },
   "SeelCard": {
@@ -1126,6 +1193,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "DewgongCard": {
@@ -1143,6 +1211,7 @@
       "WATER": 4,
       "COLORLESS": 3
     },
+    "card_group": "WATER",
     "target_group": "SeelName"
   },
   "ShellderCard": {
@@ -1159,6 +1228,7 @@
     "energy": {
       "WATER": 2
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "CloysterCard": {
@@ -1175,6 +1245,7 @@
     "energy": {
       "WATER": 4
     },
+    "card_group": "WATER",
     "target_group": "ShellderName"
   },
   "KrabbyCard": {
@@ -1192,6 +1263,7 @@
       "WATER": 2,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "KinglerCard": {
@@ -1209,6 +1281,7 @@
       "WATER": 3,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": "KrabbyName"
   },
   "HorseaCard": {
@@ -1225,6 +1298,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "SeadraCard": {
@@ -1242,6 +1316,7 @@
       "WATER": 2,
       "COLORLESS": 3
     },
+    "card_group": "WATER",
     "target_group": "HorseaName"
   },
   "GoldeenCard": {
@@ -1258,6 +1333,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "SeakingCard": {
@@ -1275,6 +1351,7 @@
       "WATER": 2,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": "GoldeenName"
   },
   "StaryuCard": {
@@ -1291,6 +1368,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "StarmieCard": {
@@ -1308,6 +1386,7 @@
       "WATER": 3,
       "COLORLESS": 2
     },
+    "card_group": "WATER",
     "target_group": "StaryuName"
   },
   "MagikarpCard": {
@@ -1325,6 +1404,7 @@
       "COLORLESS": 1,
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "GyaradosCard": {
@@ -1341,6 +1421,7 @@
     "energy": {
       "WATER": 7
     },
+    "card_group": "WATER",
     "target_group": "MagikarpName"
   },
   "LaprasCard": {
@@ -1357,6 +1438,7 @@
     "energy": {
       "WATER": 3
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "Vaporeon1Card": {
@@ -1373,6 +1455,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "WATER",
     "target_group": "EeveeName"
   },
   "Vaporeon2Card": {
@@ -1390,6 +1473,7 @@
       "COLORLESS": 3,
       "WATER": 2
     },
+    "card_group": "WATER",
     "target_group": "EeveeName"
   },
   "OmanyteCard": {
@@ -1406,6 +1490,7 @@
     "energy": {
       "WATER": 1
     },
+    "card_group": "WATER",
     "target_group": "MysteriousFossilName"
   },
   "OmastarCard": {
@@ -1423,6 +1508,7 @@
       "WATER": 3,
       "COLORLESS": 1
     },
+    "card_group": "WATER",
     "target_group": "OmanyteName"
   },
   "Articuno1Card": {
@@ -1439,6 +1525,7 @@
     "energy": {
       "WATER": 7
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "Articuno2Card": {
@@ -1455,6 +1542,7 @@
     "energy": {
       "WATER": 3
     },
+    "card_group": "WATER",
     "target_group": ""
   },
   "Pikachu1Card": {
@@ -1472,6 +1560,7 @@
       "COLORLESS": 2,
       "LIGHTNING": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Pikachu2Card": {
@@ -1488,6 +1577,7 @@
     "energy": {
       "LIGHTNING": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Pikachu3Card": {
@@ -1505,6 +1595,7 @@
       "COLORLESS": 1,
       "LIGHTNING": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Pikachu4Card": {
@@ -1522,6 +1613,7 @@
       "COLORLESS": 1,
       "LIGHTNING": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "FlyingPikachuCard": {
@@ -1539,6 +1631,7 @@
       "LIGHTNING": 1,
       "COLORLESS": 3
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "SurfingPikachu1Card": {
@@ -1555,6 +1648,7 @@
     "energy": {
       "WATER": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "SurfingPikachu2Card": {
@@ -1571,6 +1665,7 @@
     "energy": {
       "WATER": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Raichu1Card": {
@@ -1588,6 +1683,7 @@
       "LIGHTNING": 4,
       "COLORLESS": 3
     },
+    "card_group": "LIGHTNING",
     "target_group": "PikachuName"
   },
   "Raichu2Card": {
@@ -1604,6 +1700,7 @@
     "energy": {
       "LIGHTNING": 4
     },
+    "card_group": "LIGHTNING",
     "target_group": "PikachuName"
   },
   "Magnemite1Card": {
@@ -1621,6 +1718,7 @@
       "LIGHTNING": 2,
       "COLORLESS": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Magnemite2Card": {
@@ -1638,6 +1736,7 @@
       "COLORLESS": 2,
       "LIGHTNING": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Magneton1Card": {
@@ -1655,6 +1754,7 @@
       "LIGHTNING": 4,
       "COLORLESS": 3
     },
+    "card_group": "LIGHTNING",
     "target_group": "MagnemiteName"
   },
   "Magneton2Card": {
@@ -1672,6 +1772,7 @@
       "LIGHTNING": 5,
       "COLORLESS": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": "MagnemiteName"
   },
   "VoltorbCard": {
@@ -1688,6 +1789,7 @@
     "energy": {
       "COLORLESS": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Electrode1Card": {
@@ -1704,6 +1806,7 @@
     "energy": {
       "LIGHTNING": 5
     },
+    "card_group": "LIGHTNING",
     "target_group": "VoltorbName"
   },
   "Electrode2Card": {
@@ -1721,6 +1824,7 @@
       "COLORLESS": 2,
       "LIGHTNING": 3
     },
+    "card_group": "LIGHTNING",
     "target_group": "VoltorbName"
   },
   "Electabuzz1Card": {
@@ -1738,6 +1842,7 @@
       "LIGHTNING": 1,
       "COLORLESS": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Electabuzz2Card": {
@@ -1755,6 +1860,7 @@
       "LIGHTNING": 2,
       "COLORLESS": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Jolteon1Card": {
@@ -1771,6 +1877,7 @@
     "energy": {
       "COLORLESS": 6
     },
+    "card_group": "LIGHTNING",
     "target_group": "EeveeName"
   },
   "Jolteon2Card": {
@@ -1788,6 +1895,7 @@
       "COLORLESS": 3,
       "LIGHTNING": 2
     },
+    "card_group": "LIGHTNING",
     "target_group": "EeveeName"
   },
   "Zapdos1Card": {
@@ -1804,6 +1912,7 @@
     "energy": {
       "LIGHTNING": 4
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Zapdos2Card": {
@@ -1821,6 +1930,7 @@
       "LIGHTNING": 7,
       "COLORLESS": 1
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "Zapdos3Card": {
@@ -1837,6 +1947,7 @@
     "energy": {
       "LIGHTNING": 3
     },
+    "card_group": "LIGHTNING",
     "target_group": ""
   },
   "SandshrewCard": {
@@ -1853,6 +1964,7 @@
     "energy": {
       "FIGHTING": 1
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "SandslashCard": {
@@ -1870,6 +1982,7 @@
       "COLORLESS": 2,
       "FIGHTING": 2
     },
+    "card_group": "FIGHTING",
     "target_group": "SandshrewName"
   },
   "DiglettCard": {
@@ -1886,6 +1999,7 @@
     "energy": {
       "FIGHTING": 3
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "DugtrioCard": {
@@ -1903,6 +2017,7 @@
       "FIGHTING": 6,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "DiglettName"
   },
   "MankeyCard": {
@@ -1919,6 +2034,7 @@
     "energy": {
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "PrimeapeCard": {
@@ -1936,6 +2052,7 @@
       "FIGHTING": 4,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "MankeyName"
   },
   "MachopCard": {
@@ -1952,6 +2069,7 @@
     "energy": {
       "FIGHTING": 1
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "MachokeCard": {
@@ -1969,6 +2087,7 @@
       "FIGHTING": 4,
       "COLORLESS": 3
     },
+    "card_group": "FIGHTING",
     "target_group": "MachopName"
   },
   "MachampCard": {
@@ -1986,6 +2105,7 @@
       "FIGHTING": 3,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "MachokeName"
   },
   "GeodudeCard": {
@@ -2003,6 +2123,7 @@
       "FIGHTING": 1,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "GravelerCard": {
@@ -2020,6 +2141,7 @@
       "FIGHTING": 4,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "GeodudeName"
   },
   "GolemCard": {
@@ -2037,6 +2159,7 @@
       "FIGHTING": 7,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "GravelerName"
   },
   "OnixCard": {
@@ -2053,6 +2176,7 @@
     "energy": {
       "FIGHTING": 3
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "CuboneCard": {
@@ -2070,6 +2194,7 @@
       "COLORLESS": 1,
       "FIGHTING": 2
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "Marowak1Card": {
@@ -2087,6 +2212,7 @@
       "FIGHTING": 4,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "CuboneName"
   },
   "Marowak2Card": {
@@ -2104,6 +2230,7 @@
       "FIGHTING": 4,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "CuboneName"
   },
   "HitmonleeCard": {
@@ -2120,6 +2247,7 @@
     "energy": {
       "FIGHTING": 5
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "HitmonchanCard": {
@@ -2137,6 +2265,7 @@
       "FIGHTING": 3,
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "RhyhornCard": {
@@ -2154,6 +2283,7 @@
       "COLORLESS": 3,
       "FIGHTING": 1
     },
+    "card_group": "FIGHTING",
     "target_group": ""
   },
   "RhydonCard": {
@@ -2171,6 +2301,7 @@
       "FIGHTING": 5,
       "COLORLESS": 2
     },
+    "card_group": "FIGHTING",
     "target_group": "RhyhornName"
   },
   "KabutoCard": {
@@ -2187,6 +2318,7 @@
     "energy": {
       "COLORLESS": 1
     },
+    "card_group": "FIGHTING",
     "target_group": "MysteriousFossilName"
   },
   "KabutopsCard": {
@@ -2203,6 +2335,7 @@
     "energy": {
       "FIGHTING": 6
     },
+    "card_group": "FIGHTING",
     "target_group": "KabutoName"
   },
   "AerodactylCard": {
@@ -2219,6 +2352,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "FIGHTING",
     "target_group": "MysteriousFossilName"
   },
   "AbraCard": {
@@ -2235,6 +2369,7 @@
     "energy": {
       "PSYCHIC": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "KadabraCard": {
@@ -2252,6 +2387,7 @@
       "PSYCHIC": 4,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": "AbraName"
   },
   "AlakazamCard": {
@@ -2268,6 +2404,7 @@
     "energy": {
       "PSYCHIC": 3
     },
+    "card_group": "PSYCHIC",
     "target_group": "KadabraName"
   },
   "Slowpoke1Card": {
@@ -2285,6 +2422,7 @@
       "COLORLESS": 1,
       "PSYCHIC": 2
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Slowpoke2Card": {
@@ -2302,6 +2440,7 @@
       "COLORLESS": 1,
       "PSYCHIC": 2
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "SlowbroCard": {
@@ -2318,6 +2457,7 @@
     "energy": {
       "PSYCHIC": 2
     },
+    "card_group": "PSYCHIC",
     "target_group": "SlowpokeName"
   },
   "Gastly1Card": {
@@ -2335,6 +2475,7 @@
       "PSYCHIC": 2,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Gastly2Card": {
@@ -2351,6 +2492,7 @@
     "energy": {
       "PSYCHIC": 3
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Haunter1Card": {
@@ -2368,6 +2510,7 @@
       "PSYCHIC": 1,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": "GastlyName"
   },
   "Haunter2Card": {
@@ -2384,6 +2527,7 @@
     "energy": {
       "PSYCHIC": 3
     },
+    "card_group": "PSYCHIC",
     "target_group": "GastlyName"
   },
   "GengarCard": {
@@ -2400,6 +2544,7 @@
     "energy": {
       "PSYCHIC": 3
     },
+    "card_group": "PSYCHIC",
     "target_group": "HaunterName"
   },
   "DrowzeeCard": {
@@ -2417,6 +2562,7 @@
       "COLORLESS": 1,
       "PSYCHIC": 2
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "HypnoCard": {
@@ -2433,6 +2579,7 @@
     "energy": {
       "PSYCHIC": 4
     },
+    "card_group": "PSYCHIC",
     "target_group": "DrowzeeName"
   },
   "MrMimeCard": {
@@ -2450,6 +2597,7 @@
       "PSYCHIC": 1,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "JynxCard": {
@@ -2467,6 +2615,7 @@
       "PSYCHIC": 3,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Mewtwo1Card": {
@@ -2484,6 +2633,7 @@
       "PSYCHIC": 3,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Mewtwo2Card": {
@@ -2501,6 +2651,7 @@
       "PSYCHIC": 3,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Mewtwo3Card": {
@@ -2518,6 +2669,7 @@
       "PSYCHIC": 3,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Mew1Card": {
@@ -2534,6 +2686,7 @@
     "energy": {
       "PSYCHIC": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Mew2Card": {
@@ -2551,6 +2704,7 @@
       "PSYCHIC": 1,
       "COLORLESS": 1
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "Mew3Card": {
@@ -2567,6 +2721,7 @@
     "energy": {
       "PSYCHIC": 3
     },
+    "card_group": "PSYCHIC",
     "target_group": ""
   },
   "PidgeyCard": {
@@ -2583,6 +2738,7 @@
     "energy": {
       "COLORLESS": 2
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "PidgeottoCard": {
@@ -2599,6 +2755,7 @@
     "energy": {
       "COLORLESS": 5
     },
+    "card_group": "COLORLESS",
     "target_group": "PidgeyName"
   },
   "Pidgeot1Card": {
@@ -2615,6 +2772,7 @@
     "energy": {
       "COLORLESS": 7
     },
+    "card_group": "COLORLESS",
     "target_group": "PidgeottoName"
   },
   "Pidgeot2Card": {
@@ -2631,6 +2789,7 @@
     "energy": {
       "COLORLESS": 5
     },
+    "card_group": "COLORLESS",
     "target_group": "PidgeottoName"
   },
   "RattataCard": {
@@ -2647,6 +2806,7 @@
     "energy": {
       "COLORLESS": 1
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "RaticateCard": {
@@ -2663,6 +2823,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": "RattataName"
   },
   "SpearowCard": {
@@ -2679,6 +2840,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "FearowCard": {
@@ -2695,6 +2857,7 @@
     "energy": {
       "COLORLESS": 7
     },
+    "card_group": "COLORLESS",
     "target_group": "SpearowName"
   },
   "ClefairyCard": {
@@ -2711,6 +2874,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "ClefableCard": {
@@ -2727,6 +2891,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": "ClefairyName"
   },
   "Jigglypuff1Card": {
@@ -2743,6 +2908,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "Jigglypuff2Card": {
@@ -2759,6 +2925,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "Jigglypuff3Card": {
@@ -2775,6 +2942,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "WigglytuffCard": {
@@ -2791,6 +2959,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": "JigglypuffName"
   },
   "Meowth1Card": {
@@ -2807,6 +2976,7 @@
     "energy": {
       "COLORLESS": 2
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "Meowth2Card": {
@@ -2823,6 +2993,7 @@
     "energy": {
       "COLORLESS": 2
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "PersianCard": {
@@ -2839,6 +3010,7 @@
     "energy": {
       "COLORLESS": 5
     },
+    "card_group": "COLORLESS",
     "target_group": "MeowthName"
   },
   "FarfetchdCard": {
@@ -2855,6 +3027,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "DoduoCard": {
@@ -2871,6 +3044,7 @@
     "energy": {
       "COLORLESS": 1
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "DodrioCard": {
@@ -2887,6 +3061,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": "DoduoName"
   },
   "LickitungCard": {
@@ -2903,6 +3078,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "ChanseyCard": {
@@ -2919,6 +3095,7 @@
     "energy": {
       "COLORLESS": 6
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "KangaskhanCard": {
@@ -2935,6 +3112,7 @@
     "energy": {
       "COLORLESS": 5
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "TaurosCard": {
@@ -2951,6 +3129,7 @@
     "energy": {
       "COLORLESS": 5
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "DittoCard": {
@@ -2967,6 +3146,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "EeveeCard": {
@@ -2983,6 +3163,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "PorygonCard": {
@@ -2999,6 +3180,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "SnorlaxCard": {
@@ -3015,6 +3197,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "DratiniCard": {
@@ -3031,6 +3214,7 @@
     "energy": {
       "COLORLESS": 1
     },
+    "card_group": "COLORLESS",
     "target_group": ""
   },
   "DragonairCard": {
@@ -3047,6 +3231,7 @@
     "energy": {
       "COLORLESS": 7
     },
+    "card_group": "COLORLESS",
     "target_group": "DratiniName"
   },
   "Dragonite1Card": {
@@ -3063,6 +3248,7 @@
     "energy": {
       "COLORLESS": 3
     },
+    "card_group": "COLORLESS",
     "target_group": "DragonairName"
   },
   "Dragonite2Card": {
@@ -3079,6 +3265,7 @@
     "energy": {
       "COLORLESS": 4
     },
+    "card_group": "COLORLESS",
     "target_group": "DragonairName"
   },
   "GrassEnergyCard": {
@@ -3093,6 +3280,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "FireEnergyCard": {
@@ -3107,6 +3295,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "WaterEnergyCard": {
@@ -3121,6 +3310,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "LightningEnergyCard": {
@@ -3135,6 +3325,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "FightingEnergyCard": {
@@ -3149,6 +3340,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "PsychicEnergyCard": {
@@ -3163,6 +3355,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "DoubleColorlessEnergyCard": {
@@ -3177,6 +3370,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "ENERGY",
     "target_group": ""
   },
   "ProfessorOakCard": {
@@ -3191,6 +3385,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ImposterProfessorOakCard": {
@@ -3205,6 +3400,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "BillCard": {
@@ -3219,6 +3415,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "MrFujiCard": {
@@ -3233,6 +3430,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "LassCard": {
@@ -3247,6 +3445,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ImakuniCard": {
@@ -3261,6 +3460,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PokemonTraderCard": {
@@ -3275,6 +3475,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PokemonBreederCard": {
@@ -3289,6 +3490,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ClefairyDollCard": {
@@ -3303,6 +3505,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "MysteriousFossilCard": {
@@ -3317,6 +3520,7 @@
     "has_evolution": true,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "EnergyRetrievalCard": {
@@ -3331,6 +3535,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "SuperEnergyRetrievalCard": {
@@ -3345,6 +3550,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "EnergySearchCard": {
@@ -3359,6 +3565,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "EnergyRemovalCard": {
@@ -3373,6 +3580,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "SuperEnergyRemovalCard": {
@@ -3387,6 +3595,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "SwitchCard": {
@@ -3401,6 +3610,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PokemonCenterCard": {
@@ -3415,6 +3625,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PokeBallCard": {
@@ -3429,6 +3640,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ScoopUpCard": {
@@ -3443,6 +3655,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ComputerSearchCard": {
@@ -3457,6 +3670,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PokedexCard": {
@@ -3471,6 +3685,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PlusPowerCard": {
@@ -3485,6 +3700,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "DefenderCard": {
@@ -3499,6 +3715,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ItemFinderCard": {
@@ -3513,6 +3730,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "GustOfWindCard": {
@@ -3527,6 +3745,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "DevolutionSprayCard": {
@@ -3541,6 +3760,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PotionCard": {
@@ -3555,6 +3775,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "SuperPotionCard": {
@@ -3569,6 +3790,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "FullHealCard": {
@@ -3583,6 +3805,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "ReviveCard": {
@@ -3597,6 +3820,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "MaintenanceCard": {
@@ -3611,6 +3835,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "PokemonFluteCard": {
@@ -3625,6 +3850,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "GamblerCard": {
@@ -3639,6 +3865,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   },
   "RecycleCard": {
@@ -3653,6 +3880,7 @@
     "has_evolution": false,
     "uses_attacks": false,
     "energy": {},
+    "card_group": "TRAINER",
     "target_group": ""
   }
 }
